@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const Footer = (props: Props) => {
   return (
@@ -16,7 +16,7 @@ const Footer = (props: Props) => {
             Brand
           </a>
           <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-            © 2022 Preline.
+            © 2022 Digitaley Drive.
           </p>
         </div>
         {/* End Col */}
@@ -460,7 +460,7 @@ const Footer = (props: Props) => {
                 Brand
               </a>
               <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                © 2022 Preline.
+                © 2022 Digitaley Drive.
               </p>
             </div>
             {/* Social Brands */}
@@ -518,6 +518,6 @@ const Footer = (props: Props) => {
       </div>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;

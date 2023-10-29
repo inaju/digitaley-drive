@@ -11,8 +11,8 @@ const Hero = () => {
             <span className="text-blue-600">Digitaley Drive</span>
           </h1>
           <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">
-            Range of flexible courses designed to
-            Introduce you to the world of data analytics.{" "}
+            Range of flexible courses designed to Introduce you to the world of
+            data analytics.{" "}
           </p>
           {/* Buttons */}
           <div className="mt-7 grid gap-3 w-full sm:inline-flex">
@@ -157,12 +157,11 @@ const Hero = () => {
               </div>
             </div>
             {/* End Review */}
-           
           </div>
           {/* End Review */}
         </div>
         {/* End Col */}
-        <div className="relative ml-4 hidden md:block">
+        <div className="relative ml-4 ">
           <img
             className="w-full rounded-md"
             src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80"

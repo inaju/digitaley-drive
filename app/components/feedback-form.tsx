@@ -9,7 +9,7 @@ const FeedbackForm = (props: Props) => {
       <div className="grid md:grid-cols-2 items-center gap-12">
         <div>
           <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight dark:text-white">
-            Hire us
+            Apply!
           </h1>
           <p className="mt-1 md:text-lg text-gray-800 dark:text-gray-200">
             We help brands and platforms turn big ideas into beautiful digital

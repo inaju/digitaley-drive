@@ -20,9 +20,9 @@ const Testimonials = (props: Props) => {
             <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
               <div className="flex-auto p-4 md:p-6">
                 <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
-                  With Preline, we are able to easily track our performance in
-                  full detail. It is become an essential tool for us to grow and
-                  engage with our audience.
+                  With Digitaley Drive, we are able to easily track our
+                  performance in full detail. It is become an essential tool for
+                  us to grow and engage with our audience.
                 </p>
               </div>
               <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-slate-700">
@@ -134,7 +134,7 @@ const Testimonials = (props: Props) => {
             <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
               2,000+
             </p>
-            <p className="mt-1 text-gray-400">partner with Preline</p>
+            <p className="mt-1 text-gray-400">partner with Digitaley Drive</p>
           </div>
           {/* End Stats */}
           {/* Stats */}

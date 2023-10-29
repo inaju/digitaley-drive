@@ -153,7 +153,7 @@ const WhyDigitaley = (props: Props) => {
                   </h3>
                   <p className="mt-1 text-gray-600 dark:text-gray-400">
                     From boarding passes to movie tickets, there is pretty much
-                    nothing you can not store with Preline.
+                    nothing you can not store with Digitaley Drive.
                   </p>
                 </div>
               </div>

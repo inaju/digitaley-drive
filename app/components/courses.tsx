@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const Courses = (props: Props) => {
   return (
@@ -12,7 +12,7 @@ const Courses = (props: Props) => {
         </h2>
         <p className="mt-1 text-gray-600 dark:text-gray-400">
           See how game-changing companies are making the most of every
-          engagement with Preline.
+          engagement with Digitaley Drive.
         </p>
       </div>
       {/* End Title */}
@@ -32,7 +32,7 @@ const Courses = (props: Props) => {
           </div>
           <div className="my-6">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-              Announcing a free plan for small teams
+              Data Analytics I (Enthusiast)
             </h3>
             <p className="mt-5 text-gray-600 dark:text-gray-400">
               At Wake, our mission has always been focused on bringing openness.
@@ -46,7 +46,7 @@ const Courses = (props: Props) => {
             />
             <div>
               <h5 className="text-sm text-gray-800 dark:text-gray-200">
-                By Lauren Waller
+                By Ruby Waller
               </h5>
             </div>
           </div>
@@ -66,7 +66,7 @@ const Courses = (props: Props) => {
           </div>
           <div className="my-6">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-              How Google Assistant now helps you record stories for kids
+              Data Analytics II (Beginners)
             </h3>
             <p className="mt-5 text-gray-600 dark:text-gray-400">
               Google is constantly updating its consumer AI, Google Assistant,
@@ -101,7 +101,7 @@ const Courses = (props: Props) => {
           </div>
           <div className="my-6">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-              Front accounts - let&#39;s work together
+              Advanced Data Analytics
             </h3>
             <p className="mt-5 text-gray-600 dark:text-gray-400">
               Are you an accountant? Are you a company formation advisor?
@@ -115,7 +115,7 @@ const Courses = (props: Props) => {
             />
             <div>
               <h5 className="text-sm text-gray-800 dark:text-gray-200">
-                By Lauren Waller
+                By Ruby Waller
               </h5>
             </div>
           </div>
@@ -124,31 +124,10 @@ const Courses = (props: Props) => {
       </div>
       {/* End Grid */}
       {/* Card */}
-      <div className="mt-12 text-center">
-        <a
-          className="inline-flex justify-center items-center gap-x-2 text-center bg-white border hover:border-gray-300 text-sm text-blue-600 hover:text-blue-700 font-medium hover:shadow-sm rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:bg-slate-900 dark:border-gray-700 dark:hover:border-gray-600 dark:text-blue-500 dark:hover:text-blue-400 dark:hover:shadow-slate-700/[.7] dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
-          href="#"
-        >
-          Read more
-          <svg
-            className="w-2.5 h-2.5"
-            width={16}
-            height={16}
-            viewBox="0 0 16 16"
-            fill="none"
-          >
-            <path
-              d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-            />
-          </svg>
-        </a>
-      </div>
+
       {/* End Card */}
     </div>
   );
-}
+};
 
-export default Courses
+export default Courses;

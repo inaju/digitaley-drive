@@ -134,7 +134,7 @@ const Faq = (props: Props) => {
                 className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
                 aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three"
               >
-                How does Preline pricing work?
+                How does Digitaley Drive pricing work?
                 <svg
                   className="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
                   width={16}
@@ -185,7 +185,7 @@ const Faq = (props: Props) => {
                 className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
                 aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four"
               >
-                How secure is Preline?
+                How secure is Digitaley Drive?
                 <svg
                   className="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
                   width={16}
@@ -223,7 +223,7 @@ const Faq = (props: Props) => {
                 aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four"
               >
                 <p className="text-gray-600 dark:text-gray-400">
-                  Protecting the data you trust to Preline is our first
+                  Protecting the data you trust to Digitaley Drive is our first
                   priority. This part is really crucial in keeping the project
                   in line to completion.
                 </p>
