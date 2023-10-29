@@ -11,32 +11,32 @@ const Stats = (props: Props) => {
         {/* Stats */}
         <div>
           <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
-            Accuracy rate
+            Job Readiness
           </h4>
           <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
             99.95%
           </p>
-          <p className="mt-1 text-gray-500">in fulfilling orders</p>
+          <p className="mt-1 text-gray-500">in getting employed</p>
         </div>
         {/* End Stats */}
         {/* Stats */}
         <div>
           <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
-            Startup businesses
+            Students
           </h4>
           <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
-            2,000+
+            3,000+
           </p>
-          <p className="mt-1 text-gray-500">partner with Preline</p>
+          <p className="mt-1 text-gray-500">graduated</p>
         </div>
         {/* End Stats */}
         {/* Stats */}
         <div>
           <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
-            Happy customer
+            Courses
           </h4>
           <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
-            85%
+            3
           </p>
           <p className="mt-1 text-gray-500">this year alone</p>
         </div>
