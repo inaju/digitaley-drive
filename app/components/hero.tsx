@@ -2,12 +2,12 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-[85rem] mx-auto pt-12 px-4 sm:px-6 lg:px-8">
       {/* Grid */}
       <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
         <div>
           <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
-            Start your Data Analytics journey with{" "}
+            Start Your Data Analytics Journey With{" "}
             <span className="text-blue-600">Digitaley Drive</span>
           </h1>
           <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">
@@ -162,7 +162,7 @@ const Hero = () => {
           {/* End Review */}
         </div>
         {/* End Col */}
-        <div className="relative ml-4">
+        <div className="relative ml-4 hidden md:block">
           <img
             className="w-full rounded-md"
             src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80"
