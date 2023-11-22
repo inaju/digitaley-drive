@@ -8,7 +8,7 @@ const Hero = () => {
         <div>
           <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
             Start Your Data Analytics Journey With{" "}
-            <span className="text-blue-600">Digitaley Drive</span>
+            <span className="text-greenPrimary">Digitaley Drive</span>
           </h1>
           <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">
             Range of flexible courses designed to Introduce you to the world of
@@ -17,7 +17,7 @@ const Hero = () => {
           {/* Buttons */}
           <div className="mt-7 grid gap-3 w-full sm:inline-flex">
             <a
-              className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
               href="#"
             >
               Get started

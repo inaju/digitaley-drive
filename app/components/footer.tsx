@@ -88,7 +88,7 @@ const Footer = (props: Props) => {
               >
                 Careers
               </a>{" "}
-              <span className="inline text-blue-600 dark:text-blue-500">
+              <span className="inline text-greenPrimary dark:text-blue-500">
                 — We&#39;re hiring
               </span>
             </p>
@@ -195,7 +195,7 @@ const Footer = (props: Props) => {
               >
                 GitHub
               </a>{" "}
-              <span className="inline text-blue-600 dark:text-blue-500">
+              <span className="inline text-greenPrimary dark:text-blue-500">
                 — New
               </span>
             </p>
@@ -233,7 +233,7 @@ const Footer = (props: Props) => {
               <button
                 id="footer-language-dropdown"
                 type="button"
-                className="hs-dropdown-toggle py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border bg-white text-gray-700 align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+                className="hs-dropdown-toggle py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border bg-white text-gray-700 align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-greenPrimary transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
               >
                 <svg
                   className="w-3 h-3 rounded-full"

@@ -13,7 +13,7 @@ const Stats = (props: Props) => {
           <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
             Job Readiness
           </h4>
-          <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
+          <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
             99.95%
           </p>
           <p className="mt-1 text-gray-500">in getting employed</p>
@@ -24,7 +24,7 @@ const Stats = (props: Props) => {
           <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
             Students
           </h4>
-          <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
+          <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
             3,000+
           </p>
           <p className="mt-1 text-gray-500">graduated</p>
@@ -35,7 +35,7 @@ const Stats = (props: Props) => {
           <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
             Courses
           </h4>
-          <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
+          <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
             3
           </p>
           <p className="mt-1 text-gray-500">this year alone</p>

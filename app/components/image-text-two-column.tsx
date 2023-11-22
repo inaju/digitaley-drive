@@ -4,7 +4,10 @@ type Props = {};
 
 const ImageTextTwoColumn = (props: Props) => {
   return (
-    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div
+      id="vision"
+      className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
+    >
       {/* Grid */}
       <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
         <div>
@@ -35,7 +38,7 @@ const ImageTextTwoColumn = (props: Props) => {
               <li className="flex space-x-3">
                 {/* Solid Check */}
                 <svg
-                  className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                  className="flex-shrink-0 h-6 w-6 text-greenPrimary dark:text-blue-500"
                   width={16}
                   height={16}
                   viewBox="0 0 16 16"
@@ -61,7 +64,7 @@ const ImageTextTwoColumn = (props: Props) => {
               <li className="flex space-x-3">
                 {/* Solid Check */}
                 <svg
-                  className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                  className="flex-shrink-0 h-6 w-6 text-greenPrimary dark:text-blue-500"
                   width={16}
                   height={16}
                   viewBox="0 0 16 16"
@@ -87,7 +90,7 @@ const ImageTextTwoColumn = (props: Props) => {
               <li className="flex space-x-3">
                 {/* Solid Check */}
                 <svg
-                  className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                  className="flex-shrink-0 h-6 w-6 text-greenPrimary dark:text-blue-500"
                   width={16}
                   height={16}
                   viewBox="0 0 16 16"

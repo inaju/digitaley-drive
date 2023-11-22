@@ -1,18 +1,20 @@
 import React from "react";
+import rubyImage from "../../public/assets/ruby.webp";
 
 type Props = {};
 
 const Courses = (props: Props) => {
   return (
-    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div
+    id="courses"
+     className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       {/* Title */}
       <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
         <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
           The Courses
         </h2>
         <p className="mt-1 text-gray-600 dark:text-gray-400">
-          See how game-changing companies are making the most of every
-          engagement with Digitaley Drive.
+          See how much you can take your learning experience to the fullest with Digitaley Drive.
         </p>
       </div>
       {/* End Title */}
@@ -32,21 +34,42 @@ const Courses = (props: Props) => {
           </div>
           <div className="my-6">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-              Data Analytics I (Enthusiast)
+              Data Analytics
             </h3>
             <p className="mt-5 text-gray-600 dark:text-gray-400">
-              At Wake, our mission has always been focused on bringing openness.
+              Become a Data Analyst with our 3 month intensive tranning covering
+              over 40+ topics, 5 projects for both beginner and intermediate{" "}
             </p>
           </div>
+          {/* start chips */}
+          <div className="flex flex-wrap gap-2 mb-3">
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
+              SQL
+            </span>
+
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-800 dark:bg-teal-800/30 dark:text-teal-500">
+              Excel
+            </span>
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+              Problem Solving
+            </span>
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
+              Github
+            </span>
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500">
+              Power BI
+            </span>
+          </div>
+          {/* end chips */}
           <div className="mt-auto flex items-center gap-x-3">
             <img
               className="w-8 h-8 rounded-full"
-              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+              src="https://lh3.googleusercontent.com/a-/ALV-UjVHLg-DbaoUzFcsURHRlq2gk9p_zdI8aprcNeTLoirIsa4=s58-p-k-rw-no"
               alt="Image Description"
             />
             <div>
-              <h5 className="text-sm text-gray-800 dark:text-gray-200">
-                By Ruby Waller
+              <h5 className="mt-4 text-sm text-gray-800 dark:text-gray-200">
+                By Ruby Ihekweme
               </h5>
             </div>
           </div>
@@ -66,22 +89,32 @@ const Courses = (props: Props) => {
           </div>
           <div className="my-6">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-              Data Analytics II (Beginners)
+              Data Science
             </h3>
             <p className="mt-5 text-gray-600 dark:text-gray-400">
-              Google is constantly updating its consumer AI, Google Assistant,
-              with new features.
+              Become a Data Scientics with our 2 months intensive trainning
+              covering 30+ topics
             </p>
           </div>
+          {/* start chips */}
+          <div className="flex flex-wrap gap-2 mb-3">
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+              Statistics
+            </span>
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
+              Python
+            </span>
+          </div>
+          {/* end chips */}
           <div className="mt-auto flex items-center gap-x-3">
             <img
               className="w-8 h-8 rounded-full"
-              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+              src="https://lh3.googleusercontent.com/a-/ALV-UjVHLg-DbaoUzFcsURHRlq2gk9p_zdI8aprcNeTLoirIsa4=s58-p-k-rw-no"
               alt="Image Description"
             />
             <div>
-              <h5 className="text-sm text-gray-800 dark:text-gray-200">
-                By Aaron Larsson
+              <h5 className="mt-4 text-sm text-gray-800 dark:text-gray-200">
+                By Ruby Ihekweme
               </h5>
             </div>
           </div>
@@ -101,21 +134,46 @@ const Courses = (props: Props) => {
           </div>
           <div className="my-6">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-              Advanced Data Analytics
+              Business Data Analytics
             </h3>
             <p className="mt-5 text-gray-600 dark:text-gray-400">
-              Are you an accountant? Are you a company formation advisor?
+              This program is designed to equip you with the right skills as a
+              Business Analyst and prepare you for jobs. Join our 3 months
+              intensive trainning covering over 40+ topics, 5 projects.{" "}
             </p>
           </div>
+          {/* start chips */}
+          <div className="flex flex-wrap gap-2 mb-3">
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
+              SQL
+            </span>
+
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-800 dark:bg-teal-800/30 dark:text-teal-500">
+              Excel
+            </span>
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+              Problem Solving
+            </span>
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
+              Github
+            </span>
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500">
+              Power BI
+            </span>
+            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-800 text-white dark:bg-white dark:text-gray-800">
+              Presentation and Communication
+            </span>
+          </div>
+          {/* end chips */}
           <div className="mt-auto flex items-center gap-x-3">
             <img
               className="w-8 h-8 rounded-full"
-              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+              src="https://lh3.googleusercontent.com/a-/ALV-UjVHLg-DbaoUzFcsURHRlq2gk9p_zdI8aprcNeTLoirIsa4=s58-p-k-rw-no"
               alt="Image Description"
             />
             <div>
-              <h5 className="text-sm text-gray-800 dark:text-gray-200">
-                By Ruby Waller
+              <h5 className="mt-4 text-sm text-gray-800 dark:text-gray-200">
+                By Ruby Ihekweme
               </h5>
             </div>
           </div>

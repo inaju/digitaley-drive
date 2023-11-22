@@ -4,7 +4,10 @@ type Props = {};
 
 const WhyDigitaley = (props: Props) => {
   return (
-    <div className="bg-[#005DE80C] p-12 rounded-2xl">
+    <div
+      id="why-digitaley"
+      className="bg-[#005DE80C] p-12 rounded-2xl"
+    >
       <h2 className="font-bold  text-3xl lg:text-4xl text-gray-800 dark:text-gray-200">
         Why Digitaley Drive?
       </h2>
@@ -33,7 +36,7 @@ const WhyDigitaley = (props: Props) => {
                   </h3>
                   <p className="mt-1 text-gray-600 dark:text-gray-400">
                     We choose our teams carefully. Our people are the secret to
-                    great work.
+                    the excellent learning experience.
                   </p>
                 </div>
               </div>
@@ -52,11 +55,11 @@ const WhyDigitaley = (props: Props) => {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                    Effortless updates
+                    Build Innovators
                   </h3>
                   <p className="mt-1 text-gray-600 dark:text-gray-400">
-                    Benefit from automatic updates to all boards any time you
-                    need to make a change to your website.
+                    We equip talents to become innovators through deep data
+                    understanding.
                   </p>
                 </div>
               </div>
@@ -78,8 +81,8 @@ const WhyDigitaley = (props: Props) => {
                     Strong empathy
                   </h3>
                   <p className="mt-1 text-gray-600 dark:text-gray-400">
-                    We have user tested our own process by shipping over 1k
-                    products for clients.
+                    We have user tested our own learning process by mentoring
+                    over 1k Students.
                   </p>
                 </div>
               </div>
@@ -101,10 +104,11 @@ const WhyDigitaley = (props: Props) => {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                    Conquer the best
+                    Great Learning Experience
                   </h3>
                   <p className="mt-1 text-gray-600 dark:text-gray-400">
-                    We stay lean and help your product do one thing well.
+                    From each course, we give you an opportunity that adds great
+                    value.{" "}
                   </p>
                 </div>
               </div>
@@ -126,11 +130,11 @@ const WhyDigitaley = (props: Props) => {
                 </svg>
                 <div className="ml-5 sm:ml-8">
                   <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                    Designing for people
+                    Community{" "}
                   </h3>
                   <p className="mt-1 text-gray-600 dark:text-gray-400">
-                    We actively pursue the right balance between functionality
-                    and aesthetics, creating delightful experiences.
+                    We give you access to sophisticated pool of people and
+                    leaders.
                   </p>
                 </div>
               </div>
@@ -152,8 +156,8 @@ const WhyDigitaley = (props: Props) => {
                     Simple and affordable
                   </h3>
                   <p className="mt-1 text-gray-600 dark:text-gray-400">
-                    From boarding passes to movie tickets, there is pretty much
-                    nothing you can not store with Digitaley Drive.
+                    we have an array of free and affordable classes for students
+                    who want to dip their feet into the world of data analytics.
                   </p>
                 </div>
               </div>

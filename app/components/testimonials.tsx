@@ -20,9 +20,9 @@ const Testimonials = (props: Props) => {
             <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
               <div className="flex-auto p-4 md:p-6">
                 <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
-                  With Digitaley Drive, we are able to easily track our
-                  performance in full detail. It is become an essential tool for
-                  us to grow and engage with our audience.
+                  I really loved that the learning process was beginner
+                  friendly, there was no serious rush and it gave me time to
+                  carefully assimilate what i was learning.
                 </p>
               </div>
               <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-slate-700">
@@ -36,10 +36,10 @@ const Testimonials = (props: Props) => {
                   </div>
                   <div className="grow ml-3">
                     <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
-                      Josh Tyson
+                      Yamoah Francisca
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400">
-                      Product Manager | Capsule
+                      Data Analyst
                     </p>
                   </div>
                 </div>
@@ -52,9 +52,8 @@ const Testimonials = (props: Props) => {
             <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
               <div className="flex-auto p-4 md:p-6">
                 <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
-                  In September, I will be using this theme for 2 years. I went
-                  through multiple updates and changes and I am very glad to see
-                  the consistency and effort made by the team.
+                  The Teaching Method was amazing and my takeaway was mostly on
+                  visualization, which was explained quite well.
                 </p>
               </div>
               <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-slate-700">
@@ -68,10 +67,10 @@ const Testimonials = (props: Props) => {
                   </div>
                   <div className="grow ml-3">
                     <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
-                      Luisa
+                      Ayomide David
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400">
-                      Senior Director of Operations | Fitbit
+                      Data Analyst
                     </p>
                   </div>
                 </div>
@@ -84,9 +83,10 @@ const Testimonials = (props: Props) => {
             <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
               <div className="flex-auto p-4 md:p-6">
                 <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
-                  Refreshing and Thought provoking design and it changes my view
-                  about how I design the websites. Great typography, modern
-                  clean white design, nice tones of the color.
+                  The Learning process has been very convenient. I enjoyed the
+                  fact that the classes are flexible. So it is easy to digest
+                  what has been taught before the next class which makes you
+                  eager for the next class.
                 </p>
               </div>
               <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-slate-700">
@@ -100,10 +100,10 @@ const Testimonials = (props: Props) => {
                   </div>
                   <div className="grow ml-3">
                     <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
-                      Alisa Williams
+                      Dara
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400">
-                      Entrepreneur | Happy customer
+                      Data Analyst
                     </p>
                   </div>
                 </div>
@@ -118,9 +118,9 @@ const Testimonials = (props: Props) => {
           {/* Stats */}
           <div>
             <h4 className="text-lg sm:text-xl font-semibold text-white">
-              Accuracy rate
+              Job Readiness{" "}
             </h4>
-            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
+            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
               99.95%
             </p>
             <p className="mt-1 text-gray-400">in fulfilling orders</p>
@@ -129,10 +129,10 @@ const Testimonials = (props: Props) => {
           {/* Stats */}
           <div>
             <h4 className="text-lg sm:text-xl font-semibold text-white">
-              Startup businesses
+              Students
             </h4>
-            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
-              2,000+
+            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
+              3,000+
             </p>
             <p className="mt-1 text-gray-400">partner with Digitaley Drive</p>
           </div>
@@ -140,10 +140,10 @@ const Testimonials = (props: Props) => {
           {/* Stats */}
           <div>
             <h4 className="text-lg sm:text-xl font-semibold text-white">
-              Happy customer
+              Courses
             </h4>
-            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
-              85%
+            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
+              3
             </p>
             <p className="mt-1 text-gray-400">this year alone</p>
           </div>

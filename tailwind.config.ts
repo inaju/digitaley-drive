@@ -9,7 +9,12 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        greenPrimary: "#3ec14b",
+        greenSecondary: "#51c13e",
+      },
+    },
   },
   plugins: [require("preline/plugin")],
 };

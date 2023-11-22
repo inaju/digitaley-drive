@@ -11,6 +11,7 @@ import WhyDigitaley from "./components/why-digitaley";
 import ToolsToLearn from "./components/tools-to-learn";
 import Courses from "./components/courses";
 import NavBar from "./components/nav";
+import Mission from "./components/mission";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Stats />
       <ImageTextTwoColumn />
+      {/* <Mission /> */}
       <WhyDigitaley />
       <ToolsToLearn />
       <Courses />
