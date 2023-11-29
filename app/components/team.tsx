@@ -16,13 +16,14 @@ const Team = (props: Props) => {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
         <div className="text-center">
           <img
-            className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
-            alt="Image Description"
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
+            src="/assets/ruby.jpg"
+            // src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+            alt="Ruby's Image"
           />
           <div className="mt-2 sm:mt-4">
             <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-              David Forren
+              Ruby
             </h3>
             <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
               Founder / CEO
@@ -32,89 +33,67 @@ const Team = (props: Props) => {
         {/* End Col */}
         <div className="text-center">
           <img
-            className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
+            src="/assets/cassie.jpg"
             alt="Image Description"
           />
           <div className="mt-2 sm:mt-4">
             <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-              Amil Evara
+              Cassie
             </h3>
             <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-              UI/UX Designer
+              Tutor
             </p>
           </div>
         </div>
         {/* End Col */}
         <div className="text-center">
           <img
-            className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
+            src="/assets/modupe.jpg"
             alt="Image Description"
           />
           <div className="mt-2 sm:mt-4">
             <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-              Ebele Egbuna
+              Modupe
             </h3>
             <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-              Support Consultant
+              Tutor
             </p>
           </div>
         </div>
         {/* End Col */}
         <div className="text-center">
           <img
-            className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
+            src="/assets/oyin.jpg"
             alt="Image Description"
           />
           <div className="mt-2 sm:mt-4">
             <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-              Maria Powers
+              Oyin
             </h3>
             <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-              Director of sales
+              Tutor
             </p>
           </div>
         </div>
         {/* End Col */}
         <div className="text-center">
           <img
-            className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
+            src="/assets/wole.jpg"
             alt="Image Description"
           />
           <div className="mt-2 sm:mt-4">
             <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-              Delia Pawelke
+              Wole
             </h3>
             <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-              Front-end Developer
+              Tutor
             </p>
           </div>
         </div>
-        {/* End Col */}
-        <div className="text-center">
-          <img
-            className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
-            alt="Image Description"
-          />
-          <div className="mt-2 sm:mt-4">
-            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-              Tom Lowry
-            </h3>
-            <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-              UI/UX Designer
-            </p>
-          </div>
-        </div>
-        {/* End Col */}
-
-        {/* End Col */}
-
-        {/* End Col */}
-
         {/* End Col */}
       </div>
       {/* End Grid */}

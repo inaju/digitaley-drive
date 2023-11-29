@@ -120,9 +120,17 @@ const FeedbackForm = (props: Props) => {
             <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
               Fill in the form
             </h2>
-            <form>
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdmAGOVKUr9U3Tv2AY42LcTZFIiJnfs_z0gxjJL9gVWVxD9gA/viewform?embedded=true"
+              width="440"
+              height="382"
+           
+            >
+              Loading…
+            </iframe>
+
+            {/* <form>
               <div className="mt-6 grid gap-4 lg:gap-6">
-                {/* Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                   <div>
                     <label
@@ -153,7 +161,6 @@ const FeedbackForm = (props: Props) => {
                     />
                   </div>
                 </div>
-                {/* End Grid */}
                 <div>
                   <label
                     htmlFor="hs-work-email-hire-us-1"
@@ -169,7 +176,6 @@ const FeedbackForm = (props: Props) => {
                     className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                   />
                 </div>
-                {/* Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                   <div>
                     <label
@@ -210,7 +216,7 @@ const FeedbackForm = (props: Props) => {
                   Send inquiry
                 </button>
               </div>
-            </form>
+            </form> */}
             <div className="mt-3 text-center">
               <p className="text-sm text-gray-500">
                 We wil get back to you in 1-2 business days.

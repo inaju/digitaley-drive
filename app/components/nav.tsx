@@ -1,11 +1,17 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../public/digitaley-logo.png";
 type Props = {};
 
 const NavBar = (props: Props) => {
+  const [showNavBar, setShowNavBar] = useState(false);
+
+  const handleNavbar = () => {
+    setShowNavBar(!showNavBar);
+  };
   return (
-    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white shadow-md  text-sm py-3 sm:py-0">
+    <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white shadow-md  text-sm py-3 sm:py-0">
       <nav
         className="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
         aria-label="Global"
@@ -17,12 +23,11 @@ const NavBar = (props: Props) => {
             aria-label="Brand"
           >
             <Image src={logo} alt="logo" height={40} width={40} />
-            <p
-            className="text-xl"
-            >Digitaley Drive</p>
+            <p className="text-xl">Digitaley Drive</p>
           </a>
           <div className="sm:hidden">
             <button
+              onClick={handleNavbar}
               type="button"
               className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-black/[.5] font-medium text-grey-800/[.5] shadow-sm align-middle hover:bg-black/[.1] hover:text-grey-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-greenPrimary transition-all text-sm"
               data-hs-collapse="#navbar-collapse-with-animation"
@@ -53,6 +58,7 @@ const NavBar = (props: Props) => {
             </button>
           </div>
         </div>
+        {/* desktop view */}
         <div
           id="navbar-collapse-with-animation"
           className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
@@ -85,6 +91,42 @@ const NavBar = (props: Props) => {
             </a>
           </div>
         </div>
+        {/* mobile view */}
+        {showNavBar && (
+          <div
+            onClick={handleNavbar}
+            id="navbar-collapse-with-animation"
+            className="hs-collapse  absolute top-12 left-0 right-0 h-screen shadow-xl bg-green-200 overflow-hidden transition-all duration-300 basis-full grow sm:hidden"
+          >
+            <div className="flex flex-col gap-y-8 pl-10 gap-x-0 mt-6 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
+              <a
+                className="font-medium text-grey-800 sm:py-6"
+                href="#"
+                aria-current="page"
+              >
+                Home
+              </a>
+              <a
+                className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
+                href="#vision"
+              >
+                Vision
+              </a>
+              <a
+                className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
+                href="#courses"
+              >
+                Courses
+              </a>
+              <a
+                className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
+                href="#why-digitaley"
+              >
+                Why Digitaley?
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   );

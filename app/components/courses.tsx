@@ -6,15 +6,17 @@ type Props = {};
 const Courses = (props: Props) => {
   return (
     <div
-    id="courses"
-     className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      id="courses"
+      className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
+    >
       {/* Title */}
       <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
         <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
           The Courses
         </h2>
         <p className="mt-1 text-gray-600 dark:text-gray-400">
-          See how much you can take your learning experience to the fullest with Digitaley Drive.
+          See how much you can take your learning experience to the fullest with
+          Digitaley Drive.
         </p>
       </div>
       {/* End Title */}
@@ -28,7 +30,8 @@ const Courses = (props: Props) => {
           <div className="aspect-w-16 aspect-h-11">
             <img
               className="w-full object-cover rounded-xl"
-              src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              src="https://plus.unsplash.com/premium_photo-1661778915982-d104c9a41fee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              // src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
               alt="Image Description"
             />
           </div>
@@ -61,18 +64,6 @@ const Courses = (props: Props) => {
             </span>
           </div>
           {/* end chips */}
-          <div className="mt-auto flex items-center gap-x-3">
-            <img
-              className="w-8 h-8 rounded-full"
-              src="https://lh3.googleusercontent.com/a-/ALV-UjVHLg-DbaoUzFcsURHRlq2gk9p_zdI8aprcNeTLoirIsa4=s58-p-k-rw-no"
-              alt="Image Description"
-            />
-            <div>
-              <h5 className="mt-4 text-sm text-gray-800 dark:text-gray-200">
-                By Ruby Ihekweme
-              </h5>
-            </div>
-          </div>
         </a>
         {/* End Card */}
         {/* Card */}
@@ -83,7 +74,8 @@ const Courses = (props: Props) => {
           <div className="aspect-w-16 aspect-h-11">
             <img
               className="w-full object-cover rounded-xl"
-              src="https://images.unsplash.com/photo-1562851529-c370841f6536?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80"
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              // src="https://images.unsplash.com/photo-1562851529-c370841f6536?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80"
               alt="Image Description"
             />
           </div>
@@ -106,18 +98,6 @@ const Courses = (props: Props) => {
             </span>
           </div>
           {/* end chips */}
-          <div className="mt-auto flex items-center gap-x-3">
-            <img
-              className="w-8 h-8 rounded-full"
-              src="https://lh3.googleusercontent.com/a-/ALV-UjVHLg-DbaoUzFcsURHRlq2gk9p_zdI8aprcNeTLoirIsa4=s58-p-k-rw-no"
-              alt="Image Description"
-            />
-            <div>
-              <h5 className="mt-4 text-sm text-gray-800 dark:text-gray-200">
-                By Ruby Ihekweme
-              </h5>
-            </div>
-          </div>
         </a>
         {/* End Card */}
         {/* Card */}
@@ -128,7 +108,8 @@ const Courses = (props: Props) => {
           <div className="aspect-w-16 aspect-h-11">
             <img
               className="w-full object-cover rounded-xl"
-              src="https://images.unsplash.com/photo-1521321205814-9d673c65c167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3548&q=80"
+              // src="https://images.unsplash.com/photo-1521321205814-9d673c65c167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3548&q=80"
+              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Image Description"
             />
           </div>
@@ -165,18 +146,6 @@ const Courses = (props: Props) => {
             </span>
           </div>
           {/* end chips */}
-          <div className="mt-auto flex items-center gap-x-3">
-            <img
-              className="w-8 h-8 rounded-full"
-              src="https://lh3.googleusercontent.com/a-/ALV-UjVHLg-DbaoUzFcsURHRlq2gk9p_zdI8aprcNeTLoirIsa4=s58-p-k-rw-no"
-              alt="Image Description"
-            />
-            <div>
-              <h5 className="mt-4 text-sm text-gray-800 dark:text-gray-200">
-                By Ruby Ihekweme
-              </h5>
-            </div>
-          </div>
         </a>
         {/* End Card */}
       </div>
