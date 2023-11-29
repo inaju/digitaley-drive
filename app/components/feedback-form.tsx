@@ -121,10 +121,8 @@ const FeedbackForm = (props: Props) => {
               Fill in the form
             </h2>
             <iframe
+              className="w-[340px] h-[382px] md:w-[440px]"
               src="https://docs.google.com/forms/d/e/1FAIpQLSdmAGOVKUr9U3Tv2AY42LcTZFIiJnfs_z0gxjJL9gVWVxD9gA/viewform?embedded=true"
-              width="440"
-              height="382"
-           
             >
               Loading…
             </iframe>
