@@ -14,8 +14,8 @@
 @media screen and (max-width: 480px) {
   .icon-bar {
     position: fixed;
-    top: 90%;
-    left: 75%;
+    top: 95%;
+    left: 85%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
