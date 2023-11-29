@@ -75,7 +75,7 @@ const NavBar = (props: Props) => {
               className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
               href="#vision"
             >
-              Vision
+              What we do{" "}
             </a>
             <a
               className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
@@ -110,7 +110,7 @@ const NavBar = (props: Props) => {
                 className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
                 href="#vision"
               >
-                Vision
+                What we do
               </a>
               <a
                 className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"

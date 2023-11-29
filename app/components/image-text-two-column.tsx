@@ -145,7 +145,7 @@ const ImageTextTwoColumn = (props: Props) => {
                   </svg>
                   {/* End Solid Check */}
                   <span className="text-sm sm:text-base text-gray-500">
-                    User Experience Design
+                    Build Innovators
                   </span>
                 </li>
               </ul>
