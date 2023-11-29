@@ -115,7 +115,7 @@ const Courses = (props: Props) => {
           </div>
           <div className="my-6">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-              Business Data Analytics
+              Business Analytics
             </h3>
             <p className="mt-5 text-gray-600 dark:text-gray-400">
               This program is designed to equip you with the right skills as a
