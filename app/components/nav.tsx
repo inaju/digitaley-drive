@@ -6,6 +6,15 @@ import { Popover, Whisper, Button, ButtonToolbar } from "rsuite";
 
 type Props = {};
 
+const speakerAboutus = (
+  <Popover title="About Us">
+    <p className="max-w-[400px]">
+      We are a global data tech company that focuses on up-skilling data tech
+      talents and providing businesses with sustainable data solutions that
+      drive growth and innovation.
+    </p>
+  </Popover>
+);
 const speakerMission = (
   <Popover title="Mission">
     <p>Unlocking Data Potential that drive growth and innovation</p>
@@ -40,7 +49,7 @@ const NavBar = (props: Props) => {
             <p className="text-xl">Digitaley Drive</p>
           </a>
           <div className="sm:hidden">
-            {!showNavBar ? (
+            {showNavBar ? (
               <button
                 onClick={handleNavbar}
                 type="button"
@@ -109,6 +118,19 @@ const NavBar = (props: Props) => {
             >
               Home
             </a>
+
+            <Whisper
+              placement="bottom"
+              trigger="hover"
+              controlId="control-id-hover-enterable"
+              speaker={speakerAboutus}
+              enterable
+            >
+              <p className="cursor-pointer font-medium  hover:text-grey-800 ">
+                About Us
+              </p>
+            </Whisper>
+
             <Whisper
               placement="bottom"
               trigger="hover"
@@ -116,7 +138,7 @@ const NavBar = (props: Props) => {
               speaker={speakerMission}
               enterable
             >
-              <p className="cursor-pointer font-medium  hover:text-grey-800 sm:py-6">
+              <p className="cursor-pointer font-medium  hover:text-grey-800 sm:pb-2">
                 Mission
               </p>
             </Whisper>
@@ -127,20 +149,15 @@ const NavBar = (props: Props) => {
               speaker={speakerVision}
               enterable
             >
-              <p className="font-medium mb-2 text-grey-800/[.8] hover:text-grey-800 sm:py-6">
+              <p className="font-medium mb-2 text-grey-800/[.8] hover:text-grey-800 ">
                 Vision
               </p>
             </Whisper>
-            {/* <a
-              className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
-              href="#vision"
-            >
-              What we do{" "}
-            </a> */}
+
             <a
               className="
               cursor-pointer
-              font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
+              font-medium text-grey-800/[.8] hover:text-grey-800 "
               href="#courses"
             >
               Courses
@@ -168,34 +185,7 @@ const NavBar = (props: Props) => {
               >
                 Home
               </a>
-              <Whisper
-                placement="bottom"
-                trigger="hover"
-                controlId="control-id-hover-enterable"
-                speaker={speakerMission}
-                enterable
-              >
-                <p className="cursor-pointer font-medium  hover:text-grey-800 sm:py-6">
-                  Mission
-                </p>
-              </Whisper>
-              <Whisper
-                placement="bottom"
-                trigger="hover"
-                controlId="control-id-hover-enterable"
-                speaker={speakerVision}
-                enterable
-              >
-                <p className="font-medium mb-2 text-grey-800/[.8] hover:text-grey-800 sm:py-6">
-                  Vision
-                </p>
-              </Whisper>
-              <a
-                className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
-                href="#vision"
-              >
-                What we do
-              </a>
+          
               <a
                 className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
                 href="#courses"

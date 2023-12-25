@@ -40,8 +40,9 @@ const Courses = (props: Props) => {
               Data Analytics
             </h3>
             <p className="mt-5 text-gray-600 dark:text-gray-400">
-              Become a Data Analyst with our 3 month intensive tranning covering
-              over 40+ topics, 5 projects for both beginner and intermediate{" "}
+              Become a Data Analyst with our 3 months intensive tranning
+              covering over 40+ topics, 5 projects for both beginner and
+              intermediate{" "}
             </p>
           </div>
           {/* start chips */}
@@ -62,6 +63,28 @@ const Courses = (props: Props) => {
             <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500">
               Power BI
             </span>
+            <div className="mt-7 grid gap-3 w-full sm:inline-flex">
+              <a
+                className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                href="#application-form"
+              >
+                Sign Up
+                <svg
+                  className="w-2.5 h-2.5"
+                  width={16}
+                  height={16}
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
           {/* end chips */}
         </a>
@@ -97,6 +120,30 @@ const Courses = (props: Props) => {
               Python
             </span>
           </div>
+
+          <div className="mt-7 grid gap-3 w-full sm:inline-flex">
+            <a
+              className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              href="#application-form"
+            >
+              Sign Up
+              <svg
+                className="w-2.5 h-2.5"
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                />
+              </svg>
+            </a>
+          </div>
+
           {/* end chips */}
         </a>
         {/* End Card */}
@@ -144,6 +191,28 @@ const Courses = (props: Props) => {
             </span>
           </div>
           {/* end chips */}
+          <div className="mt-7 grid gap-3 w-full sm:inline-flex">
+            <a
+              className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              href="#application-form"
+            >
+              Sign Up
+              <svg
+                className="w-2.5 h-2.5"
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                />
+              </svg>
+            </a>
+          </div>
         </a>
         {/* End Card */}
       </div>

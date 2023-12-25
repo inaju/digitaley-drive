@@ -113,7 +113,7 @@ const Footer = (props: Props) => {
           <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
             Practices
           </h4>
-         
+
           <div className="mt-3 grid space-y-3 text-sm">
             <p>
               <a
@@ -145,7 +145,6 @@ const Footer = (props: Props) => {
               </a>
             </p>
           </div>
-         
         </div>
         {/* End Col */}
 
@@ -202,17 +201,17 @@ const Footer = (props: Props) => {
             <p>
               <a
                 className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="tel:+2349161568320"
+                href="tel:+2349034718259"
               >
-                +234 916 156 8320
+                +234 903 471 8259
               </a>
             </p>
             <p>
               <a
                 className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="tel:+2349034718259"
+                href="tel:+2349161568320"
               >
-                +234 903 471 8259
+                +234 916 156 8320
               </a>
             </p>
           </div>

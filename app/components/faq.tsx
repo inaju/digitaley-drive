@@ -17,7 +17,34 @@ const Faq = (props: Props) => {
         <div className="grid sm:grid-row-2 gap-6 md:gap-12">
           <div>
             <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-              Will there by any project at the comppletion of the program?{" "}
+              Will there be any project at the completion of the program?
+            </h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-400">
+              Yes, you will be given about 5 projects to build after the
+              completion of your training.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Are there any assignments given?
+            </h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-400">
+              Assessment will be given at the end of every course. You will also
+              have quizzes in-between to test your knowledge and prepare you.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Will there be mentorship sessions?
+            </h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-400">
+              Yes, there will be mentorship session for everyone so you can get
+              the career help you need.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Will there by any project at the completion of the program?{" "}
             </h3>
             <p className="mt-2 text-gray-600 dark:text-gray-400">
               Yes, 5 projects would be given{" "}
@@ -32,7 +59,6 @@ const Faq = (props: Props) => {
               Yes, we will walk you through ever step of the process
             </p>
           </div>
-         
         </div>
         {/* End Grid */}
       </div>

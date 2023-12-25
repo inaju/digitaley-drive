@@ -23,7 +23,7 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-4 pt-8 md:p-10 gap-y-40">
+    <main className="overflow-x-hidden flex min-h-screen flex-col items-center justify-between px-4 pt-8 md:p-10 gap-y-14 lg:gap-y-40">
       <Hero />
     
       <Stats />
@@ -41,7 +41,7 @@ export default function Home() {
           className="icon-bar cursor-pointer"
           onClick={() =>
             router.push(
-              "https://wa.me/+2349161568320?text=Hey Ruby, I want to learn more about digitaley drive, I came from the website!"
+              "https://wa.me/+2349034718259?text=Hello, I want to learn more about digitaley drive, I came from the website!"
             )
           }
         >

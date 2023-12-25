@@ -27,13 +27,13 @@ const Testimonials = (props: Props) => {
               </div>
               <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-slate-700">
                 <div className="flex items-center">
-                  {/* <div className="flex-shrink-0">
+                  <div className="flex-shrink-0">
                     <img
                       className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                      src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                      src="./assets/yamoah_francisca.jpg"
                       alt="Image Description"
                     />
-                  </div> */}
+                  </div>
                   <div className="grow ml-3">
                     <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
                       Yamoah Francisca
@@ -58,13 +58,13 @@ const Testimonials = (props: Props) => {
               </div>
               <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-slate-700">
                 <div className="flex items-center">
-                  {/* <div className="flex-shrink-0">
+                  <div className="flex-shrink-0">
                     <img
                       className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                      src="./assets/ayomide_david.jpg"
                       alt="Image Description"
                     />
-                  </div> */}
+                  </div>
                   <div className="grow ml-3">
                     <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
                       Ayomide David
@@ -91,16 +91,16 @@ const Testimonials = (props: Props) => {
               </div>
               <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-slate-700">
                 <div className="flex items-center">
-                  {/* <div className="flex-shrink-0">
+                  <div className="flex-shrink-0">
                     <img
                       className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                      src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+                      src="./assets/adenubi_dara.jpg"
                       alt="Image Description"
                     />
-                  </div> */}
+                  </div>
                   <div className="grow ml-3">
                     <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
-                      Dara
+                      Adenubi Dara{" "}
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400">
                       Data Analyst
