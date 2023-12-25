@@ -102,17 +102,17 @@ Great Learning Experience                </span>
             <div className="flex -space-x-2">
               <img
                 className="inline-block h-8 w-8 rounded-full ring-2 ring-white dark:ring-gray-800 object-cover"
-                src="./assets/cassie.jpg"
+                src="./assets/cassie_1.jpg"
                 alt="Image Description"
               />
               <img
                 className="inline-block h-8 w-8 rounded-full ring-2 ring-white dark:ring-gray-800 object-cover  "
-                src="./assets/ruby.jpg"
+                src="./assets/ruby_1.jpg"
                 alt="Image Description"
               />
               <img
                 className="inline-block h-8 w-8 rounded-full ring-2 ring-white dark:ring-gray-800 object-cover"
-                src="./assets/wole.jpg"
+                src="./assets/wole_1.jpg"
                 alt="Image Description"
               />
               <span className="inline-flex justify-center items-center h-8 w-8 rounded-full bg-greenPrimary text-white ring-2 ring-white">
