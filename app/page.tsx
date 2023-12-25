@@ -17,13 +17,15 @@ import Courses from "./components/courses";
 import NavBar from "./components/nav";
 import Mission from "./components/mission";
 import { SocialIcon } from "react-social-icons";
+import { Button } from "rsuite";
 
 export default function Home() {
-    const router = useRouter();
+  const router = useRouter();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-4 pt-8 md:p-10 gap-y-40">
       <Hero />
+    
       <Stats />
       <ImageTextTwoColumn />
       {/* <Mission /> */}
@@ -39,7 +41,7 @@ export default function Home() {
           className="icon-bar cursor-pointer"
           onClick={() =>
             router.push(
-              "https://wa.me/08231231412?text=Hey Ruby, I want to learn more about digitaley drive, I came from the website!"
+              "https://wa.me/+2349161568320?text=Hey Ruby, I want to learn more about digitaley drive, I came from the website!"
             )
           }
         >

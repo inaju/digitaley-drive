@@ -19,6 +19,7 @@ const Footer = (props: Props) => {
             © 2023 Digitaley Drive.
           </p>
         </div>
+
         {/* End Col */}
         <div>
           <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
@@ -66,8 +67,106 @@ const Footer = (props: Props) => {
               </a>
             </p>
           </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="#vision"
+              >
+                Mission{" "}
+              </a>
+            </p>
+          </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="#vision"
+              >
+                Vision{" "}
+              </a>
+            </p>
+          </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="https://docs.google.com/forms/d/1bb65VvC8DIBQrQAD6v1-j7j0hDamNgT8ktjTwUMBoJc/edit"
+              >
+                Become a Trainer{" "}
+              </a>
+            </p>
+          </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="https://docs.google.com/presentation/d/1Lj-70DfcSdKqqdXZkJAjwa5N6QU5g6RKDPdbiRm7X1o/edit#slide=id.p1"
+              >
+                Digitaleydrive for women
+              </a>
+            </p>
+          </div>
         </div>
         {/* End Col */}
+        <div>
+          <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
+            Practices
+          </h4>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="#vision"
+              >
+                Individual
+              </a>
+            </p>
+          </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="https://docs.google.com/forms/d/1O19dUFHDm0TlCATCNXd91ogVVDp7SCNlddPLh8zFUPk/edit
+"
+              >
+                Business{" "}
+              </a>
+            </p>
+          </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="https://docs.google.com/forms/d/11gnpmFWETCJcjBWsR4yNv3Q8gPDXuYzbkqySIGru5Oo/edit"
+              >
+                Kids{" "}
+              </a>
+            </p>
+          </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="https://docs.google.com/forms/d/1Ugtzv2qa9NaoYreU6U5PxNj0c5XHW5wPHjtIPRlQaJY/edit"
+              >
+                Consulting{" "}
+              </a>
+            </p>
+          </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="#vision"
+              >
+                Digitaleydrive for women
+              </a>
+            </p>
+          </div>
+        </div>
+        {/* End Col */}
+
         <div>
           <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
             Resources
@@ -82,8 +181,29 @@ const Footer = (props: Props) => {
               </a>
             </p>
           </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="https://digitaleydrive.substack.com/?utm_source=navbar&utm_medium=web&r=1nuq0h"
+              >
+                Newsletter{" "}
+              </a>
+            </p>
+          </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="https://substack.com/@digitaleydrive"
+              >
+                Blog{" "}
+              </a>
+            </p>
+          </div>
         </div>
         {/* End Col */}
+
         <div>
           <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
             Contact

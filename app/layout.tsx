@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import "rsuite/dist/rsuite.min.css";
+
 
 import "./globals.css";
 import NavBar from "./components/nav";
@@ -19,12 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <NavBar />
-        {children}
-        <Script src="./node_modules/preline/dist/preline.js"></Script>
-      </body>
-    </html>
+      <html lang="en">
+        <body className={inter.className}>
+
+          <NavBar />
+          {children}
+          <Script src="./node_modules/preline/dist/preline.js"></Script>
+        </body>
+      </html>
   );
 }

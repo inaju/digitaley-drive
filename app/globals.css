@@ -11,6 +11,17 @@
   transform: translateY(-50%);
 }
 
+a:hover {
+  text-decoration: none;
+  color:inherit;
+  opacity: 0.9;
+}
+
+a{
+  /* color:black; */
+  /* cursor:pointer; */
+}
+
 @media screen and (max-width: 480px) {
   .icon-bar {
     position: fixed;
@@ -20,7 +31,6 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-
 }
 
 /* :root {

@@ -1,8 +1,21 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 import logo from "../../public/digitaley-logo.png";
+import { Popover, Whisper, Button, ButtonToolbar } from "rsuite";
+
 type Props = {};
+
+const speakerMission = (
+  <Popover title="Mission">
+    <p>Unlocking Data Potential that drive growth and innovation</p>
+  </Popover>
+);
+const speakerVision = (
+  <Popover title="Vision">
+    <p>To empower growth and innovation that redefines possibilities</p>
+  </Popover>
+);
 
 const NavBar = (props: Props) => {
   const [showNavBar, setShowNavBar] = useState(false);
@@ -10,6 +23,7 @@ const NavBar = (props: Props) => {
   const handleNavbar = () => {
     setShowNavBar(!showNavBar);
   };
+
   return (
     <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white shadow-md  text-sm py-3 sm:py-0">
       <nav
@@ -63,7 +77,7 @@ const NavBar = (props: Props) => {
           id="navbar-collapse-with-animation"
           className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
         >
-          <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
+          <div className="text-grey-800/[.8] cursor-pointer flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
             <a
               className="font-medium text-grey-800 sm:py-6"
               href="#"
@@ -71,14 +85,38 @@ const NavBar = (props: Props) => {
             >
               Home
             </a>
-            <a
+            <Whisper
+              placement="bottom"
+              trigger="hover"
+              controlId="control-id-hover-enterable"
+              speaker={speakerMission}
+              enterable
+            >
+              <p className="cursor-pointer font-medium  hover:text-grey-800 sm:py-6">
+                Mission
+              </p>
+            </Whisper>
+            <Whisper
+              placement="bottom"
+              trigger="hover"
+              controlId="control-id-hover-enterable"
+              speaker={speakerVision}
+              enterable
+            >
+              <p className="font-medium mb-2 text-grey-800/[.8] hover:text-grey-800 sm:py-6">
+                Vision
+              </p>
+            </Whisper>
+            {/* <a
               className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
               href="#vision"
             >
               What we do{" "}
-            </a>
+            </a> */}
             <a
-              className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
+              className="
+              cursor-pointer
+              font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
               href="#courses"
             >
               Courses
