@@ -34,6 +34,22 @@ const Team = (props: Props) => {
         <div className="text-center">
           <img
             className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
+            src="./assets/oyin_1.jpg"
+            alt="Image Description"
+          />
+          <div className="mt-2 sm:mt-4">
+            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
+              Oyindamola Olawoyin
+            </h3>
+            <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
+              Education Manager
+            </p>
+          </div>
+        </div>
+        {/* End Col */}
+        <div className="text-center">
+          <img
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
             src="./assets/cassie_1.jpg"
             alt="Image Description"
           />
@@ -62,22 +78,7 @@ const Team = (props: Props) => {
             </p>
           </div>
         </div>
-        {/* End Col */}
-        <div className="text-center">
-          <img
-            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="./assets/oyin_1.jpg"
-            alt="Image Description"
-          />
-          <div className="mt-2 sm:mt-4">
-            <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-              Oyindamola Olawoyin
-            </h3>
-            <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-              Tutor
-            </p>
-          </div>
-        </div>
+
         {/* End Col */}
         <div className="text-center">
           <img

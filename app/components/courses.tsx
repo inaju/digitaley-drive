@@ -91,34 +91,36 @@ const Courses = (props: Props) => {
         {/* End Card */}
         {/* Card */}
         <a
-          className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
+          className="group border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
           href="#application-form"
         >
-          <div className="aspect-w-16 aspect-h-11">
-            <img
-              className="w-full object-cover rounded-xl"
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              // src="https://images.unsplash.com/photo-1562851529-c370841f6536?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80"
-              alt="Image Description"
-            />
-          </div>
-          <div className="my-6">
-            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-              Data Science
-            </h3>
-            <p className="mt-5 text-gray-600 dark:text-gray-400">
-              Become a Data Scientics with our 2 months intensive trainning
-              covering 30+ topics
-            </p>
-          </div>
-          {/* start chips */}
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
-              Statistics
-            </span>
-            <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-              Python
-            </span>
+          <div className="group flex flex-col mb-12">
+            <div className="aspect-w-16 aspect-h-11">
+              <img
+                className="w-full object-cover rounded-xl"
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                // src="https://images.unsplash.com/photo-1562851529-c370841f6536?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80"
+                alt="Image Description"
+              />
+            </div>
+            <div className="my-6">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
+                Data Science
+              </h3>
+              <p className="mt-5 text-gray-600 dark:text-gray-400">
+                Become a Data Scientics with our 2 months intensive trainning
+                covering 30+ topics
+              </p>
+            </div>
+            {/* start chips */}
+            <div className="flex flex-wrap gap-2 mb-3">
+              <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+                Statistics
+              </span>
+              <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
+                Python
+              </span>
+            </div>
           </div>
 
           <div className="mt-7 grid gap-3 w-full sm:inline-flex">
