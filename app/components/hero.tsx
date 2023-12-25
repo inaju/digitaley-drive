@@ -34,7 +34,7 @@ const Hero = () => {
             <div className="mt-7 grid gap-3 w-full sm:inline-flex">
               <a
                 className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-                href="#"
+                href="#courses"
               >
                 Get started
                 <svg

@@ -40,36 +40,60 @@ const NavBar = (props: Props) => {
             <p className="text-xl">Digitaley Drive</p>
           </a>
           <div className="sm:hidden">
-            <button
-              onClick={handleNavbar}
-              type="button"
-              className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-black/[.5] font-medium text-grey-800/[.5] shadow-sm align-middle hover:bg-black/[.1] hover:text-grey-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-greenPrimary transition-all text-sm"
-              data-hs-collapse="#navbar-collapse-with-animation"
-              aria-controls="navbar-collapse-with-animation"
-              aria-label="Toggle navigation"
-            >
-              <svg
-                className="hs-collapse-open:hidden w-4 h-4"
-                width={16}
-                height={16}
-                fill="currentColor"
-                viewBox="0 0 16 16"
+            {!showNavBar ? (
+              <button
+                onClick={handleNavbar}
+                type="button"
+                className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-black/[.5] font-medium text-grey-800/[.5] shadow-sm align-middle hover:bg-black/[.1] hover:text-grey-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-greenPrimary transition-all text-sm"
+                data-hs-collapse="#navbar-collapse-with-animation"
+                aria-controls="navbar-collapse-with-animation"
+                aria-label="Toggle navigation"
               >
-                <path
-                  fillRule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
-              </svg>
-              <svg
-                className="hs-collapse-open:block hidden w-4 h-4"
-                width={16}
-                height={16}
-                fill="currentColor"
-                viewBox="0 0 16 16"
+                <svg
+                  className="hs-collapse-open:hidden w-4 h-4"
+                  width={16}
+                  height={16}
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+                <svg
+                  className="hs-collapse-open:block hidden w-4 h-4"
+                  width={16}
+                  height={16}
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </button>
+            ) : (
+              <button
+                onClick={handleNavbar}
+                type="button"
+                className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-black/[.5] font-medium text-grey-800/[.5] shadow-sm align-middle hover:bg-black/[.1] hover:text-grey-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-greenPrimary transition-all text-sm"
+                data-hs-collapse="#navbar-collapse-with-animation"
+                aria-controls="navbar-collapse-with-animation"
+                aria-label="Toggle navigation"
               >
-                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-              </svg>
-            </button>
+                <svg
+                  width="10px"
+                  height="10px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
+                    fill="#0F0F0F"
+                  />
+                </svg>
+              </button>
+            )}
           </div>
         </div>
         {/* desktop view */}
@@ -144,6 +168,28 @@ const NavBar = (props: Props) => {
               >
                 Home
               </a>
+              <Whisper
+                placement="bottom"
+                trigger="hover"
+                controlId="control-id-hover-enterable"
+                speaker={speakerMission}
+                enterable
+              >
+                <p className="cursor-pointer font-medium  hover:text-grey-800 sm:py-6">
+                  Mission
+                </p>
+              </Whisper>
+              <Whisper
+                placement="bottom"
+                trigger="hover"
+                controlId="control-id-hover-enterable"
+                speaker={speakerVision}
+                enterable
+              >
+                <p className="font-medium mb-2 text-grey-800/[.8] hover:text-grey-800 sm:py-6">
+                  Vision
+                </p>
+              </Whisper>
               <a
                 className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
                 href="#vision"
