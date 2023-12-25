@@ -17,7 +17,7 @@ const Team = (props: Props) => {
         <div className="text-center">
           <img
             className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="./assets/ruby.jpg"
+            src="./assets/ruby_1.jpg"
             // src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
             alt="Ruby's Image"
           />
@@ -34,7 +34,7 @@ const Team = (props: Props) => {
         <div className="text-center">
           <img
             className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="./assets/cassie.jpg"
+            src="./assets/cassie_1.jpg"
             alt="Image Description"
           />
           <div className="mt-2 sm:mt-4">
@@ -50,7 +50,7 @@ const Team = (props: Props) => {
         <div className="text-center">
           <img
             className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="./assets/modupe.jpg"
+            src="./assets/modupe_1.jpg"
             alt="Image Description"
           />
           <div className="mt-2 sm:mt-4">
@@ -66,7 +66,7 @@ const Team = (props: Props) => {
         <div className="text-center">
           <img
             className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="./assets/oyin.jpg"
+            src="./assets/oyin_1.jpg"
             alt="Image Description"
           />
           <div className="mt-2 sm:mt-4">
@@ -82,7 +82,7 @@ const Team = (props: Props) => {
         <div className="text-center">
           <img
             className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="./assets/wole.jpg"
+            src="./assets/wole_1.jpg"
             alt="Image Description"
           />
           <div className="mt-2 sm:mt-4">
@@ -98,7 +98,7 @@ const Team = (props: Props) => {
         <div className="text-center">
           <img
             className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto"
-            src="./assets/ayo.jpg"
+            src="./assets/ayo_1.jpg"
             alt="Image Description"
           />
           <div className="mt-2 sm:mt-4">
