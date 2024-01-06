@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Digitaley Drive",
   description:
-    "Empowering Growth through Data | Explore a Range of flexible courses designed to introduce you to the world of data.",
+    "Empowering Growth through Quality Education | Explore a Range of flexible courses designed to introduce you to the world of data.",
 };
 
 export default function RootLayout({

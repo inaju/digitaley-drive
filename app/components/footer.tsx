@@ -47,9 +47,11 @@ const Footer = (props: Props) => {
                 className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                 href="#courses"
               >
-                Business Analytics
+                Business Intelligence
               </a>
             </p>
+
+
           </div>
         </div>
         {/* End Col */}
@@ -103,7 +105,7 @@ const Footer = (props: Props) => {
                 className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                 href="https://docs.google.com/presentation/d/1Lj-70DfcSdKqqdXZkJAjwa5N6QU5g6RKDPdbiRm7X1o/edit#slide=id.p1"
               >
-                Digitaleydrive for women
+                Digitaldrive for women
               </a>
             </p>
           </div>
@@ -217,7 +219,34 @@ const Footer = (props: Props) => {
           </div>
         </div>
         {/* End Col */}
+
       </div>
+
+
+      <div className="mt-[1rem] relative flex flex-row gap-4">
+              <a href="https://instagram.com/digitaleydrive?igshid=YmMyMTA2M2Y=">
+                <img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" className="w-5 h-5"/>
+              </a>
+              
+
+              <a href="https://www.linkedin.com/company/digitaley-drive.ng/">
+                <img src="https://cdn-icons-png.flaticon.com/128/3536/3536569.png" className="w-5 h-5"/>
+              </a>
+              
+
+
+              <a href="https://www.facebook.com/profile.php?id=100085373543996">
+                <img src="https://cdn-icons-png.flaticon.com/128/1051/1051309.png" className="w-5 h-5"/>
+              </a>
+              
+
+
+              <a href="https://mobile.twitter.com/Digitaleydrive">
+                <img src="https://cdn-icons-png.flaticon.com/128/1384/1384017.png" className="w-5 h-5"/>
+              </a>
+              
+            </div>
+            
     </footer>
   );
 };

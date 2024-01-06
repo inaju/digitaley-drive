@@ -36,7 +36,7 @@ const Stats = (props: Props) => {
             Courses
           </h4>
           <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
-            3
+            5
           </p>
           <p className="mt-1 text-gray-500">this year alone</p>
         </div>

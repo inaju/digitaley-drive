@@ -23,12 +23,11 @@ const Hero = () => {
         >
           <div>
             <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
-              Empowering Growth through{" "}
-              <span className="text-greenPrimary">Data</span>
+              Empowering Growth through Quality{" "}
+              <span className="text-greenPrimary">Education</span>
             </h1>
             <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">
-              Explore a Range of flexible courses designed to introduce you to
-              the world of data.{" "}
+            Explore a Range of flexible courses designed to equip and empower you for innovation.{" "}
             </p>
             {/* Buttons */}
             <div className="mt-7 grid gap-3 w-full sm:inline-flex">
@@ -36,7 +35,28 @@ const Hero = () => {
                 className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary hover:text-white border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
                 href="#courses"
               >
-                Get started
+                Individual
+                <svg
+                  className="w-2.5 h-2.5"
+                  width={16}
+                  height={16}
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </a>
+
+              <a
+                className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary hover:text-white border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScjDdtgFMuQu5-7EjFCvtaPIQG22nRlinEXLMgPUlsgBpxG9Q/viewform" target="_blank"
+              >
+                Business
                 <svg
                   className="w-2.5 h-2.5"
                   width={16}

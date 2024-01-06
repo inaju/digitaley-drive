@@ -14,7 +14,7 @@ const FeedbackForm = (props: Props) => {
             Apply!
           </h1>
           <p className="mt-1 md:text-lg text-gray-800 dark:text-gray-200">
-            We empower students to grow in their data journey
+            We empower students to grow in their career
           </p>
           <div className="mt-8">
             <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
@@ -36,7 +36,7 @@ const FeedbackForm = (props: Props) => {
                   />
                 </svg>
                 <span className="text-gray-600 dark:text-gray-400">
-                  Empathetic Authors
+                  Detailed Module
                 </span>
               </li>
               <li className="flex space-x-3">
@@ -54,7 +54,7 @@ const FeedbackForm = (props: Props) => {
                   />
                 </svg>
                 <span className="text-gray-600 dark:text-gray-400">
-                  Community support
+                  Best Tutors
                 </span>
               </li>
               <li className="flex space-x-3">
