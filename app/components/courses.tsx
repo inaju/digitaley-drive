@@ -445,14 +445,14 @@ const Courses = (props: Props) => {
 
 
         <a
-          className="group flex flex-col h-fit border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
+          className="group flex flex-col border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
           href="#application-form"
         >
           <div className="aspect-w-16 aspect-h-11">
             <img
               className="w-full object-cover rounded-xl"
               // src="https://images.unsplash.com/photo-1521321205814-9d673c65c167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3548&q=80"
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://media.istockphoto.com/id/1321462048/photo/digital-transformation-concept-system-engineering-binary-code-programming.webp?b=1&s=170667a&w=0&k=20&c=8HOUiG9_M3Nm2TKS-EiGI8XdZctk7502R7s8NbCTm88="
               alt="Image Description"
             />
           </div>

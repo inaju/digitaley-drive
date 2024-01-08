@@ -54,6 +54,37 @@ const ToolsToLearn = (props: Props) => {
           <Image src={sql} alt="logo" height={40} width={40} />
           <p className="text-grey-700 font-semibold text-xl">MS SQL</p>
         </div>
+        <div className="flex items-center justify-around p-4 md:p-7 bg-gray-100 rounded-lg dark:bg-slate-800">
+          <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" className="w-16 h-8"/>
+          <p className="text-grey-700 font-semibold text-xl">Sklearn</p>
+        </div>
+
+        <div className="flex items-center justify-around p-4 md:p-7 bg-gray-100 rounded-lg dark:bg-slate-800">
+          <img src="https://cdn-icons-png.flaticon.com/128/3299/3299912.png" className="w-11 h-9"/>
+          <p className="text-grey-700 font-semibold text-xl">Mathematics</p>
+        </div>
+
+        <div className="flex items-center justify-around p-4 md:p-7 bg-gray-100 rounded-lg dark:bg-slate-800">
+          <img src="https://cdn-icons-png.flaticon.com/128/4325/4325613.png" className="w-11 h-9"/>
+          <p className="text-grey-700 font-semibold text-xl">Problem Solving</p>
+        </div>
+
+        <div className="flex items-center justify-around p-4 md:p-7 bg-gray-100 rounded-lg dark:bg-slate-800">
+          <img src="https://cdn-icons-png.flaticon.com/128/4616/4616734.png" className="w-10 h-8"/>
+          <p className="text-grey-700 font-semibold text-xl">Machine Learning</p>
+        </div>
+
+        <div className="flex items-center justify-around p-4 md:p-7 bg-gray-100 rounded-lg dark:bg-slate-800">
+          <img src="https://cdn-icons-png.flaticon.com/128/1064/1064587.png" className="w-11 h-8"/>
+          <p className="text-grey-700 font-semibold text-xl text-center">Presentation & Storytelling</p>
+        </div>
+
+        <div className="flex items-center justify-around p-4 md:p-7 bg-gray-100 rounded-lg dark:bg-slate-800">
+          <img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" className="w-8 h-8"/>
+          <p className="text-grey-700 font-semibold text-xl">Google Colab</p>
+        </div>
+
+        {/*  */}
       </div>
       {/* End Grid */}
     </div>
