@@ -51,6 +51,24 @@ const Footer = (props: Props) => {
               </a>
             </p>
 
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="#courses"
+              >
+                Data Analytics with Python
+              </a>
+            </p>
+
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="#courses"
+              >
+                Business Analysis
+              </a>
+            </p>
+
 
           </div>
         </div>
@@ -246,7 +264,7 @@ const Footer = (props: Props) => {
               </a>
               
             </div>
-            
+
     </footer>
   );
 };
