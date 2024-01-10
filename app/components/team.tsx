@@ -16,7 +16,7 @@ const Team = (props: Props) => {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
         <div className="text-center">
           <img
-            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-64 mx-auto"
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-64 lg:h-64 mx-auto"
             src="./assets/ruby_1.jpeg"
             // src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
             alt="Ruby's Image"
@@ -33,7 +33,7 @@ const Team = (props: Props) => {
         {/* End Col */}
         <div className="text-center">
           <img
-            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-64 mx-auto"
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-64 lg:h-64 mx-auto"
             src="./assets/oyin_1.jpg"
             alt="Image Description"
           />
@@ -49,7 +49,7 @@ const Team = (props: Props) => {
         {/* End Col */}
         <div className="text-center">
           <img
-            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-64 mx-auto"
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-64 lg:h-64 mx-auto"
             src="./assets/cassie_1.jpg"
             alt="Image Description"
           />
@@ -67,7 +67,7 @@ const Team = (props: Props) => {
         {/* End Col */}
         <div className="text-center">
           <img
-            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-64 mx-auto"
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-64 lg:h-64 mx-auto"
             src="./assets/modupe_1.jpg"
             alt="Image Description"
           />
@@ -84,7 +84,7 @@ const Team = (props: Props) => {
         {/* End Col */}
         <div className="text-center">
           <img
-            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-64 mx-auto"
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-64 lg:h-64 mx-auto"
             src="./assets/wole_1.jpg"
             alt="Image Description"
           />
@@ -100,7 +100,7 @@ const Team = (props: Props) => {
         {/* End Col */}
         <div className="text-center">
           <img
-            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-60 lg:h-64 mx-auto"
+            className="rounded-xl object-cover sm:w-48 sm:h-48 lg:w-64 lg:h-64 mx-auto"
             src="./assets/ayo_1.jpg"
             alt="Image Description"
           />
