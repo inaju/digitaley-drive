@@ -20,7 +20,7 @@ const ToolsToLearn = (props: Props) => {
       <div className="sm:w-1/2 xl:w-full mb-6 md:mb-12 mt-2">
         <p className="mt-1 text-gray-600 dark:text-gray-400">
           Here are tools and applications you&#39;ll be introduced to during the
-          6 weeks program
+          3 - 4 months program
         </p>
       </div>
       {/* End Title */}
