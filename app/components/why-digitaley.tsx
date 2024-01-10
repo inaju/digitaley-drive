@@ -156,7 +156,7 @@ const WhyDigitaley = (props: Props) => {
                     Simple and affordable
                   </h3>
                   <p className="mt-1 text-gray-600 dark:text-gray-400">
-                    we have an array of free and affordable classes for students
+                    We have an array of free and affordable classes for students
                     who want to dip their feet into the world of data analytics.
                   </p>
                 </div>
