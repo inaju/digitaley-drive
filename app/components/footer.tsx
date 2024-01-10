@@ -127,6 +127,16 @@ const Footer = (props: Props) => {
               </a>
             </p>
           </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="https://www.instagram.com/reel/C1oZo8hIJDB/?igsh=YzkzNGp2ZGE4M3Bk"
+              >
+                Student stories
+              </a>
+            </p>
+          </div>
         </div>
         {/* End Col */}
         <div>
@@ -192,6 +202,7 @@ const Footer = (props: Props) => {
               </a>
             </p>
           </div>
+
           <div className="mt-3 grid space-y-3 text-sm">
             <p>
               <a
@@ -199,6 +210,16 @@ const Footer = (props: Props) => {
                 href="https://substack.com/@digitaleydrive"
               >
                 Blog{" "}
+              </a>
+            </p>
+          </div>
+          <div className="mt-3 grid space-y-3 text-sm">
+            <p>
+              <a
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                href="/"
+              >
+                Hackathon{" "}
               </a>
             </p>
           </div>
@@ -241,7 +262,7 @@ const Footer = (props: Props) => {
       </div>
 
 
-      <div className="mt-[1rem] relative flex flex-row gap-4">
+      <div className="md:mt-[4rem] mt-[2rem] relative flex flex-row gap-4">
               <a href="https://instagram.com/digitaleydrive?igshid=YmMyMTA2M2Y=">
                 <img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" className="w-5 h-5"/>
               </a>
