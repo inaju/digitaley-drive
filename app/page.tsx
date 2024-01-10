@@ -23,7 +23,8 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <main className="overflow-x-hidden flex min-h-screen flex-col items-center justify-between px-4 pt-8 md:p-10 gap-y-14 lg:gap-y-40">
+    <main className="overflow-x-hidden flex min-h-screen flex-col items-center justify-between px-4 pt-8 md:p-10 gap-y-14 lg:gap-y-28
+    ">
       <Hero />
     
       <Stats />
