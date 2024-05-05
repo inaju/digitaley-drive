@@ -4,12 +4,12 @@ type Props = {};
 
 const Stats = (props: Props) => {
   return (
-    <div className="max-w-full px-4 sm:px-6 lg:px-8 mx-auto">
+    <div className="max-w-full px-4 sm:px-6 lg:px-0 mx-auto">
       {/* Grid */}
 
-      <div className="sm:mt-20 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">
+      <div className="sm:mt-20 grid md:flex flex-row justify-between gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-20">
         {/* Stats */}
-        <div>
+        <div className="flex flex-col items-center">
           <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
             Job Readiness
           </h4>
@@ -20,23 +20,23 @@ const Stats = (props: Props) => {
         </div>
         {/* End Stats */}
         {/* Stats */}
-        <div>
+        <div className="flex flex-col items-center">
           <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
             Students
           </h4>
           <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
-            3,000+
+            18,000+
           </p>
           <p className="mt-1 text-gray-500">graduated</p>
         </div>
         {/* End Stats */}
         {/* Stats */}
-        <div>
+        <div className="flex flex-col items-center">
           <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
             Courses
           </h4>
           <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
-            5
+            6
           </p>
           <p className="mt-1 text-gray-500">this year alone</p>
         </div>

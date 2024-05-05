@@ -1,5 +1,4 @@
 import React from "react";
-import rubyImage from "../../public/assets/ruby.webp";
 
 type Props = {};
 

@@ -3,55 +3,75 @@ import Image from "next/image";
 import React, { useState, forwardRef } from "react";
 import logo from "../../public/digitaley-logo.png";
 import { Popover, Whisper, Button, ButtonToolbar } from "rsuite";
-
+import Link from "next/link";
+import MobileNavbar from "./mobileNav";
 type Props = {};
 
-const speakerAboutus = (
-  <Popover title="About Us">
-    <p className="max-w-[400px]">
-      We are a global data tech company that focuses on up-skilling data tech
-      talents and providing businesses with sustainable data solutions that
-      drive growth and innovation.
-    </p>
+
+const companyLinks = (
+  <Popover className="bg-lightPrimary">
+    <div className="flex flex-col gap-2 w-32 px-2 ">
+      <Link
+        className="relative flex text-[15px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
+        href="#"
+        aria-current="page"
+      >
+        Contact
+      </Link>
+
+      <Link
+        className="font- flex text-[15px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
+        href="#"
+        aria-current="page"
+      >
+        About us
+      </Link>
+
+      <Link
+        className="font- flex text-[15px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
+        href="#"
+        aria-current="page"
+      >
+        Careers
+      </Link>
+    </div>
+
   </Popover>
 );
-const speakerMission = (
-  <Popover title="Mission">
-    <p>Unlocking Data Potential that drive growth and innovation</p>
-  </Popover>
-);
-const speakerVision = (
-  <Popover title="Vision">
-    <p>To empower growth and innovation that redefines possibilities</p>
-  </Popover>
-);
+
 
 const NavBar = (props: Props) => {
   const [showNavBar, setShowNavBar] = useState(false);
+  const [open, setOpen] = useState(false);
+  const toggleMenu = () => {
+    setOpen((prevOpen: any) => !prevOpen);
+  };
 
   const handleNavbar = () => {
     setShowNavBar(!showNavBar);
   };
 
+
+  const currentPath = window.location.pathname;
+
   return (
-    <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white shadow-md  text-sm py-3 sm:py-0">
+    <header className="relative lato flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full shadow-  text-sm py-3 sm:py-0">
       <nav
         className="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex items-center justify-between">
-          <a
-            className="flex  w-[15rem] items-center gap-3 font-semibold text-grey-800"
-            href="#"
-            aria-label="Brand"
+          <Link
+            className="flex hover:no-underline  w-[15rem] items-center gap-3 font-semibold text-grey-800"
+            href="/"
           >
-            <Image src={logo} alt="logo" height={40} width={40} />
-            <p className="text-xl">Digitaley Drive</p>
-          </a>
+            <Image src={logo} alt="logo" height={40} width={40} className="w-10"/>
+            <p className="text-xl text-gray-700">Digitaley Drive</p>
+          </Link>
           <div className="sm:hidden">
-            {showNavBar ? (
+            {!showNavBar ? (
               <button
-                onClick={handleNavbar}
+                onClick={toggleMenu}
                 type="button"
                 className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-black/[.5] font-medium text-grey-800/[.5] shadow-sm align-middle hover:bg-black/[.1] hover:text-grey-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-greenPrimary transition-all text-sm"
                 data-hs-collapse="#navbar-collapse-with-animation"
@@ -82,7 +102,7 @@ const NavBar = (props: Props) => {
               </button>
             ) : (
               <button
-                onClick={handleNavbar}
+                onClick={toggleMenu}
                 type="button"
                 className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-black/[.5] font-medium text-grey-800/[.5] shadow-sm align-middle hover:bg-black/[.1] hover:text-grey-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-greenPrimary transition-all text-sm"
                 data-hs-collapse="#navbar-collapse-with-animation"
@@ -108,68 +128,101 @@ const NavBar = (props: Props) => {
         {/* desktop view */}
         <div
           id="navbar-collapse-with-animation"
-          className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+          className="hs-collapse hidden py-4 overflow-hidden transition-all duration-300 basis-full grow sm:block"
         >
           <div className="text-grey-800/[.8] cursor-pointer flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
-            <a
-              className="font-medium text-grey-800 sm:py-6"
+            <Link
+              className="relative flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
               href="#"
               aria-current="page"
             >
               Home
-            </a>
 
-            <Whisper
-              placement="bottom"
-              trigger="hover"
-              controlId="control-id-hover-enterable"
-              speaker={speakerAboutus}
-              enterable
-            >
-              <p className="cursor-pointer font-medium  hover:text-grey-800 ">
-                About Us
-              </p>
-            </Whisper>
+              {
+                currentPath == "/" &&
 
-            <Whisper
-              placement="bottom"
-              trigger="hover"
-              controlId="control-id-hover-enterable"
-              speaker={speakerMission}
-              enterable
-            >
-              <p className="cursor-pointer font-medium  hover:text-grey-800 sm:pb-2">
-                Mission
-              </p>
-            </Whisper>
-            <Whisper
-              placement="bottom"
-              trigger="hover"
-              controlId="control-id-hover-enterable"
-              speaker={speakerVision}
-              enterable
-            >
-              <p className="font-medium mb-2 text-grey-800/[.8] hover:text-grey-800 ">
-                Vision
-              </p>
-            </Whisper>
+                <div className="bg-greenPrimary -bottom-2 absolute h-[2px] w-[100%]"></div>
+              }
+            </Link>
 
-            <a
-              className="
-              cursor-pointer
-              font-medium text-grey-800/[.8] hover:text-grey-800 "
-              href="#courses"
+            <Link
+              className="font- flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
+              href="#"
+              aria-current="page"
+            >
+              Not sure
+              {
+                currentPath == "/not sure" &&
+
+                <div className="bg-greenPrimary  h-[2px] w-[100%]"></div>
+              }
+            </Link>
+
+            <Link
+              className="font- flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
+              href="#"
+              aria-current="page"
             >
               Courses
-            </a>
-            <a
-              className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
-              href="#why-digitaley"
+
+              {
+                currentPath == "/courses" &&
+
+                <div className="bg-greenPrimary  h-[2px] w-[100%]"></div>
+              }
+            </Link>
+
+            <Whisper
+              placement="bottom"
+              trigger="hover"
+              controlId="control-id-hover-enterable"
+              speaker={companyLinks}
+              enterable
             >
-              Why Digitaley?
-            </a>
+              <p className="font- flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary">
+                Company
+              </p>
+            </Whisper>
+
+            <Link
+              className="font- flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
+              href="#"
+              aria-current="page"
+            >
+              Why digitaley drive
+
+              {
+                currentPath == "/why-digitaley-ddrive" &&
+
+                <div className="bg-greenPrimary  h-[2px] w-[100%]"></div>
+              }
+            </Link>
+
+            <Link
+              className="border border-greenPrimary px-8 py-2 rounded-full text-[16px] gap-1 hover:no-underline text-greenPrimary hover:text-greenPrimary"
+              href="#"
+              aria-current="page"
+            >
+              Hire talents
+
+              {
+                currentPath == "/hire-talents" &&
+
+                <div className="bg-greenPrimary  h-[2px] w-[100%]"></div>
+              }
+            </Link>
+
+            <Link
+              className="border border-greenPrimary px-8 py-2 rounded-full text-[16px] gap-1 hover:no-underline text-white bg-greenPrimary hover:text-greenPrimary"
+              href="/login"
+              aria-current="page"
+            >
+              Login
+            </Link>
           </div>
         </div>
+
+        <MobileNavbar toggleMenu={toggleMenu} open={open}/>
         {/* mobile view */}
         {showNavBar && (
           <div
@@ -185,7 +238,7 @@ const NavBar = (props: Props) => {
               >
                 Home
               </a>
-          
+
               <a
                 className="font-medium text-grey-800/[.8] hover:text-grey-800 sm:py-6"
                 href="#courses"

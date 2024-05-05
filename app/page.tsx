@@ -1,7 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-
+import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 import Image from "next/image";
 import Hero from "./components/hero";
 import Team from "./components/team";
@@ -18,26 +19,47 @@ import NavBar from "./components/nav";
 import Mission from "./components/mission";
 import { SocialIcon } from "react-social-icons";
 import { Button } from "rsuite";
-
+import PopularCourses from "./sections/PopularCourses";
+// import PopularCourses from "./components/Course";
+// import { PopularCourses } from "./components/test/src/sections";
+import Header from './components/Header';
+import Statistics from './components/Statistics'
+import About from './sections/About'
+import Instructors from './sections/Instructors'
+import TestApp from './components/test/src/App'
 export default function Home() {
   const router = useRouter();
 
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
-    <main className="overflow-x-hidden flex min-h-screen flex-col items-center justify-between px-4 pt-8 md:p-10 gap-y-14 lg:gap-y-28
+    <main className="overflow-x-hidden bg-lightPrimary flex min-h-screen flex-col items-center justify-between px-4 pt-8 md:p-10 gap-y-14 lg:gap-y-28
     ">
       <Hero />
-    
       <Stats />
+      
       <ImageTextTwoColumn />
+      <About />
       {/* <Mission /> */}
-      <WhyDigitaley />
-      <ToolsToLearn />
       <Courses />
-      <Testimonials />
-      <Team />
-      <Faq />
-      <FeedbackForm />
-      <div>
+      <PopularCourses />
+      <Instructors />
+      <WhyDigitaley />
+      {/* <PopularCourses /> */}
+      {/* <ToolsToLearn /> */}
+      {/* <Courses /> */}
+      {/* <Testimonials /> */}
+      {/* <Team /> */}
+      {/* <Faq /> */}
+      {/* <FeedbackForm /> */}
+      {/* <div>
         <div
           className="icon-bar cursor-pointer"
           onClick={() =>
@@ -78,7 +100,7 @@ export default function Home() {
             ></path>
           </svg>{" "}
         </div>
-      </div>
+      </div> */}
       <Footer />
     </main>
   );
