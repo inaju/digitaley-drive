@@ -1,6 +1,7 @@
 import { forwardRef } from "react";
 import { RiStarFill } from "react-icons/ri";
 import { useState } from "react";
+import Link from "next/link";
 const DifficultyLevel = ({ difficulty }: { difficulty: string }) => {
     let spans = [],
         index = 0;
@@ -18,8 +19,9 @@ const DifficultyLevel = ({ difficulty }: { difficulty: string }) => {
     return <>{spans}</>;
 };
 
-const Course = forwardRef(({ id, title, category, difficulty, thumbnail, instructor: { name, pic }, rating }, ref) => {
+const Course = forwardRef(({ id, title, category, difficulty, duration, description, tools, thumbnail, instructor: { name, pic }, rating }, ref) => {
     const [isActive, setIsActive] = useState(false)
+    console.log(tools)
     return (
         <div
             className="group lato relative h-[550px] rounded-2xl border-[1.5px] border-solid border-transparent rounded-4xl overflow-hidden transition-colors duration-300"
@@ -34,22 +36,19 @@ const Course = forwardRef(({ id, title, category, difficulty, thumbnail, instruc
                 <img
                     src={thumbnail}
                     alt={title}
+                    className=" w-[100%] h-[100%]"
                 />
             </div>
-            <div className={`absolute bottom-0 inset-x-0 ${isActive ? 'h-80' : 'h-32'} p-2 m-2 bg-black/50 border-[1.5px] border-solid border-transparent rounded-2xl transition-colors duration-300 group-hover:border-gray-10`}>
-                <a
-                    href="#"
+            <div className={`absolute bottom-0 inset-x-0 ${isActive ? 'h-80' : 'h-32'} p-2 m-2 bg-white border-[1.5px] border-solid border-transparent rounded-2xl transition-colors duration-300 group-hover:border-gray-10`}>
+                <div
                     className="flex flex-col justify-between h-full"
                     title={title}
                 >
-                    <div className="flex justify-between gap-4">
+                    <div className="flex justify- gap-4">
                         <p className="text-xl font-medium text-gray-10 whitespace-nowrap text-ellipsis overflow-hidden text-greenPrimary">{title}</p>
                     </div>
-                    <p className="mt-2 text-gray-200 dark:text-gray-400">
-                        This program is designed to equip you with the right skills as a
-                        Business Intelligence Analyst and prepare you for jobs. Join our
-                        3 months intensive trainning covering over 40+ topics, 5
-                        projects.{" "}
+                    <p className="mt-2 h-16 text-gray-700 dark:text-gray-400">
+                        {description}
                     </p>
                     {/* ========= Course Instructor ========= */}
                     {/* <div className="flex justify-between items-center">
@@ -71,8 +70,18 @@ const Course = forwardRef(({ id, title, category, difficulty, thumbnail, instruc
                         </div>
                     </div> */}
                     <div className={`${isActive ? '' : 'hidden'}`}>
-                        <div className="flex flex-wrap gap-2 mb-0">
-                        <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500">
+                        <div className="flex flex-wrap gap-2 mb-0 h-[70px]">
+                            {/* {tools[0]} */}
+                            {
+
+                               tools && tools.map((tool:any) => <span  className={`inline-flex items-center h-7 gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium ${tool.color} dark:bg-white/10 dark:text-white`}>
+                                    
+                                    {
+                                        tool.tool
+                                    }
+                                </span>)
+                            }
+                            {/* <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500">
                             Power BI
                         </span>
                         <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
@@ -87,44 +96,44 @@ const Course = forwardRef(({ id, title, category, difficulty, thumbnail, instruc
 
                         <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-800 text-white dark:bg-white dark:text-gray-800">
                             Presentation, Communication & Storytelling
-                        </span>
-                    </div>
+                        </span> */}
+                        </div>
 
-                    <div className="mt-0 flex items-center gap-5">
-                        <img
-                            src="https://cdn-icons-png.flaticon.com/128/833/833602.png"
-                            className="w-6 h-6"
-                        />
-                        <p className="text-[16px] text-white">3 months</p>
-                    </div>
+                        <div className="mt-2 flex items-center gap-5">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/833/833602.png"
+                                className="w-6 h-6"
+                            />
+                            <p className="text-[16px] text-black">{duration} months</p>
+                        </div>
 
-                    <div className="mt-7 grid gap-3 w-full sm:inline-flex flex-wrap">
-                        <a
-                            className="inline-flex justify-center items-center gap-x-3 text-center hover:bg-greenPrimary border border-greenPrimary text-sm lg:text-base hover:text-white text-greenPrimary font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-2 px-4 dark:focus:ring-offset-gray-800"
-                            href="https://paystack.com/pay/il6uz88ryc"
-                            target="_blank"
-                        >
-                            Enroll
-                            <img src="/assets/svg/arrow-right-up-green.svg" alt="" className="w-4 h-4" />
-                        </a>
-                        <a
-                            className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-2 px-4 dark:focus:ring-offset-gray-800"
-                            href="https://paystack.com/pay/9x3pfjhsqa"
-                            target="_blank"
-                        >
-                            Installments
-                            <img src="/assets/svg/arrow-right-up-white.svg" alt="" className="w-4 h-4" />
-                        </a>
-                        <a
-                            className="inline-flex justify-center items-center gap-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-2 px-4 dark:focus:ring-offset-gray-800"
-                            href="#application-form"
-                        >
-                            See Brochure
-                            <img src="/assets/svg/arrow-right-up-white.svg" alt="" className="w-4 h-4" />
-                        </a>
+                        <div className="mt-7 grid gap-3 w-full sm:inline-flex flex-wrap">
+                            <a
+                                className="inline-flex justify-center items-center gap-x-3 text-center hover:bg-greenPrimary border border-greenPrimary text-sm lg:text-base hover:text-white text-greenPrimary font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-2 px-4 dark:focus:ring-offset-gray-800"
+                                href="https://paystack.com/pay/il6uz88ryc"
+                                target="_blank"
+                            >
+                                Enroll
+                                <img src="/assets/svg/arrow-right-up-green.svg" alt="" className="w-4 h-4" />
+                            </a>
+                            <a
+                                className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-2 px-4 dark:focus:ring-offset-gray-800"
+                                href="https://paystack.com/pay/9x3pfjhsqa"
+                                target="_blank"
+                            >
+                                Installments
+                                <img src="/assets/svg/arrow-right-up-white.svg" alt="" className="w-4 h-4" />
+                            </a>
+                            <a
+                                className="inline-flex justify-center items-center gap-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-2 px-4 dark:focus:ring-offset-gray-800"
+                                href="#application-form"
+                            >
+                                See Brochure
+                                <img src="/assets/svg/arrow-right-up-white.svg" alt="" className="w-4 h-4" />
+                            </a>
+                        </div>
                     </div>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     );

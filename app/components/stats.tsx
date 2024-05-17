@@ -4,7 +4,7 @@ type Props = {};
 
 const Stats = (props: Props) => {
   return (
-    <div className="max-w-full px-4 sm:px-6 lg:px-0 mx-auto">
+    <div className="max-w-full lato px-4 sm:px-6 lg:px-0 mx-auto">
       {/* Grid */}
 
       <div className="sm:mt-20 grid md:flex flex-row justify-between gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-20">

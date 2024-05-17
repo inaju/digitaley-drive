@@ -23,7 +23,7 @@ const Courses = (props: Props) => {
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Card */}
         <a
-          className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
+          className="group bg-white flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
           href="#application-form"
         >
           <div className="group flex flex-col mb-10">
@@ -141,7 +141,7 @@ const Courses = (props: Props) => {
         {/* End Card */}
         {/* Card */}
         <a
-          className="group border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
+          className="group border bg-white border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
           href="#application-form"
         >
           <div className="group flex flex-col mb-10">
@@ -261,7 +261,7 @@ const Courses = (props: Props) => {
         {/* End Card */}
         {/* Card */}
         <a
-          className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
+          className="group bg-white flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
           href="#application-form"
         >
           <div className="group flex flex-col mb-10">
@@ -382,7 +382,7 @@ const Courses = (props: Props) => {
         {/* End Card */}
 
         <a
-          className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
+          className="group bg-white flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
           href="#application-form"
         >
           <div className="group flex flex-col mb-10">
@@ -470,7 +470,7 @@ const Courses = (props: Props) => {
         {/* End Card */}
 
         <a
-          className="group flex flex-col border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
+          className="group bg-white flex flex-col border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
           href="#application-form"
         >
           <div className="group flex flex-col mb-10">

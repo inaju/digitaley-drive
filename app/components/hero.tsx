@@ -5,7 +5,7 @@ import { Animate } from "react-simple-animate";
 
 const Hero = () => {
   return (
-    <div className="max-w-[85rem] mx-auto pt-12 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-[85rem] mx-auto pt-12 px-4 sm:px-6 lg:px-8 lato">
       {/* Grid */}
       <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
         <Animate
@@ -22,17 +22,16 @@ const Hero = () => {
           }}
         >
           <div>
-            <h1 className="block section-title-before section-title-after lato text-3xl font-bold text-gray-700 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
+            <h1 className="block  text-3xl font-bold text-gray-700 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
               Empowering Growth through Quality{" "}
               <span className="text-greenPrimary">Education</span>
             </h1>
             <p className="mt-3 text-lg text-gray-600 dark:text-gray-400">
               Explore a Range of flexible courses designed to equip and empower you for innovation.{" "}
             </p>
-            {/* Buttons */}
             <div className="md:mt-24 mt-7 md:mb-12 grid gap-3 w-full  sm:inline-flex">
               <a
-                className="inline-flex justify-center items-center gap-x-3 text-center  hover:text- hover:text-greenPrimary border border-greenPrimary text-sm lg:text-base text-greenPrimary font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-8 dark:focus:ring-offset-gray-800"
+                className="inline-flex justify-center items-center gap-x-3 text-center  hover:text- hover:text-greenPrimary border border-greenPrimary text-sm lg:text-base text-greenPrimary font-medium rounded-xl focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-8 dark:focus:ring-offset-gray-800"
                 href="#courses"
               >
                 Individual
@@ -40,7 +39,7 @@ const Hero = () => {
               </a>
 
               <a
-                className="inline-flex justify-between hover:text-white items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary hover:text-\ border border-transparent text-sm lg:text-base text-white font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-8 dark:focus:ring-offset-gray-800"
+                className="inline-flex justify-between hover:text-white items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary hover:text-\ border border-transparent text-sm lg:text-base text-white font-medium rounded-xl focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-8 dark:focus:ring-offset-gray-800"
                 href="https://docs.google.com/forms/d/e/1FAIpQLScjDdtgFMuQu5-7EjFCvtaPIQG22nRlinEXLMgPUlsgBpxG9Q/viewform" target="_blank"
               >
                 Kids
@@ -60,20 +59,7 @@ const Hero = () => {
                   />
                 </svg> */}
               </a>
-              {/* <a
-              className="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
-              href="#"
-            >
-              Contact sales team
-            </a> */}
             </div>
-
-            {/* End Buttons */}
-            {/* Review */}
-
-            {/* End Review */}
-            {/* </div> */}
-            {/* End Review */}
           </div>
         </Animate>
         {/* End Col */}

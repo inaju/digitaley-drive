@@ -7,6 +7,7 @@ import "rsuite/dist/rsuite.min.css";
 import "./globals.css";
 import NavBar from "./components/nav";
 import Header from './components/Header'
+import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           {/* <NavBar /> */}
           <Header />
           {children}
+          <Footer />
           <Script src="./node_modules/preline/dist/preline.js"></Script>
         </body>
       </html>

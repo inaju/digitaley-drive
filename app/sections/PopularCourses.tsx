@@ -61,6 +61,9 @@ const PopularCourses = () => {
                                                 thumbnail={course.thumbnail}
                                                 instructor={{ name: course.instructor.name, pic: course.instructor.pic }}
                                                 rating={course.rating}
+                                                tools={course.tools}
+                                                description={course.description}
+                                                duration={course.duration}
                                             />
                                         </swiper-slide>
                                     );

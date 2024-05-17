@@ -5,7 +5,7 @@ import { navLinks } from "../constants";
 import { navbarVariants, mobileMenuVariants } from "../constants/motion";
 import { useResizeX, useScrollY } from "../hooks";
 import NavBar from "@/app/components/nav";
-
+import { usePathname } from "next/navigation";
 const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     const resized = useResizeX(992);
@@ -14,6 +14,9 @@ const Header = () => {
     useEffect(() => {
         if (resized) setToggleMenu(false);
     }, [resized]);
+    const pathname = usePathname()
+
+    if(pathname == "/login") return;
 
     return (
         <motion.header

@@ -46,7 +46,7 @@ export default function Home() {
       <Stats />
       
       <ImageTextTwoColumn />
-      <About />
+      {/* <About /> */}
       {/* <Mission /> */}
       <Courses />
       <PopularCourses />
@@ -101,7 +101,7 @@ export default function Home() {
           </svg>{" "}
         </div>
       </div> */}
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

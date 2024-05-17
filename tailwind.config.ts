@@ -13,7 +13,12 @@ const config: Config = {
       colors: {
         greenPrimary: "#3ec14b",
         greenSecondary: "#51c13e",
-        lightPrimary: "#e3e3e1"
+        lightPrimary: "#e3e3e1",
+        // primary: "var(--color-primary)",
+        // secondary: "var(--color-secondary)",
+        // heading: "var(--color-heading)",
+        // text: "var(--color-text)",
+        background: "var(--color-background)",
       },
     },
   },
