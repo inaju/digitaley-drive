@@ -157,6 +157,26 @@ const page = () => {
             your expertise to potential employers and hit the ground running in
             your data analyst career.
           </p>
+          <div className="flex px-4 mt-8 flex-wrap gap-2 mb-0">
+              <span className="inline-flex items-center gap-x-1.5 py-2 px-5 rounded-full text-[16px] font-medium bg-teal-100 text-teal-800 dark:bg-teal-800/30 dark:text-teal-500">
+                Excel
+              </span>
+              <span className="inline-flex items-center gap-x-1.5 py-2 px-5 rounded-full text-[16px] font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
+                SQL
+              </span>
+
+              <span className="inline-flex items-center gap-x-1.5 py-2 px-5 rounded-full text-[16px] font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500">
+                Power BI
+              </span>
+
+              <span className="inline-flex items-center gap-x-1.5 py-2 px-5 rounded-full text-[16px] font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
+                Github
+              </span>
+
+              <span className="inline-flex items-center gap-x-1.5 py-2 px-5 rounded-full text-[16px] font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+                Job/Freelance Preparation
+              </span>
+            </div>
 
         </div>
         <div className='w-6/12'>
@@ -167,9 +187,9 @@ const page = () => {
         </div> */}
         </div>
       </div>
-      <RoundedButton className='px-16 py-3 cursor-pointer rounded-xl w-fit '>
+      {/* <RoundedButton className='px-16 py-3 cursor-pointer rounded-xl w-fit '>
         Enroll Now
-      </RoundedButton>
+      </RoundedButton> */}
       <div className=' mt-32 flex gap-16'>
 
         <div className=''>
@@ -181,7 +201,7 @@ const page = () => {
             <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>Hackathon Development   </p>
           </div>
 
-          <div className='flex mt-16 gap-6'>
+          {/* <div className='flex mt-16 gap-6'>
             <RoundedButton className='px-16 py-3 cursor-pointer rounded-xl w-fit '>
               Enroll Now
             </RoundedButton>
@@ -191,24 +211,8 @@ const page = () => {
             <RoundedButton className='px-16 py-3 cursor-pointer rounded-xl w-fit '>
               See Brochure
             </RoundedButton>
-            {/* <MagneticButton>
-        <button className='px-16 py-2 cursor-pointer text-[16px] text-white rounded-xl w-fit bg-greenPrimary flex items-center gap-5'>Installment 
-        
-        </button>
-      </MagneticButton>
-      <MagneticButton>
-        <button className='px-16 py-3 cursor-pointer text-[16px] text-white rounded-xl w-fit bg-greenPrimary'>See Brochure
-       
-        </button>
-      </MagneticButton> */}
-          </div>
-
-          {/* -                                                                      -PowerBI
--Github                                                                          -Github
--Bi weekly Mentorship                                                   -BI weekly Mentorship
--SQL                                                                              -SQL
--Hackathon Development                                              -Hackathon Development
-                                                                                      -3 months Internship */}
+          
+          </div> */}
 
         </div>
         <div className=''>
@@ -221,7 +225,73 @@ const page = () => {
             <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>3 months Internship</p>
           </div>
         </div>
-      </div>
+
+
+              
+      </div>     <div className="mt-7 grid gap-3 w-full sm:inline-flex flex-wrap px-4">
+             <a
+              className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              href="https://paystack.com/pay/h6go2uvwlc"
+              target="_blank"
+            >
+              Enroll
+              <svg
+                className="w-2.5 h-2.5"
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                />
+              </svg>
+            </a>
+            <a
+              className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              href="https://paystack.com/pay/djw1nmq8yo"
+              target="_blank"
+            >
+              Installments
+              <svg
+                className="w-2.5 h-2.5"
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                />
+              </svg>
+            </a>
+            <a
+              className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              href="#application-form"
+            >
+              See Brochure
+              <svg
+                className="w-2.5 h-2.5"
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                />
+              </svg>
+            </a>
+          </div>
       <div>
 
       </div>
