@@ -31,7 +31,7 @@ export const FollowerPointerCard = ({
       const scrollX = window.scrollX;
       const scrollY = window.scrollY;
       x.set(e.clientX - rect.left + scrollX);
-      y.set(e.clientY - rect.top + scrollY + 1080);
+      y.set(e.clientY - rect.top + scrollY + 0);
     }
   };
   const handleMouseLeave = () => {

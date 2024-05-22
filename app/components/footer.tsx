@@ -1,12 +1,14 @@
+'use client'
 import React from "react";
 import { IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter, IoLogoFacebook } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
+import RoundedButton from "./custom/RoundedButton/RoundedButton";
 type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <div className="bg-green-950 lato">
-      <footer className="w-full  max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+    <div className="bg-green-800 lato">
+      <footer className="w-full  max-w-[85rem] py-16 px-4 sm:px-6 lg:px-8 mx-auto">
         {/* Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
           {/* <div className="col-span-full hidden lg:col-span-1 lg:block">
@@ -17,20 +19,20 @@ const Footer = (props: Props) => {
           >
             Digitaley Drive
           </a>
-          <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+          <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-300">
             © 2023 Digitaley Drive.
           </p>
         </div> */}
 
           {/* End Col */}
           <div>
-            <h4 className="text-xs font-semibold text-white uppercase dark:text-gray-100">
+            <h4 className="text-[17px] font-semibold text-white uppercase dark:text-gray-100">
               Courses
             </h4>
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="#courses"
                 >
                   Data Analytics
@@ -38,36 +40,45 @@ const Footer = (props: Props) => {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
+                  href="#courses"
+                >
+                 Data Engineering
+                </a>
+              </p>
+              <p>
+                <a
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
+                  href="#courses"
+                >
+                 Business Analysis
+                </a>
+              </p>
+
+              <p>
+                <a
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="#courses"
                 >
                   Data Science
                 </a>
               </p>
+
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="#courses"
                 >
-                  Business Intelligence
+                Business Intelligence Analytics
                 </a>
               </p>
 
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="#courses"
                 >
-                  Data Analytics with Python
-                </a>
-              </p>
-
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
-                  href="#courses"
-                >
-                  Business Analysis
+                Python Programming
                 </a>
               </p>
 
@@ -76,13 +87,13 @@ const Footer = (props: Props) => {
           </div>
           {/* End Col */}
           <div>
-            <h4 className="text-xs font-semibold text-white uppercase dark:text-gray-100">
+            <h4 className="text-[17px] font-semibold text-white uppercase dark:text-gray-100">
               Company
             </h4>
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="#vision"
                 >
                   About us
@@ -92,7 +103,7 @@ const Footer = (props: Props) => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="#vision"
                 >
                   Mission{" "}
@@ -102,7 +113,7 @@ const Footer = (props: Props) => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="#vision"
                 >
                   Vision{" "}
@@ -112,7 +123,7 @@ const Footer = (props: Props) => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="https://docs.google.com/forms/d/1bb65VvC8DIBQrQAD6v1-j7j0hDamNgT8ktjTwUMBoJc/edit"
                 >
                   Become a Trainer{" "}
@@ -122,7 +133,7 @@ const Footer = (props: Props) => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="https://docs.google.com/presentation/d/1Lj-70DfcSdKqqdXZkJAjwa5N6QU5g6RKDPdbiRm7X1o/edit#slide=id.p1"
                 >
                   Digitaldrive for women
@@ -132,7 +143,7 @@ const Footer = (props: Props) => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="https://www.instagram.com/reel/C1oZo8hIJDB/?igsh=YzkzNGp2ZGE4M3Bk"
                 >
                   Student stories
@@ -142,14 +153,14 @@ const Footer = (props: Props) => {
           </div>
           {/* End Col */}
           <div>
-            <h4 className="text-xs font-semibold text-white uppercase dark:text-gray-100">
+            <h4 className="text-[17px] font-semibold text-white uppercase dark:text-gray-100">
               Practices
             </h4>
 
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="https://docs.google.com/forms/d/1O19dUFHDm0TlCATCNXd91ogVVDp7SCNlddPLh8zFUPk/edit
 "
                 >
@@ -160,7 +171,7 @@ const Footer = (props: Props) => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="https://docs.google.com/forms/d/11gnpmFWETCJcjBWsR4yNv3Q8gPDXuYzbkqySIGru5Oo/edit"
                 >
                   Kids{" "}
@@ -170,7 +181,7 @@ const Footer = (props: Props) => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="https://docs.google.com/forms/d/1Ugtzv2qa9NaoYreU6U5PxNj0c5XHW5wPHjtIPRlQaJY/edit"
                 >
                   Indiviuals{" "}
@@ -181,13 +192,13 @@ const Footer = (props: Props) => {
           {/* End Col */}
 
           <div>
-            <h4 className="text-xs font-semibold text-white uppercase dark:text-gray-100">
+            <h4 className="text-17px font-semibold text-white uppercase dark:text-gray-100">
               Resources
             </h4>
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="#why-digitaley"
                 >
                   Free Resources
@@ -197,7 +208,7 @@ const Footer = (props: Props) => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="https://digitaleydrive.substack.com/?utm_source=navbar&utm_medium=web&r=1nuq0h"
                 >
                   Blog{" "}
@@ -208,7 +219,7 @@ const Footer = (props: Props) => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="https://substack.com/@digitaleydrive"
                 >
                   Career Launch{" "}
@@ -218,7 +229,7 @@ const Footer = (props: Props) => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="/"
                 >
                   Hackathon{" "}
@@ -228,7 +239,7 @@ const Footer = (props: Props) => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="/"
                 >
                   Community{" "}
@@ -239,13 +250,13 @@ const Footer = (props: Props) => {
           {/* End Col */}
 
           <div>
-            <h4 className="text-xs font-semibold text-white uppercase dark:text-gray-100">
+            <h4 className="text-[17px] font-semibold text-white uppercase dark:text-gray-100">
               Contact
             </h4>
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="mailto:hello@digitaleydrive.com"
                 >
                   hello@digitaleydrive.com
@@ -253,7 +264,7 @@ const Footer = (props: Props) => {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="tel:+2349034718259"
                 >
                   +234 903 471 8259
@@ -261,7 +272,7 @@ const Footer = (props: Props) => {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-green-500 dark:text-gray-400 dark:hover:text-gray-200"
+                  className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
                   href="tel:+2349161568320"
                 >
                   +234 916 156 8320
@@ -274,8 +285,8 @@ const Footer = (props: Props) => {
         </div>
 
 
-        <div className="flex justify-between items-center">
-          <div className=" relative flex flex-row gap-4">
+        <div className="flex flex-col px-[1rem] lg:flex-row justify-between items-center">
+          <div className="w-[100%] lg:w-fit relative flex flex-row gap-4">
 
           <a href="#" className="md:mt-[4rem] mt-[2rem] cursor-pointer relative flex flex-row gap-4">
             <div className="text-white text-2xl p-1 rounded-md bg-greenPrimary shadow-md">
@@ -324,18 +335,21 @@ const Footer = (props: Props) => {
 
           </div>
 
-          <div>
+          {/* <div className="border px-[1rem] lg:px-0">
             <h1 className="text-greenPrimary text-4xl">Get all the latest updates</h1>
-            <div className="flex mt-3 gap-6">
-              <div className="w-[25rem] flex h-10 bg-white rounded-md items-center overflow-hidden">
+            <div className="flex flex-col lg:flex-row mt-3 gap-6">
+              <div className="w-[100%] lg:w-[25rem] flex h-10 bg-white rounded-md items-center overflow-hidden">
                 <div className="h-full border flex justify-center px-3 items-center bg-gray-300">
                 <MdOutlineEmail className="text-xl"/>
                 </div>
-                <input className="w-full h-full bg-transparent outline-none" placeholder="" />
+                <input className="w-[100%] px-4 h-full bg-transparent outline-none" placeholder="" />
               </div>
-              <button className="bg-greenPrimary px-8 text-white rounded-md h-10">Sign Up</button>
+              <RoundedButton className="">
+                Subscribe
+              </RoundedButton>
+            
             </div>
-          </div>
+          </div> */}
           <div></div>
         </div>
 

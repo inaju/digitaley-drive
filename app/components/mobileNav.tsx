@@ -4,11 +4,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState, forwardRef } from "react";
 import logo from "../../public/digitaley-logo.png";
+// import RoundedButton from "./custom/RoundedButton/RoundedButton";
 const navLinks = [
     { title: "Home", href: "/" },
-    { title: "Not Sure", href: "/" },
-    { title: "Courses", href: "/" },
-    { title: "Why digitaley drive", href: "/" },
+    { title: "Career Launch", href: "/career-launch" },
+    { title: "Courses", href: "/courses" },
+    { title: "Why digitaley drive", href: "/why-digitaley" },
+    { title: "About us", href: "/about-us" },
+    { title: "Contact Us", href: "/contact-us" },
+
 ];
 
 const MobileNavbar = ({ toggleMenu, open }: { open: any, toggleMenu: any }) => {
@@ -48,6 +52,7 @@ const MobileNavbar = ({ toggleMenu, open }: { open: any, toggleMenu: any }) => {
         },
     };
 
+    const currentPath = window.location.pathname;
     return (
         <header>
 
@@ -58,15 +63,16 @@ const MobileNavbar = ({ toggleMenu, open }: { open: any, toggleMenu: any }) => {
                         initial="initial"
                         animate="animate"
                         exit="exit"
-                        className="fixed lato left-0 top-0 w-full h-screen origin-top bg-lightPrimary text-black p-10"
+                        className="fixed lato left-0 top-0 w-full h-screen origin-top bg-lightPrimary text-black p-10 px-[1rem]"
                     >
                         <div className="flex h-full flex-col">
-                            <div className="flex justify-between">
+                            <div className="flex items-center justify-between">
                                 <Link
+                                onClick={toggleMenu}
                                     className="flex hover:no-underline  w-[15rem] items-center gap-3 font-semibold text-grey-800"
                                     href="/"
                                 >
-                                    <Image src={logo} alt="logo" height={40} width={40} />
+                                    <Image src={logo} alt="logo" height={40} width={40} className="w-10" />
                                     <p className="text-xl text-gray-700">Digitaley Drive</p>
                                 </Link>
                                 <p
@@ -90,15 +96,41 @@ const MobileNavbar = ({ toggleMenu, open }: { open: any, toggleMenu: any }) => {
                                                 key={index}
                                                 title={link.title}
                                                 href={link.href}
+                                                path={currentPath}
+                                                toggleMenu={toggleMenu}
                                             />
                                         </div>
                                     );
                                 })}
                                 <motion.div
                                     variants={mobileLinkVars}
-                                    className=""
+                                    className="flex justify-between items-center gap-12 mt-12"
                                 >
-                                    <h1 className="text-3xl uppercase text-black">Company</h1>
+                                    <Link
+                                        className="border w-[100%] border-greenPrimary px-8 py-3 rounded-md text-[16px] gap-1 hover:no-underline text-greenPrimary hover:text-greenPrimary"
+                                        href="#"
+                                        aria-current="page"
+                                    >
+                                        Hire talents
+
+                                        {/* {
+                                            currentPath == "/hire-talents" &&
+
+                                            <div className="bg-greenPrimary  h-[2px] w-[100%]"></div>
+                                        } */}
+                                    </Link>
+
+                                    <Link
+                                        className="border text-center w-[100%] border-greenPrimary px-8 py-3 rounded-md text-[16px] gap-1 hover:no-underline text-white bg-greenPrimary hover:text-greenPrimary"
+                                        href="/login"
+                                        aria-current="page"
+                                    >
+                                        Login
+                                    </Link>
+                                    {/* <button>Hire Talents</button>
+                                    <RoundedButton className="w-fit px-8 py-2">
+                                        Login
+                                    </RoundedButton> */}
                                 </motion.div>
                             </motion.div>
                         </div>
@@ -130,13 +162,19 @@ const mobileLinkVars = {
 // const MobileDropDown = () => {
 
 // }
-const MobileNavLink = ({ title, href }: { title: string, href: string }) => {
+const MobileNavLink = ({ title, href, path, toggleMenu }: { title: string, href: string, path: string, toggleMenu: any }) => {
+    const currentPath = '/contact-us'
     return (
         <motion.div
             variants={mobileLinkVars}
-            className=""
+            className="flex items-center gap-5"
+
         >
-            <Link href={href} className="text-3xl uppercase text-black">{title}</Link>
+            {
+                path == href && <img src="/assets/svg/arrow-right-green.svg" alt="" className="w-6" />
+            }
+            
+            <Link href={href} className="text-[16px] lato uppercase text-black hover:text-greenPrimary" onClick={toggleMenu}>{title}</Link>
         </motion.div>
     );
 };

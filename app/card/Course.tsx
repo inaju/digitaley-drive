@@ -71,7 +71,6 @@ const Course = forwardRef(({ id, title, category, difficulty, duration, descript
                     </div> */}
                     <div className={`${isActive ? '' : 'hidden'}`}>
                         <div className="flex flex-wrap gap-2 mb-0 h-[70px]">
-                            {/* {tools[0]} */}
                             {
 
                                tools && tools.map((tool:any) => <span  className={`inline-flex items-center h-7 gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium ${tool.color} dark:bg-white/10 dark:text-white`}>
@@ -81,22 +80,7 @@ const Course = forwardRef(({ id, title, category, difficulty, duration, descript
                                     }
                                 </span>)
                             }
-                            {/* <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500">
-                            Power BI
-                        </span>
-                        <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
-                            SQL
-                        </span>
-                        <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
-                            Problem Solving Techiniques
-                        </span>
-                        <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-800 dark:bg-teal-800/30 dark:text-teal-500">
-                            Excel
-                        </span>
-
-                        <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-800 text-white dark:bg-white dark:text-gray-800">
-                            Presentation, Communication & Storytelling
-                        </span> */}
+                            
                         </div>
 
                         <div className="mt-2 flex items-center gap-5">

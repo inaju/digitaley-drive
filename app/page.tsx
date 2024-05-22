@@ -25,8 +25,11 @@ import PopularCourses from "./sections/PopularCourses";
 import Header from './components/Header';
 import Statistics from './components/Statistics'
 import About from './sections/About'
-import Instructors from './sections/Instructors'
+// import Instructors from './sections/Instructors'
 import TestApp from './components/test/src/App'
+import FAQ from "./components/Faq";
+import ContactForm from "./components/ContactForm";
+import Works from "./components/Works";
 export default function Home() {
   const router = useRouter();
 
@@ -40,7 +43,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="overflow-x-hidden bg-lightPrimary flex min-h-screen flex-col items-center justify-between px-4 pt-8 md:p-10 gap-y-14 lg:gap-y-28
+    <main className="overflow-x-hidden bg-lightPrimary flex min-h-screen flex-col items-center justify-between px-4 pt-8 md:p-10 
     ">
       <Hero />
       <Stats />
@@ -49,13 +52,15 @@ export default function Home() {
       {/* <About /> */}
       {/* <Mission /> */}
       <Courses />
-      <PopularCourses />
-      <Instructors />
+      {/* <PopularCourses /> */}
       <WhyDigitaley />
       {/* <PopularCourses /> */}
       {/* <ToolsToLearn /> */}
       {/* <Courses /> */}
-      {/* <Testimonials /> */}
+      <Testimonials />
+      <FAQ />
+      <ContactForm />
+      <Works />
       {/* <Team /> */}
       {/* <Faq /> */}
       {/* <FeedbackForm /> */}

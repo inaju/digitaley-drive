@@ -5,12 +5,15 @@ import logo from "../../public/digitaley-logo.png";
 import { Popover, Whisper, Button, ButtonToolbar } from "rsuite";
 import Link from "next/link";
 import MobileNavbar from "./mobileNav";
+import { usePathname } from 'next/navigation'
+import RoundedButton from "./custom/RoundedButton/RoundedButton";
+import MagneticButton from "./custom/Magnetic";
 type Props = {};
 
 
 const companyLinks = (
   <Popover className="bg-lightPrimary">
-    <div className="flex flex-col gap-2 w-32 px-2 ">
+    <div className="flex flex-col gap-2 w-32 lato px-2 ">
       <Link
         className="relative flex text-[15px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
         href="#"
@@ -52,15 +55,16 @@ const NavBar = (props: Props) => {
   };
 
 
-  const currentPath = window.location.pathname;
+  const currentPath = usePathname();
+
 
   return (
-    <header className="relative space flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full shadow-  text-sm py-3 sm:py-0">
+    <header className="relative lato flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full shadow-  text-sm py-3 sm:py-0">
       <nav
-        className="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+        className="relative max-w-[85rem] w-full mx-auto px-[1rem] sm:flex sm:items-center sm:justify-between lg:px-8"
         aria-label="Global"
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center w-[100%] lg:w-fit justify-between">
           <Link
             className="flex hover:no-underline  w-[15rem] items-center gap-3 font-semibold text-grey-800"
             href="/"
@@ -68,7 +72,7 @@ const NavBar = (props: Props) => {
             <Image src={logo} alt="logo" height={40} width={40} className="w-10"/>
             <p className="text-xl text-gray-700">Digitaley Drive</p>
           </Link>
-          <div className="sm:hidden">
+          <div className="lg:hidden">
             {!showNavBar ? (
               <button
                 onClick={toggleMenu}
@@ -128,12 +132,12 @@ const NavBar = (props: Props) => {
         {/* desktop view */}
         <div
           id="navbar-collapse-with-animation"
-          className="hs-collapse hidden py-4 overflow-hidden transition-all duration-300 basis-full grow sm:block"
+          className="hs-collapse hidden py-4 overflow-hidden transition-all duration-300 basis-full grow lg:block"
         >
           <div className="text-grey-800/[.8] cursor-pointer flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
             <Link
               className="relative flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
-              href="#"
+              href="/"
               aria-current="page"
             >
               Home
@@ -147,12 +151,12 @@ const NavBar = (props: Props) => {
 
             <Link
               className="font- flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
-              href="#"
+              href="/career-launch"
               aria-current="page"
             >
-              Not sure
+              Career Launch
               {
-                currentPath == "/not sure" &&
+                currentPath == "/career-launch" &&
 
                 <div className="bg-greenPrimary  h-[2px] w-[100%]"></div>
               }
@@ -160,7 +164,7 @@ const NavBar = (props: Props) => {
 
             <Link
               className="font- flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
-              href="#"
+              href="/courses"
               aria-current="page"
             >
               Courses
@@ -186,39 +190,44 @@ const NavBar = (props: Props) => {
 
             <Link
               className="font- flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
-              href="#"
+              href="/why-digitaley-drive"
               aria-current="page"
             >
               Why digitaley drive
 
               {
-                currentPath == "/why-digitaley-ddrive" &&
+                currentPath == "/why-digitaley-drive" &&
 
                 <div className="bg-greenPrimary  h-[2px] w-[100%]"></div>
               }
             </Link>
 
             <Link
-              className="border border-greenPrimary px-8 py-2 rounded-full text-[16px] gap-1 hover:no-underline text-greenPrimary hover:text-greenPrimary"
+              className="hover:no-underline"
               href="#"
               aria-current="page"
             >
-              Hire talents
+              <RoundedButton className="border border-greenPrimary px-8 py-2 rounded-full text-[16px] gap-1 hover:no-underline text-greenPrimary hover:text-greenPrimary">
+                Hire Talents
+              </RoundedButton>
+              {/* Hire talents
 
               {
                 currentPath == "/hire-talents" &&
 
                 <div className="bg-greenPrimary  h-[2px] w-[100%]"></div>
-              }
+              } */}
             </Link>
 
+            <MagneticButton>
             <Link
-              className="border border-greenPrimary px-8 py-2 rounded-full text-[16px] gap-1 hover:no-underline text-white bg-greenPrimary hover:text-greenPrimary"
+              className="border hover:text-white border-greenPrimary px-8 py-2 rounded-full text-[16px] gap-1 hover:no-underline text-white bg-greenPrimary"
               href="/login"
               aria-current="page"
             >
               Login
             </Link>
+            </MagneticButton>
           </div>
         </div>
 
