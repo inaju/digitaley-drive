@@ -16,7 +16,7 @@ const companyLinks = (
     <div className="flex flex-col gap-2 w-32 lato px-2 ">
       <Link
         className="relative flex text-[15px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
-        href="#"
+        href="/contact-us"
         aria-current="page"
       >
         Contact
@@ -24,7 +24,7 @@ const companyLinks = (
 
       <Link
         className="font- flex text-[15px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
-        href="#"
+        href="/about-us"
         aria-current="page"
       >
         About us
@@ -32,7 +32,7 @@ const companyLinks = (
 
       <Link
         className="font- flex text-[15px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
-        href="#"
+        href="/career"
         aria-current="page"
       >
         Careers
@@ -163,7 +163,7 @@ const NavBar = (props: Props) => {
             </Link>
 
             <Link
-              className="font- flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
+              className="font- flex text-[16px] flex-col border-none outline-none gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
               href="/courses"
               aria-current="page"
             >
@@ -190,7 +190,7 @@ const NavBar = (props: Props) => {
 
             <Link
               className="font- flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
-              href="/why-digitaley-drive"
+              href="#why-digitaley"
               aria-current="page"
             >
               Why digitaley drive

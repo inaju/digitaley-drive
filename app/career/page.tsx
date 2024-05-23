@@ -4,7 +4,7 @@ import { jobOpenings } from '../data'
 import MagneticButton from '../components/custom/Magnetic'
 import { CiLocationOn } from "react-icons/ci";
 import { IoMdTime } from "react-icons/io";
-import FAQ from '../components/Faq';
+import Faq from '../components/faq';
 import ContactForm from '../components/ContactForm';
 import Works from '../components/Works';
 const page = () => {
@@ -49,7 +49,7 @@ const page = () => {
                 </div>)}
             </div>
             <div className='z-0 bg-white'>
-      <FAQ />
+      <Faq />
       <ContactForm />
       <Works />
       </div>

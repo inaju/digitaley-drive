@@ -67,26 +67,26 @@
 //               </p>
 //             </div>
 //             {/* start chips */}
-//             <div className="flex px-4 flex-wrap gap-2 mb-0">
-//               <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-800 dark:bg-teal-800/30 dark:text-teal-500">
-//                 Excel
-//               </span>
-//               <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
-//                 SQL
-//               </span>
+            // <div className="flex px-4 flex-wrap gap-2 mb-0">
+            //   <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-800 dark:bg-teal-800/30 dark:text-teal-500">
+            //     Excel
+            //   </span>
+            //   <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
+            //     SQL
+            //   </span>
 
-//               <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500">
-//                 Power BI
-//               </span>
+            //   <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500">
+            //     Power BI
+            //   </span>
 
-//               <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-//                 Github
-//               </span>
+            //   <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
+            //     Github
+            //   </span>
 
-//               <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
-//                 Job/Freelance Preparation
-//               </span>
-//             </div>
+            //   <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+            //     Job/Freelance Preparation
+            //   </span>
+            // </div>
 //           </div>
 //           <div className="mt-0 flex items-center gap-5 px-4">
 //             <img src="https://cdn-icons-png.flaticon.com/128/833/833602.png" className="w-6 h-6"/>
@@ -688,7 +688,7 @@ const PopularCourses = () => {
                                 
                             })}
                         </swiper-container>
-                        <SliderNavigation ref={sliderRef} length={courses.length}/>
+                        <SliderNavigation ref={sliderRef} />
                     </motion.div> 
                 </div>
             </div>
@@ -703,9 +703,7 @@ const PopularCourses = () => {
 
 
 
-type Props = {};
-
-const Courses = (props: Props) => {
+const Courses = (props) => {
   return (
    <div className="w-[100vw] ">
      <div
@@ -724,6 +722,148 @@ const Courses = (props: Props) => {
 };
 
 export default Courses;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import { useEffect, useRef } from "react";
+// import { motion } from "framer-motion";
+// import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper components
+// import SliderNavigation from "./SliderNavigation";
+// import { centerVariants } from "../constant/motion";
+// import { FollowingPointerDemo } from "./card/CustomCard";
+// import "swiper/css";
+// import { courses } from "../data/index";
+
+// const PopularCourses = () => {
+//     const sliderRef = useRef(null);
+//     const swiperParams = {
+//         spaceBetween: 16,
+//         grabCursor: true,
+//         loop: true,
+//         autoplay: {
+//             delay: 2000,
+//             disableOnInteraction: false,
+//         },
+//         breakpoints:
+//         {
+
+//             0: {
+//                 slidesPerView: 1,
+//             },
+//             992: {
+//                 slidesPerView: 2,
+//             },
+//             1200: {
+//                 slidesPerView: 3,
+//             },
+//         },
+//     };
+
+//     useEffect(() => {
+//         sliderRef.current && Object.assign(sliderRef.current, swiperParams);
+//     }, []);
+//     const categories = [
+//         'Data',
+//         'Python',
+//         'Business',
+
+//     ]
+
+//     return (
+//         <section id="popular" className="container">
+//             <div className="container">
+//                 <div className="flex justify-between">
+//                   <motion.div
+//                         variants={centerVariants}
+//                         initial="hidden"
+//                         whileInView="visible"
+//                         viewport={{ margin: "0px 0px -200px 0px", once: true }}
+//                         className="flex flex-col gap-y-4 w-[100%]"
+//                     >
+//                         <Swiper ref={sliderRef} {...swiperParams}>  {/* Use Swiper component */}
+//                             {courses.map((course) => {
+//                                     return (
+//                                         <SwiperSlide key={course.id}>  {/* Use SwiperSlide component */}
+//                                             <FollowingPointerDemo course={course} width="lg:max-w-[27.5rem]"/>
+//                                         </SwiperSlide>
+//                                     );
+                                
+//                             })}
+//                         </Swiper>
+//                         <SliderNavigation ref={sliderRef} />
+//                     </motion.div> 
+//                 </div>
+//             </div>
+//         </section>
+//     );
+// };
+
+
+
+
+
+
+
+// type Props = {};
+
+// const Courses = (props: Props) => {
+//   return (
+//    <div className="w-[100vw] ">
+//      <div
+//       id="courses"
+//       className="max-w-[90rem] lato px-4 py-8 sm:px-6 lg:px-8 lg:py-24 mx-auto"
+//     >
+    
+//       <div className="cursor-pointer justify-end mb-4 flex items-center gap-4">
+//         <p className="text-greenPrimary">Browse All Courses</p>
+//         <img src="/assets/svg/arrow-right-green.svg" alt="" className="w-6" />
+//       </div>
+//       <PopularCourses />
+//     </div>
+//    </div>
+//   );
+// };
+
+// export default Courses;
 
 
 

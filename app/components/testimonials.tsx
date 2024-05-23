@@ -246,7 +246,7 @@ const Testimonials = (props: Props) => {
         </div>
         {/* End Title */}
         {/* Grid */}
-        <div className="lg:grid flex flex-col lg:grid-cols-2 gap-6">
+        <div className="lg:grid flex flex-col lg:grid-cols-3 gap-6">
           {/* Card */}
           <div className="flex h-auto">
             <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
@@ -262,7 +262,7 @@ As a final year student in Business Information with the Durban University of te
                   <div className="flex-shrink-0">
                     <img
                       className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                      src="./assets/yamoah_francisca.jpg"
+                      src="/assets/karabo.jpg"
                       alt="Image Description"
                     />
                   </div>
@@ -296,7 +296,7 @@ Thank you Digitaleydrive for this wonderful opportunity.
                   <div className="flex-shrink-0">
                     <img
                       className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                      src="./assets/ayomide_david.jpg"
+                      src="/assets/philip.jpg"
                       alt="Image Description"
                     />
                   </div>
@@ -314,11 +314,11 @@ Thank you Digitaleydrive for this wonderful opportunity.
           </div>
           {/* End Card */}
           {/* Card */}
-          <div className="flex h-auto col-span-2">
+          <div className="flex h-auto">
             <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
               <div className="flex-auto p-4 md:p-6">
                 <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
-                As someone transitioning from Pharmacy to Data analysis, I wasn't sure what to expect. However, the learning process was comprehensive, with a well-structured curriculum that made it easy to progress from the basics to advanced aspects. The instructors were very supportive and patient, providing clear explanations for tasks and areas we found difficult. My highlight during the training was the opportunity to work on projects that mirrored real-life data scenarios. These projects challenged me to learn new concepts every day, pushing me to do more research outside the covered material. Receiving constructive feedback from the tutors further helped me improve my skills. After the training, I feel more confident and well-equipped to work independently on projects and pursue a career in data analysis. I'm excited about the prospect of implementing my skills in a professional setting.
+                As someone transitioning from Pharmacy to Data analysis, I wasn&apos;t sure what to expect. However, the learning process was comprehensive, with a well-structured curriculum that made it easy to progress from the basics to advanced aspects. The instructors were very supportive and patient, providing clear explanations for tasks and areas we found difficult. My highlight during the training was the opportunity to work on projects that mirrored real-life data scenarios. These projects challenged me to learn new concepts every day, pushing me to do more research outside the covered material. Receiving constructive feedback from the tutors further helped me improve my skills. After the training, I feel more confident and well-equipped to work independently on projects and pursue a career in data analysis. I&apos;m excited about the prospect of implementing my skills in a professional setting.
                 </p>
               </div>
               <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-slate-700">
@@ -326,7 +326,7 @@ Thank you Digitaleydrive for this wonderful opportunity.
                   <div className="flex-shrink-0">
                     <img
                       className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                      src="./assets/adenubi_dara.jpg"
+                      src="/assets/akpudo.jpg"
                       alt="Image Description"
                     />
                   </div>
@@ -346,7 +346,7 @@ Thank you Digitaleydrive for this wonderful opportunity.
         </div>
         {/* End Grid */}
         {/* Grid */}
-        <div className="mt-20 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">
+        <div className="mt-20 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-4 lg:gap-8">
           {/* Stats */}
           <div>
             <h4 className="text-lg sm:text-xl font-semibold text-white">
@@ -364,18 +364,29 @@ Thank you Digitaleydrive for this wonderful opportunity.
               Students
             </h4>
             <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
-              3,000+
+            18,000+
             </p>
             <p className="mt-1 text-gray-400">partner with Digitaley Drive</p>
           </div>
           {/* End Stats */}
+          {/* Stats */}
+<div className="flex flex-col items-center">
+          <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
+            Countries
+          </h4>
+          <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
+            26+
+          </p>
+          <p className="mt-1 text-gray-500">Impacted</p>
+        </div>
+        {/* End Stats */}
           {/* Stats */}
           <div>
             <h4 className="text-lg sm:text-xl font-semibold text-white">
               Courses
             </h4>
             <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
-              5
+              6+
             </p>
             <p className="mt-1 text-gray-400">this year alone</p>
           </div>

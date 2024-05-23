@@ -1,8 +1,9 @@
 import Image from "next/image";
 import RoundedButton from "../custom/RoundedButton/RoundedButton";
-export function FollowingPointerDemo({ course, width }: any) {
+import Link from "next/link";
+export function FollowingPointerDemo({ course, width, index }: any) {
   return (
-    <div className={`w-[100%] lg:w-[100%] mb-6 mx-auto ${width ? width : 'w-[100%]'}`}>
+    <div key={index} className={`w-[100%] lg:w-[100%] mb-6 mx-auto ${width ? width : 'w-[100%]'}`}>
       <div className={`relative w-[100%]  lato overflow-hidden h-full rounded-2xl transition duration-200 group bg-white hover:shadow-xl border border-zinc-100`}>
         <div className="w-full h-80 aspect-w-16 aspect-h-10 bg-gray-100 rounded-tr-lg rounded-tl-lg overflow-hidden xl:aspect-w-16 xl:aspect-h-10 relative">
           <img
@@ -48,10 +49,12 @@ export function FollowingPointerDemo({ course, width }: any) {
             <h1 className="text-[15px]">3 months</h1>
           </div> */}
           <div className="group-hover:flex hidden flex-row justify-between items-center mt-2">
-           
-            <RoundedButton className='px-10 py-2 cursor-pointer rounded-full mt-6 w-fit '>
+           <Link href={`/courses/${course.reference}`} className="">
+            <RoundedButton  className='px-10 py-2 cursor-pointer rounded-full mt-6 w-fit '>
+              
               View Details
-            </RoundedButton>
+              
+            </RoundedButton></Link>
           </div>
         </div>
       </div>

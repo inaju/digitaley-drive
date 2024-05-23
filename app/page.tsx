@@ -4,11 +4,11 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import Image from "next/image";
-import Hero from "./components/hero";
+import Hero from "./components/Hero";
 import Team from "./components/team";
 import Testimonials from "./components/testimonials";
 import Stats from "./components/stats";
-import Faq from "./components/faq";
+import Faq from "./components/faq"; // Correct casing
 import ImageTextTwoColumn from "./components/image-text-two-column";
 import Footer from "./components/footer";
 import FeedbackForm from "./components/feedback-form";
@@ -19,17 +19,19 @@ import NavBar from "./components/nav";
 import Mission from "./components/mission";
 import { SocialIcon } from "react-social-icons";
 import { Button } from "rsuite";
-import PopularCourses from "./sections/PopularCourses";
+// import PopularCourses from "./sections/PopularCourses";
 // import PopularCourses from "./components/Course";
 // import { PopularCourses } from "./components/test/src/sections";
 import Header from './components/Header';
-import Statistics from './components/Statistics'
+// import Statistics from './components/Statistics'
 import About from './sections/About'
 // import Instructors from './sections/Instructors'
-import TestApp from './components/test/src/App'
-import FAQ from "./components/Faq";
+// import TestApp from './components/test/src/App'
+// import Faq from "./components/Faq";
 import ContactForm from "./components/ContactForm";
 import Works from "./components/Works";
+import HowDigitaley from "./components/HowDigitaleyWorks";
+import WhereStudentWorks from "./components/WhereStudentWorks";
 export default function Home() {
   const router = useRouter();
 
@@ -54,13 +56,16 @@ export default function Home() {
       <Courses />
       {/* <PopularCourses /> */}
       <WhyDigitaley />
+<WhereStudentWorks />
+      <HowDigitaley />
       {/* <PopularCourses /> */}
       {/* <ToolsToLearn /> */}
       {/* <Courses /> */}
       <Testimonials />
-      <FAQ />
-      <ContactForm />
+      <Faq />
+ 
       <Works />
+      <ContactForm />
       {/* <Team /> */}
       {/* <Faq /> */}
       {/* <FeedbackForm /> */}
