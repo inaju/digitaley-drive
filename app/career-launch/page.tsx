@@ -1,6 +1,9 @@
 'use client'
 import React from 'react'
 import { stagger, useAnimate } from "framer-motion";
+import Faq from '../components/faq';
+import ContactForm from '../components/ContactForm';
+import Works from '../components/Works';
 // import {
 //   // Availability,
 //   // Colors,
@@ -137,7 +140,7 @@ import { useEscapePress } from "../utils/use-escape-press";
 
 // console.log(careerPaths);
 
-const page = () => {
+const Page = () => {
   const [scope, animate] = useAnimate();
   const fullscreenFeature = useFeatureStore((state) => state.fullscreenFeature);
   const lastFullscreenFeature = useFeatureStore(
@@ -198,8 +201,9 @@ const page = () => {
     }
   }, [animate, fullscreenFeature, lastFullscreenFeature]);
   return (
-    <div className="mx-auto pt-24 lg:pt-40 max-w-[92.5rem] px-[1rem] lg:px-0 lato">
-      <h1 className='text-[2.5rem] lg:text-[6rem] text-greenPrimary'>Career  Launch</h1>
+    <div className="mx-auto pt-24 lg:pt-40 max-w-[82.5rem] px-[1rem] lg:px-0 lato">
+      <h1 className='text-[2.5rem] lg:text-[6rem] text-greenPrimary'>Hello Digitaley Drive Learner!</h1>
+      <p className='mt-6 text-[18px]'>If you are confused about what to learn or what career path to take, then grap a hot tea cause i am about to spill some tea.</p>
       <div ref={scope}>
         {careerPaths.map((feature) => (
           <feature.visual id={feature.id} key={feature.id} />
@@ -210,8 +214,8 @@ const page = () => {
         >
           Back to site
         </button>
-        <div className="flex flex-col-reverse lg:flex-row w-full items-start gap-16 lg:gap-20">
-          <div className="w-full py-[4rem] lg:py-[50vh]">
+        <div className="flex flex-col-reverse lg:flex-row  w-full items-start gap-16 lg:gap-20">
+          <div className="w-full py-[4rem] lg:py-[40vh]">
             <ul>
               {/* {careerPaths.map((path, index) => (
                 <li key={path.id}>
@@ -291,12 +295,12 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="h-screen">More room to scroll</div>
+      {/* <div className="h-screen">More room to scroll</div> */}
 
 
 
 
-
+{/* 
       <div>
         {careerPaths.map((path, index) => (
           <div key={index} className="career-path">
@@ -354,9 +358,15 @@ const page = () => {
             )}
           </div>
         ))}
-      </div>
+      </div> */}
+
+     
     </div>
   )
 }
 
-export default page
+export default Page
+
+{/* <Faq />
+<ContactForm />
+<Works /> */}

@@ -1,12 +1,12 @@
 'use client'
 import React, {useEffect} from 'react'
-import { FaClock } from "react-icons/fa";
+import { FaClock, FaQq } from "react-icons/fa";
 import PopularCourses from '../components/Course';
-import FAQ from '../components/Faq';
+import Faq from '../components/faq';
 import ContactForm from '../components/ContactForm';
 import Works from '../components/Works';
 import Lenis from "@studio-freight/lenis";
-const page = () => {
+const Page = () => {
   useEffect(() => {
     const lenis = new Lenis();
     function raf(time: any) {
@@ -41,11 +41,11 @@ const page = () => {
         <PopularCourses />
       </div>
 
-      <FAQ />
+      <Faq />
       <ContactForm />
       <Works />
     </div>
   )
 }
 
-export default page
+export default Page;

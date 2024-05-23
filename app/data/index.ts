@@ -904,11 +904,363 @@ export const careerPaths = [
 //     }
 //   ];
 
+
+// export const courses = [
+//     {
+//         id: 2,
+//         title: "Data Analytics",
+//         description: [
+//             'This comprehensive Data Analyst Track Fellowship is designed to equip         you with the skills and knowledge to thrive in the field of data analytics,   regardless of your experience level.  Master the nuances of data analysis,  progressing from beginner to advanced through a blend of live, interactive sessions and hands-on project-based learning.',
+//             'Gain practical experience by tackling 5 real-world portfolio projects spanning   diverse industries like healthcare, e-commerce, digital marketing, retail,    aviation, and fintech. This program will empower you to demonstrate    your expertise to potential employers and hit the ground running in  your data analyst career.'
+//         ],
+//         category: "Data",
+//         thumbnail: 'https://plus.unsplash.com/premium_photo-1661778915982-d104c9a41fee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+//         tools: [
+//             {
+//                 tool: 'Excel',
+//                 color: 'bg-green-200 text-green-700'
+//             },
+//             {
+//                 tool: 'PowerBI',
+//                 color: 'bg-slate-200 text-slate-700'
+//             },
+//             {
+//                 tool: 'Github',
+//                 color: 'bg-yellow-200 text-yellow-700'
+//             },
+//             {
+//                 tool: 'SQL',
+//                 color: 'bg-blue-200 text-blue-700'
+//             },
+//         ],
+//         duration: '3',
+//         amountWithInternship: '70,000|$70 ',
+//         amountWithoutInternship: '50,000|$50',
+//         topics: '40+',
+//         weeks: '12',
+//         modules: '5',
+//         internshipBenefit: '3 months internship'
+//     },
+//     {
+
+//         id: 3,
+//         title: "Data Science",
+//         category: "Data",
+//         thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+//         description: [
+//             'This comprehensive Data Science Track equips you with the skill    and knowledge to conquer the ever-evolving field of data science,  no matter your prior experience.  Unravel the complexities of data   science, progressing from beginner to advanced through a blend of engaging live sessions and hands-on project-based learning.',
+//             "Sharpen your real-world skills by tackling impactful portfolio projects.  You'll build predictive models that solve real business problems and  showcase your expertise at community graduation hackathons.",
+//             "This program empowers you to impress potential employers with your proficiency and launch your data science career with confidence."
+//         ],
+       
+//         tools: [
+//             {
+//                 tool: 'Vscode',
+//                 color: 'bg-purple-200 text-purple-700'
+//             },
+//             {
+//                 tool: 'SQL',
+//                 color: 'bg-black text-white'
+//             },
+//             {
+//                 tool: 'Python',
+//                 color: 'bg-yellow-200 text-yellow-700'
+//             },
+//             {
+//                 tool: 'Github',
+//                 color: 'bg-red-200 text-red-700'
+//             },
+            
+//             {
+//                 tool: 'Sklearn',
+//                 color: 'bg-slate-200 text-slate-700'
+//             },
+//             {
+//                 tool: 'Statistics & Mathematics',
+//                 color: 'bg-blue-200 text-blue-700'
+//             }
+//         ],
+//         duration: '4',
+//         topics: '30+',
+//         weeks: '12',
+//         modules: '5',
+//         internshipBenefit: '3 months internship',
+//         amountWithInternship: '150,000|$150 ',
+//         amountWithoutInternship: '100,000|$100',
+//     },
+//     {
+//         id: 4,
+//         title: "Python Programming",
+//         titleDes: 'Master Python and Build Powerful Solutions with the Python Track!',
+//         description: [
+//             'This comprehensive Python Track equips you with the skill                                    and knowledge to build scalable python codes and pipelines,  regardless of your experience level.  Unravel the complexities of Python  programming, progressing from beginner to advanced through a blend ofInteractive live sessions and hands-on project-based learning.',
+//             "Sharpen your real-world skills by tackling 3 impactful portfolio projects that solve real business challenges and showcase your expertise at community graduation hackathons.",
+//             "This program launches your python capabilities and expertise and empowers you to impress potential employers."
+//         ],
+//         category: "Python",
+//         thumbnail: 'https://images.unsplash.com/photo-1624953587687-daf255b6b80a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHl0aG9uJTIwcHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D',
+//         tools: [
+//             {
+//                 tool: 'Python',
+//                 color: 'bg-yellow-200 text-yellow-700'
+//             },
+//             {
+//                 tool: 'Google Colab                ',
+//                 color: 'bg-slate-200 text-slate-700'
+//             },
+//             {
+//                 tool: 'Github',
+//                 color: 'bg-blue-200 text-blue-700'
+//             },
+//             {
+//                 tool: 'Jupyter network',
+//                 color: 'bg-green-200 text-green-700'
+//             },
+//         ],
+//         duration: '4',
+//         topics: '20+',
+//         weeks: '12',
+//         modules: '3',
+//         amountWithInternship: '50,000|$50 ',
+//     },
+//     {
+//         id: 5,
+//         title: "Data Engineering",
+       
+//         description: "This program equips you with the in-demand skills to engineer the future   of data in our ever-evolving data landscape, regardless of your experience level.   Master the art of data management, from building ETL pipelines and data  systems to designing efficient data organization.  Progress from beginner   to advanced through a blend of interactive live sessions and hands-on  project-based learning. <br />  Sharpen your real-world skills by tackling impactful portfolio projects.   These projects will solidify your knowledge and empower you to impress   potential employers with your data engineering prowess, launching your  career with confidence.   ",
+//         category: "Data",
+//         thumbnail: 'https://images.unsplash.com/photo-1511376777868-611b54f68947?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGVuZ2luZWVyaW5nfGVufDB8fDB8fHww',
+//         tools: [
+//             {
+//                 tool: 'Snowflake',
+//                 color: 'bg-yellow-200 text-yellow-700'
+//             },
+//             {
+//                 tool: 'BigQuery',
+//                 color: 'bg-slate-200 text-slate-700'
+//             },
+//             {
+//                 tool: 'Red shift     ',
+//                 color: 'bg-blue-200 text-blue-700'
+//             },
+//             {
+//                 tool: 'dbt',
+//                 color: 'bg-green-200 text-green-700'
+//             },
+//             {
+//                 tool: 'SQL ',
+//                 color: 'bg-red-200 text-red-700'
+//             },
+//             {
+//                 tool: 'Bi-weekly mentorship  ',
+//                 color: 'bg-purple-200 text-purple-700'
+//             },
+//         ],
+//         duration: '4',
+//         topics: '30+',
+//         weeks: '12',
+//         modules: '2',
+//         internshipBenefit: '3 months internship',
+//         amountWithInternship: '150,000|$150 ',
+//         amountWithoutInternship: '100,000|$100',
+//     },
+//     {
+//         id: 6,
+//         title: "Business Intelligence/ PowerBI Developer ",
+//         description: [
+//             "This comprehensive Business Intelligence/PowerBI developer program equips you with the expertise to drive business growth by utilizing powerful business intelligence tools. From Data Integration to Data CPT, to Data Modelling, to Advanced DAX computation and calculations that appraise business KPIs, to powerful insights and stories, to Deployment and maintenance,etc.       ",
+//             "Regardless of your experience level, master the nuances of business intelligence,   progressing from beginner to advanced through a blend of live, interactive  sessions and hands-on project-based learning.",
+//             "Gain practical experience by tackling 5 real-world portfolio projects spanning  diverse industries like healthcare, e-commerce,  retail,   supply chain, and fintech. This program will empower you to demonstrate your expertise to potential employers and launch your career with confidence. "
+//         ],
+//         category: "Business",
+//         thumbnail: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+//         tools: [
+//             {
+//                 tool: 'PowerBI',
+//                 color: 'bg-yellow-200 text-yellow-700'
+//             },
+//             {
+//                 tool: 'Problem Solving Technique',
+//                 color: 'bg-slate-200 text-slate-700'
+//             },
+//             {
+//                 tool: 'Bi weekly Mentorship',
+//                 color: 'bg-blue-200 text-blue-700'
+//             },
+//             {
+//                 tool: 'SQL',
+//                 color: 'bg-green-200 text-green-700'
+//             },
+//             {
+//                 tool: 'Presentation, Communication and Storytelling ',
+//                 color: 'bg-black text-white'
+//             },
+//         ],
+//         duration: '4',
+//         topics: '40+',
+//         weeks: '12',
+//         modules: '5',
+//         internshipBenefit: '3 months internship',
+//         amountWithInternship: '130,000|$130 ',
+//         amountWithoutInternship: '100,000|$100',
+//     },
+//     {
+//         id: 6,
+//         title: "Business Analysis",
+//              description: "Reviewed by industry experts, this bootcamp is designed for both                        aspiring beginners and experienced professionals seeking a smooth transition   into the high-demand field of Business Analysis.TOur 100% practical curriculum,   developed in collaboration with industry experts, equips you with the in-demand   skills and real-world experience to land your dream job quickly. ",
+//         overview: "This intensive Bootcamp equips both beginners and seasoned professionals with the in-demand skills to bridge the gap between business and IT. Master Agile and Scrum methodologies to plan, execute, and complete projects effectively. Gain a deep understanding of Requirements Engineering Lifecycles and the critical role of System Analysis . You'll become a champion of business transformation, learning to discover, design, and implement valuable process improvements. Hone your skills through real-world Capstone Projects and walk away with double the power: the Digitaley Drive Business Analysis Certificate and the Scrum Alliance Certified ScrumMaster (CSM) Certification. <br />   This Bootcamp is your springboard to a rewarding career in Business Analysis. ",
+//         category: "Business",
+//         thumbnail: 'https://media.istockphoto.com/id/1321462048/photo/digital-transformation-concept-system-engineering-binary-code-programming.webp?b=1&s=170667a&w=0&k=20&c=8HOUiG9_M3Nm2TKS-EiGI8XdZctk7502R7s8NbCTm88=',
+//         curriculum: [
+//             {
+//                 week: 1,
+//                 title: "Foundations of Business Analysis",
+//                 days: [
+//                     {
+//                         day: 1,
+//                         topics: ["Introduction to Business Analysis", "Role of a Business Analyst", "Identifying stakeholders", "Business Analysis vs Data Analysis"],
+//                     },
+//                     {
+//                         day: 2,
+//                         topics: ["Understanding Data & Problem solving", "What is data?", "Different types of data", "Problem solving in data", "CRISP-DM", "McKinney"],
+//                     },
+//                     {
+//                         day: 3,
+//                         topics: ["Introduction to Microsoft Excel", "Understanding excel interface", "Data Analytics in Excel", "Excel Functions", "Pivot table", "Pivot charts"],
+//                     },
+//                     {
+//                         day: 4,
+//                         topics: ["Hands-on Practice with Excel", "Data Visualization", "Dashboarding with Excel"],
+//                     },
+//                 ],
+//             },
+//             {
+//                 week: 2,
+//                 title: "Data Analysis Tools",
+//                 days: [
+//                     {
+//                         day: 5,
+//                         topics: ["Introduction to Power BI", "Understanding Power BI", "ETL", "Data Analysis & Visualization", "Transformation and cleaning"],
+//                     },
+//                     {
+//                         day: 6,
+//                         topics: ["Data Analysis with Power BI", "DAX in Power BI", "Dashboarding"],
+//                     },
+//                     {
+//                         day: 7,
+//                         topics: ["Hands-on Practice with Power BI", "Dashboarding exercises", "Presentation"],
+//                     },
+//                 ],
+//             },
+//             {
+//                 week: 3,
+//                 title: "Database Fundamentals",
+//                 days: [
+//                     {
+//                         day: 8,
+//                         topics: ["Introduction to SQL", "Basics of SQL syntax", "Data Manipulation Language"],
+//                     },
+//                     {
+//                         day: 9,
+//                         topics: ["Advanced SQL", "Data Query Language", "Data Sorting and Filtering"],
+//                     },
+//                     {
+//                         day: 10,
+//                         topics: ["SQL Functions", "Aggregation Functions"],
+//                     },
+//                 ],
+//             },
+//             {
+//                 week: 4,
+//                 title: "Business Analysis Planning",
+//                 days: [
+//                     {
+//                         day: 11,
+//                         topics: ["Planning and Monitoring", "BA Planning and Monitoring", "Stakeholder Analysis"],
+//                     },
+//                     {
+//                         day: 12,
+//                         topics: ["Business Analysis Plan", "Approach and Tasks", "Information Management"],
+//                     },
+//                     {
+//                         day: 13,
+//                         topics: ["Performance Improvements", "Identifying Improvements", "Strategy Analysis"],
+//                     },
+//                 ],
+//             },
+//             {
+//                 week: 5,
+//                 title: "Advanced Business Analysis Techniques",
+//                 days: [
+//                     {
+//                         day: 14,
+//                         topics: ["Documentation and Reporting", "Importance of documentation in BA", "Types of BA documentation (business requirements document, functional specifications)", "Creating clear and concise reports for stakeholders"],
+//                     },
+//                     {
+//                         day: 15,
+//                         topics: ["Requirements Elicitation", "Techniques for gathering requirements (interviews, surveys, workshops)", "Documenting requirements (use cases, user stories)", "Prioritizing requirements"],
+//                     },
+//                     {
+//                         day: 16,
+//                         topics: ["Business Analysis in Agile Environments", "Agile methodology overview", "Role of business analyst in agile teams", "Agile requirements gathering and management"],
+//                     },
+//                     {
+//                         day: 17,
+//                         topics: ["Capstone Project"],
+//                     },
+//                 ],
+//             },
+//         ],
+//         price: '$390',
+//         topics: '20+',
+//         weeks: '12',
+//         modules: '2',
+//     },
+// ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export const courses = [
     {
         id: 2,
         title: "Data Analytics",
-        description: 'This comprehensive Data Analyst Track Fellowship is designed to equip   you with the skills and knowledge to thrive in the field of data analytics, regardless of your experience level.Master the nuances of data analysis, progressing from beginner to advanced through a blend of live, interactive sessions and hands- on project - based learning.  <br />     diverse industries like healthcare, e-commerce, digital marketing, retail,   aviation, and fintech. This program will empower you to demonstrate  your expertise to potential employers and hit the ground running in your data analyst career.',
+        reference: 'data-analytics',
+        description: [
+            'This comprehensive Data Analyst Track Fellowship is designed to equip         you with the skills and knowledge to thrive in the field of data analytics,   regardless of your experience level.  Master the nuances of data analysis,  progressing from beginner to advanced through a blend of live, interactive sessions and hands-on project-based learning.',
+            'Gain practical experience by tackling 5 real-world portfolio projects spanning   diverse industries like healthcare, e-commerce, digital marketing, retail,    aviation, and fintech. This program will empower you to demonstrate    your expertise to potential employers and hit the ground running in  your data analyst career.'
+        ],
         category: "Data",
         thumbnail: 'https://plus.unsplash.com/premium_photo-1661778915982-d104c9a41fee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         tools: [
@@ -925,21 +1277,21 @@ export const courses = [
                 color: 'bg-yellow-200 text-yellow-700'
             },
             {
-                tool: 'Bi weekly Mentorship',
-                color: 'bg-red-200 text-red-700'
-            },
-            {
                 tool: 'SQL',
                 color: 'bg-blue-200 text-blue-700'
             },
-            {
-                tool: 'Hackathon Development                                              ',
-                color: 'bg-black-200 text-white'
-            },
+        ],
+        notes: [
+            'Excel',
+            'PowerBI',
+            'Github',
+            'Bi weekly Mentorship  ',
+            'SQL',
+            'Hackathon Development'
         ],
         duration: '3',
-        amountWithInternship: '70,000|$70 ',
-        amountWithoutInternship: '50,000|$50',
+        amountWithInternship: '₦70,000 | $70 ',
+        amountWithoutInternship: '₦50,000 | $50',
         topics: '40+',
         weeks: '12',
         modules: '5',
@@ -950,13 +1302,22 @@ export const courses = [
         id: 3,
         title: "Data Science",
         category: "Data",
+        reference: 'data-science',
         thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        description: "This comprehensive Data Science Track equips you with the skill  and knowledge to conquer the ever-evolving field of data science,   no matter your prior experience.  Unravel the complexities of data   science, progressing from beginner to advanced through a blend of     engaging live sessions and hands-on project-based learning.   Sharpen your real-world skills by tackling impactful portfolio projects.     You'll build predictive models that solve real business problems and    showcase your expertise at community graduation hackathons.   This program empowers you to impress potential employers with   your proficiency and launch your data science career with confidence. ",
+        description: [
+            'This comprehensive Data Science Track equips you with the skill    and knowledge to conquer the ever-evolving field of data science,  no matter your prior experience.  Unravel the complexities of data   science, progressing from beginner to advanced through a blend of engaging live sessions and hands-on project-based learning.',
+            "Sharpen your real-world skills by tackling impactful portfolio projects.  You'll build predictive models that solve real business problems and  showcase your expertise at community graduation hackathons.",
+            "This program empowers you to impress potential employers with your proficiency and launch your data science career with confidence."
+        ],
        
         tools: [
             {
-                tool: 'Sklearn',
-                color: 'bg-red-200 text-red-700'
+                tool: 'Vscode',
+                color: 'bg-purple-200 text-purple-700'
+            },
+            {
+                tool: 'SQL',
+                color: 'bg-black text-white'
             },
             {
                 tool: 'Python',
@@ -964,34 +1325,44 @@ export const courses = [
             },
             {
                 tool: 'Github',
+                color: 'bg-red-200 text-red-700'
+            },
+            
+            {
+                tool: 'Sklearn',
                 color: 'bg-slate-200 text-slate-700'
             },
             {
                 tool: 'Statistics & Mathematics',
                 color: 'bg-blue-200 text-blue-700'
-            },
-            {
-                tool: 'SQL',
-                color: 'bg-purple-200 text-purple-700'
-            },
-            {
-                tool: 'Hackathon Development   ',
-                color: 'bg-black text-white'
-            },
+            }
+        ],
+        notes: [
+            'Sklearn',
+            'Python',
+            'Github',
+            'Statistics & Mathematics               ',
+            'SQL',
+            'Hackathon Development'
         ],
         duration: '4',
         topics: '30+',
         weeks: '12',
         modules: '5',
         internshipBenefit: '3 months internship',
-        amountWithInternship: '150,000|$150 ',
-        amountWithoutInternship: '100,000|$100',
+        amountWithInternship: '₦150,000|$150 ',
+        amountWithoutInternship: '₦100,000|$100',
     },
     {
         id: 4,
         title: "Python Programming",
+        reference: 'python-programming',
         titleDes: 'Master Python and Build Powerful Solutions with the Python Track!',
-        description: "This comprehensive Python Track equips you with the skill  and knowledge to build scalable python codes and pipelines,   regardless of your experience level.  Unravel the complexities of Python  programming, progressing from beginner to advanced through a blend of   Interactive live sessions and hands-on project-based learning. <br />  Sharpen your real-world skills by tackling 3 impactful portfolio projects  that solve real business challenges and showcase your expertise at   community graduation hackathons. <br />  This program launches your python capabilities and expertise and empowers you to impress potential employers. ",
+        description: [
+            'This comprehensive Python Track equips you with the skill                                    and knowledge to build scalable python codes and pipelines,  regardless of your experience level.  Unravel the complexities of Python  programming, progressing from beginner to advanced through a blend ofInteractive live sessions and hands-on project-based learning.',
+            "Sharpen your real-world skills by tackling 3 impactful portfolio projects that solve real business challenges and showcase your expertise at community graduation hackathons.",
+            "This program launches your python capabilities and expertise and empowers you to impress potential employers."
+        ],
         category: "Python",
         thumbnail: 'https://images.unsplash.com/photo-1624953587687-daf255b6b80a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHl0aG9uJTIwcHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D',
         tools: [
@@ -1008,23 +1379,32 @@ export const courses = [
                 color: 'bg-blue-200 text-blue-700'
             },
             {
-                tool: 'Hackathon Development',
+                tool: 'Jupyter network',
                 color: 'bg-green-200 text-green-700'
             },
+        ],
+        notes: [
+            'Python',
+            'Google Colab',
+            'Github',
+            'Hackathon Development              ',
+            'SQL',
+            'Hackathon Development'
         ],
         duration: '4',
         topics: '20+',
         weeks: '12',
         modules: '3',
-        internshipBenefit: '3 months internship',
-        amountWithInternship: '50,000|$50 ',
-        amountWithoutInternship: '30,000|$300',
+        amountWithoutInternship: '₦30,000|$300',
     },
     {
         id: 5,
         title: "Data Engineering",
-       
-        description: "This program equips you with the in-demand skills to engineer the future   of data in our ever-evolving data landscape, regardless of your experience level.   Master the art of data management, from building ETL pipelines and data  systems to designing efficient data organization.  Progress from beginner   to advanced through a blend of interactive live sessions and hands-on  project-based learning. <br />  Sharpen your real-world skills by tackling impactful portfolio projects.   These projects will solidify your knowledge and empower you to impress   potential employers with your data engineering prowess, launching your  career with confidence.   ",
+        reference: 'data-engineering',
+        description: ["This program equips you with the in-demand skills to engineer the future        of data in our ever-evolving data landscape, regardless of your experience level.    Master the art of data management, from building ETL pipelines and data   systems to designing efficient data organization.  Progress from beginner to advanced through a blend of interactive live sessions and hands-on  project-based learning. ",
+            "Sharpen your real-world skills by tackling impactful portfolio projects.      These projects will solidify your knowledge and empower you to impress    potential employers with your data engineering prowess, launching your     career with confidence. "
+
+        ],
         category: "Data",
         thumbnail: 'https://images.unsplash.com/photo-1511376777868-611b54f68947?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGVuZ2luZWVyaW5nfGVufDB8fDB8fHww',
         tools: [
@@ -1047,60 +1427,67 @@ export const courses = [
             {
                 tool: 'SQL ',
                 color: 'bg-red-200 text-red-700'
-            },
-            {
-                tool: 'Bi-weekly mentorship  ',
-                color: 'bg-purple-200 text-purple-700'
-            },
+            }
+        ],
+        notes: [
+            'Snowflake',
+            'BigQuery',
+            'Red shift ',
+            'dbt',
+            'SQL',
+            'Bi-weekly mentorship'
         ],
         duration: '4',
         topics: '30+',
         weeks: '12',
         modules: '2',
         internshipBenefit: '3 months internship',
-        amountWithInternship: '150,000|$150 ',
-        amountWithoutInternship: '100,000|$100',
+        amountWithInternship: '₦150,000|$150 ',
+        amountWithoutInternship: '₦100,000|$100',
     },
     {
         id: 6,
         title: "Business Intelligence/ PowerBI Developer ",
-        description: "This comprehensive Business Intelligence/PowerBI developer program equips you with the expertise to drive business growth by utilizing powerful business intelligence tools. From Data Integration to Data CPT, to Data Modelling, to Advanced DAX computation and calculations that appraise business KPIs, to powerful insights and stories, to Deployment and maintenance,etc.               Regardless of your experience level, master the nuances of business intelligence,    progressing from beginner to advanced through a blend of live, interactive   sessions and hands-on project-based learning. <br />  Gain practical experience by tackling 5 real-world portfolio projects spanning   diverse industries like healthcare, e-commerce,  retail,   supply chain, and fintech. This program will empower you to demonstrate   your expertise to potential employers and launch your career with confidence.   ",
+        reference: 'business-intelligence',
+        description: [
+            "This comprehensive Business Intelligence/PowerBI developer program equips you with the expertise to drive business growth by utilizing powerful business intelligence tools. From Data Integration to Data CPT, to Data Modelling, to Advanced DAX computation and calculations that appraise business KPIs, to powerful insights and stories, to Deployment and maintenance,etc.  ",
+            "Regardless of your experience level, master the nuances of business intelligence,   progressing from beginner to advanced through a blend of live, interactive sessions and hands-on project-based learning",
+            "Gain practical experience by tackling 5 real-world portfolio projects spanning   diverse industries like healthcare, e-commerce,  retail, supply chain, and fintech. This program will empower you to demonstrate   your expertise to potential employers and launch your career with confidence.  ",
+        ],
         category: "Business",
         thumbnail: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         tools: [
             {
-                tool: 'PowerBI',
+                tool: 'PowerBI Development',
                 color: 'bg-yellow-200 text-yellow-700'
             },
             {
-                tool: 'Problem Solving Technique',
+                tool: 'SQL',
                 color: 'bg-slate-200 text-slate-700'
             },
-            {
-                tool: 'Bi weekly Mentorship',
-                color: 'bg-blue-200 text-blue-700'
-            },
-            {
-                tool: 'SQL',
-                color: 'bg-green-200 text-green-700'
-            },
-            {
-                tool: 'Presentation, Communication and Storytelling ',
-                color: 'bg-black text-white'
-            },
+        ],
+        notes: [
+            'PowerBI',
+            'Problem Solving Technique',
+            'Bi weekly Mentorship ',
+            'SQL',
+            'Presentation, Communication and Storytelling         - Presentation, Communication and story     to business stakeholders'
         ],
         duration: '4',
         topics: '40+',
         weeks: '12',
         modules: '5',
         internshipBenefit: '3 months internship',
-        amountWithInternship: '130,000|$130 ',
-        amountWithoutInternship: '100,000|$100',
+        amountWithInternship: '₦130,000|$130 ',
+        amountWithoutInternship: '₦100,000|$100',
     },
     {
         id: 6,
         title: "Business Analysis",
-             description: "Reviewed by industry experts, this bootcamp is designed for both                        aspiring beginners and experienced professionals seeking a smooth transition   into the high-demand field of Business Analysis.TOur 100% practical curriculum,   developed in collaboration with industry experts, equips you with the in-demand   skills and real-world experience to land your dream job quickly. ",
+        reference: 'business-analysis',
+             description: [
+                "Reviewed by industry experts, this bootcamp is designed for both         aspiring beginners and experienced professionals seeking a smooth transition into the high-demand field of Business Analysis.TOur 100% practical curriculum,  developed in collaboration with industry experts, equips you with the in-demand  skills and real-world experience to land your dream job quickly"
+             ],
         overview: "This intensive Bootcamp equips both beginners and seasoned professionals with the in-demand skills to bridge the gap between business and IT. Master Agile and Scrum methodologies to plan, execute, and complete projects effectively. Gain a deep understanding of Requirements Engineering Lifecycles and the critical role of System Analysis . You'll become a champion of business transformation, learning to discover, design, and implement valuable process improvements. Hone your skills through real-world Capstone Projects and walk away with double the power: the Digitaley Drive Business Analysis Certificate and the Scrum Alliance Certified ScrumMaster (CSM) Certification. <br />   This Bootcamp is your springboard to a rewarding career in Business Analysis. ",
         category: "Business",
         thumbnail: 'https://media.istockphoto.com/id/1321462048/photo/digital-transformation-concept-system-engineering-binary-code-programming.webp?b=1&s=170667a&w=0&k=20&c=8HOUiG9_M3Nm2TKS-EiGI8XdZctk7502R7s8NbCTm88=',

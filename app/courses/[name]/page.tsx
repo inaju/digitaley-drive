@@ -137,14 +137,28 @@
 import React from 'react'
 import RoundedButton from '@/app/components/custom/RoundedButton/RoundedButton'
 import MagneticButton from '@/app/components/custom/Magnetic'
-const page = () => {
+import { usePathname } from 'next/navigation'
+import { courses } from '@/app/data'
+import CourseAccordion from '@/app/components/CourseAccordion'
+const Page = () => {
+  const pathname = usePathname();
+  const courseSlug = pathname.split('/')[2];
+
+  console.log('Extracted slug:', courseSlug);
+
+  const foundObjectById = courses.find(obj => obj.reference === courseSlug);
+
+  console.log('Found object:', foundObjectById);
   return (
-    <div className='lato max-w-[90rem] pt-48 mb-24 mx-auto'>
+    <div className='lato h-fit overflow-y- pb-24 max-w-[90rem] pt-48 mx-auto'>
       <div className='flex justify-between gap-20'>
         <div className='w-6/12'>
-          <h1 className='text-3xl '>Product (UI/UX) Design Bootcamp</h1>
+          <h1 className='text-3xl '>{foundObjectById?.title}</h1>
           <p>14,000+ Enrolled</p>
-          <p className='mt-6 text-slate-600 text-lg'>This comprehensive Data Analyst Track Fellowship is designed to equip               |Picture here
+          <div className='flex flex-col mt-6 gap-5'>
+            {foundObjectById?.description.map((desc, i) => <p className='text-slate-600 text-lg' key={i}>{desc}</p>)}
+          </div>
+          {/* <p className='mt-6 text-slate-600 text-lg'>This comprehensive Data Analyst Track Fellowship is designed to equip               |Picture here
             you with the skills and knowledge to thrive in the field of data analytics,
             regardless of your experience level.  Master the nuances of data analysis,
             progressing from beginner to advanced through a blend of live, interactive
@@ -156,142 +170,149 @@ const page = () => {
             aviation, and fintech. This program will empower you to demonstrate
             your expertise to potential employers and hit the ground running in
             your data analyst career.
-          </p>
-          <div className="flex px-4 mt-8 flex-wrap gap-2 mb-0">
-              <span className="inline-flex items-center gap-x-1.5 py-2 px-5 rounded-full text-[16px] font-medium bg-teal-100 text-teal-800 dark:bg-teal-800/30 dark:text-teal-500">
-                Excel
-              </span>
-              <span className="inline-flex items-center gap-x-1.5 py-2 px-5 rounded-full text-[16px] font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
-                SQL
-              </span>
+          </p> */}
+          <div className="flex justify- gap-6 items-center mt-8">
+            <span className='text-[18px]'>
+            {foundObjectById?.topics} topics
+            </span>
+            <div className="w-3 h-3 rounded-full bg-greenPrimary"></div>
+            <span className='text-[18px]'>
+            {foundObjectById?.weeks} weeks
+            </span>
+            <div className="w-3 h-3 rounded-full bg-greenPrimary"></div>
+            <span className='text-[18px]'>
+              {foundObjectById?.modules} modules
+            </span>
+          </div>
 
-              <span className="inline-flex items-center gap-x-1.5 py-2 px-5 rounded-full text-[16px] font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500">
-                Power BI
-              </span>
+          {
+            foundObjectById?.tools && <div className="flex mt-8 flex-wrap gap-2 mb-0">
+            {
+              foundObjectById?.tools?.map((tool, i) => <span key={i} className={`inline-flex items-center gap-x-1.5 py-2 px-5 rounded-full text-[16px] font-medium ${tool.color} dark:bg-teal-800/30 dark:text-teal-500`}>
+                {tool.tool}
+              </span>)
+            }
 
-              <span className="inline-flex items-center gap-x-1.5 py-2 px-5 rounded-full text-[16px] font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-                Github
-              </span>
-
-              <span className="inline-flex items-center gap-x-1.5 py-2 px-5 rounded-full text-[16px] font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
-                Job/Freelance Preparation
-              </span>
-            </div>
+          </div>
+          }
 
         </div>
         <div className='w-6/12'>
-          <img src='https://res.cloudinary.com/dw9gte68q/image/upload/v1708306465/AcademyImages/ProductAcademy/afr_productschPD_ybew90.svg' />
+          <img src={foundObjectById?.thumbnail} className='rounded-xl'/>
 
-          {/* <div>
-          <p></p>
-        </div> */}
         </div>
       </div>
-      {/* <RoundedButton className='px-16 py-3 cursor-pointer rounded-xl w-fit '>
-        Enroll Now
-      </RoundedButton> */}
-      <div className=' mt-32 flex gap-16'>
+      {
+            foundObjectById?.notes &&
+      <div className=' mt-32 flex justify-between gap-16'>
 
         <div className=''>
-          <h1 className='text-2xl space text-greenPrimary'>Data Analytics Track without internship   </h1>
+          <h1 className='text-2xl  text-greenPrimary'>{foundObjectById?.title} Track without internship   </h1>
           <div className='mt-6'>
-            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>PowerBI </p>
-            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>Bi weekly Mentorship   </p>
-            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>SQL </p>
-            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>Hackathon Development   </p>
+            {
+              foundObjectById?.notes?.map((note, i) => <p key={i} className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span> {note}   </p>)
+            }
+            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>Pricing:<span className='ml-2'>{foundObjectById?.amountWithoutInternship}</span></p>
           </div>
-
-          {/* <div className='flex mt-16 gap-6'>
-            <RoundedButton className='px-16 py-3 cursor-pointer rounded-xl w-fit '>
-              Enroll Now
-            </RoundedButton>
-            <RoundedButton className='px-16 py-3 cursor-pointer rounded-xl w-fit '>
-              Installments
-            </RoundedButton>
-            <RoundedButton className='px-16 py-3 cursor-pointer rounded-xl w-fit '>
-              See Brochure
-            </RoundedButton>
-          
-          </div> */}
 
         </div>
         <div className=''>
-          <h1 className='text-2xl space text-greenPrimary'>Data Analytics Track with internship   </h1>
+          <h1 className='text-2xl  text-greenPrimary'>{foundObjectById?.title} Track with internship   </h1>
           <div className='mt-6'>
-            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>PowerBI </p>
+            {
+              foundObjectById?.notes?.map((note, i) => <p key={i} className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span> {note}   </p>)
+            }
+            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>3 months Internship</p>
+            {/* <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>PowerBI </p>
             <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>Bi weekly Mentorship   </p>
             <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>SQL </p>
             <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>Hackathon Development   </p>
             <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>3 months Internship</p>
+ */}
+
+            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>Pricing:<span className='ml-2'>{foundObjectById?.amountWithInternship}</span></p>
+
+            {/* <h1>Pricing: $100</h1> */}
           </div>
         </div>
 
 
-              
-      </div>     <div className="mt-7 grid gap-3 w-full sm:inline-flex flex-wrap px-4">
-             <a
-              className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-              href="https://paystack.com/pay/h6go2uvwlc"
-              target="_blank"
-            >
-              Enroll
-              <svg
-                className="w-2.5 h-2.5"
-                width={16}
-                height={16}
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <path
-                  d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                />
-              </svg>
-            </a>
-            <a
-              className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-              href="https://paystack.com/pay/djw1nmq8yo"
-              target="_blank"
-            >
-              Installments
-              <svg
-                className="w-2.5 h-2.5"
-                width={16}
-                height={16}
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <path
-                  d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                />
-              </svg>
-            </a>
-            <a
-              className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-              href="#application-form"
-            >
-              See Brochure
-              <svg
-                className="w-2.5 h-2.5"
-                width={16}
-                height={16}
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <path
-                  d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                />
-              </svg>
-            </a>
-          </div>
+
+      </div>     
+}
+      <div className="mt-7 grid gap-3 w-full sm:inline-flex flex-wrap px-4">
+        <a
+          className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+          href="https://paystack.com/pay/h6go2uvwlc"
+          target="_blank"
+        >
+          Enroll
+          <svg
+            className="w-2.5 h-2.5"
+            width={16}
+            height={16}
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+            />
+          </svg>
+        </a>
+        <a
+          className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+          href="https://paystack.com/pay/djw1nmq8yo"
+          target="_blank"
+        >
+          Installments
+          <svg
+            className="w-2.5 h-2.5"
+            width={16}
+            height={16}
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+            />
+          </svg>
+        </a>
+        <a
+          className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+          href="#application-form"
+        >
+          See Brochure
+          <svg
+            className="w-2.5 h-2.5"
+            width={16}
+            height={16}
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+            />
+          </svg>
+        </a>
+      </div>
+
+    <div className='mt-20 max-w-[60rem] mx-auto flex flex-col gap-5'>
+  {
+    foundObjectById?.curriculum && foundObjectById.curriculum.map((item, i) => <div key={i} className='h-fit overflow-x-hidden'>
+      <CourseAccordion index={i} title={item.title} week={item.week} topics={[...item.days]}/>
+    </div>)
+  }
+    </div>
+      
       <div>
 
       </div>
@@ -299,4 +320,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page;

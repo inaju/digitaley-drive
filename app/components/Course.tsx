@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { register } from "swiper/element";
 // import { courses } from "../data";
-import Course from "../card/Course";
 import SliderNavigation from "./SliderNavigation";
 import { centerVariants } from "../constant/motion";
 import { FollowingPointerDemo } from "./card/CustomCard";
@@ -254,9 +253,9 @@ const PopularCourses = () => {
         ))}
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-[100%] lg:w-9/12">
-                        {filteredCourses.map((course) => {
+                        {filteredCourses.map((course, i) => {
                             return (
-                                <FollowingPointerDemo course={course} />
+                                <FollowingPointerDemo key={i} index={i} course={course} />
                             );
 
                         })}

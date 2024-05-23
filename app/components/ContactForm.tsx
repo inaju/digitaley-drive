@@ -4,7 +4,7 @@ import RoundedButton from './custom/RoundedButton/RoundedButton';
 const ContactForm = () => {
     return (
         <div className='lato w-[100vw] py-12 lg:py-24 px-[1rem] bg-transparent flex flex-col lg:items-center justify-center'>
-            <h1 className='text-2xl lg:text-5xl text-greenPrimary'>Let's keep in touch</h1>
+            <h1 className='text-2xl lg:text-5xl text-greenPrimary'>Let&apos;s keep in touch</h1>
             <p className='text-gray-400 lg:text-center text-[16px] mt-2'>Subscribe to keep with fresh and existing updates. 
                 we promise not to spam you.</p>
 
@@ -13,7 +13,7 @@ const ContactForm = () => {
                 <RoundedButton className='px-8 rounded-xl w-fit cursor-pointer py-2 lg:py-3'>
                     <div className='flex flex-row gap-3 items-center '>
                         <p>
-                            SEND
+                            Subscribe
                         </p>
                         <LuSendHorizonal />
                     </div>

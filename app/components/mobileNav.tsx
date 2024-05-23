@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState, forwardRef } from "react";
 import logo from "../../public/digitaley-logo.png";
+import { usePathname } from "next/navigation";
 // import RoundedButton from "./custom/RoundedButton/RoundedButton";
 const navLinks = [
     { title: "Home", href: "/" },
@@ -52,7 +53,7 @@ const MobileNavbar = ({ toggleMenu, open }: { open: any, toggleMenu: any }) => {
         },
     };
 
-    const currentPath = window.location.pathname;
+    const currentPath = usePathname()
     return (
         <header>
 
@@ -91,7 +92,7 @@ const MobileNavbar = ({ toggleMenu, open }: { open: any, toggleMenu: any }) => {
                             >
                                 {navLinks.map((link, index) => {
                                     return (
-                                        <div className="overflow-hidden">
+                                        <div className="overflow-hidden" key={index}>
                                             <MobileNavLink
                                                 key={index}
                                                 title={link.title}
