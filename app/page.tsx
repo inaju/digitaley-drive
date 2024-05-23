@@ -69,7 +69,7 @@ export default function Home() {
       {/* <Team /> */}
       {/* <Faq /> */}
       {/* <FeedbackForm /> */}
-      {/* <div>
+      <div>
         <div
           className="icon-bar cursor-pointer"
           onClick={() =>
@@ -110,7 +110,7 @@ export default function Home() {
             ></path>
           </svg>{" "}
         </div>
-      </div> */}
+      </div>
       {/* <Footer /> */}
     </main>
   );

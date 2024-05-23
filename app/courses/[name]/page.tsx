@@ -150,9 +150,9 @@ const Page = () => {
 
   console.log('Found object:', foundObjectById);
   return (
-    <div className='lato h-fit overflow-y- pb-24 max-w-[90rem] pt-48 mx-auto'>
-      <div className='flex justify-between gap-20'>
-        <div className='w-6/12'>
+    <div className='lato h-fit overflow-y- pb-24 max-w-[90rem] px-[1rem] pt-20 lg:pt-48 mx-auto'>
+      <div className='flex flex-col-reverse lg:flex-row justify-between gap-20'>
+        <div className='w-[100%] lg:w-6/12'>
           <h1 className='text-3xl '>{foundObjectById?.title}</h1>
           <p>14,000+ Enrolled</p>
           <div className='flex flex-col mt-6 gap-5'>
@@ -197,14 +197,14 @@ const Page = () => {
           }
 
         </div>
-        <div className='w-6/12'>
+        <div className='w-[100%] lg:w-6/12'>
           <img src={foundObjectById?.thumbnail} className='rounded-xl'/>
 
         </div>
       </div>
       {
             foundObjectById?.notes &&
-      <div className=' mt-32 flex justify-between gap-16'>
+      <div className=' mt-16 lg:mt-32 flex flex-col lg:flex-row justify-between gap-16'>
 
         <div className=''>
           <h1 className='text-2xl  text-greenPrimary'>{foundObjectById?.title} Track without internship   </h1>
@@ -241,9 +241,10 @@ const Page = () => {
       </div>     
 }
       <div className="mt-7 grid gap-3 w-full sm:inline-flex flex-wrap px-4">
-        <a
+
+        {foundObjectById?.enroll &&  <a
           className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-          href="https://paystack.com/pay/h6go2uvwlc"
+          href={foundObjectById?.enroll}
           target="_blank"
         >
           Enroll
@@ -261,10 +262,14 @@ const Page = () => {
               strokeLinecap="round"
             />
           </svg>
-        </a>
+        </a>}
+       
+       
+
+        {foundObjectById?.installments &&
         <a
           className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-          href="https://paystack.com/pay/djw1nmq8yo"
+          href={foundObjectById?.installments}
           target="_blank"
         >
           Installments
@@ -283,6 +288,7 @@ const Page = () => {
             />
           </svg>
         </a>
+}
         <a
           className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
           href="#application-form"

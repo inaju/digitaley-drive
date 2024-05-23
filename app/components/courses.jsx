@@ -629,6 +629,7 @@ import { centerVariants } from "../constant/motion";
 import { FollowingPointerDemo } from "./card/CustomCard";
 import "swiper/css";
 import { courses } from "../data/index";
+import Link from "next/link";
 register();
 
 const PopularCourses = () => {
@@ -704,6 +705,7 @@ const PopularCourses = () => {
 
 
 const Courses = (props) => {
+    // const navigate = useNavi
   return (
    <div className="w-[100vw] ">
      <div
@@ -712,7 +714,7 @@ const Courses = (props) => {
     >
     
       <div className="cursor-pointer justify-end mb-4 flex items-center gap-4">
-        <p className="text-greenPrimary">Browse All Courses</p>
+        <Link href="/courses" className="text-greenPrimary" >Browse All Courses</Link>
         <img src="/assets/svg/arrow-right-green.svg" alt="" className="w-6" />
       </div>
       <PopularCourses />

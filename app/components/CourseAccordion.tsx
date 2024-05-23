@@ -11,7 +11,7 @@ const CourseAccordion = ({ title, week, topics, index }: {title: string, week: n
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className={`py-3 shadow-md border overflow-y-hidden ${!accordionOpen && 'h-14'} my-2 lato lg:px-[2rem] z-[${index}]`}>
+    <div className={`py-3 shadow-md px-[1rem] border overflow-y-hidden ${!accordionOpen && 'h-14'} my-2 lato lg:px-[2rem] z-[${index}]`}>
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between w-full h-8 items-center bg-transparent"

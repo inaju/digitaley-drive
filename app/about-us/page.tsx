@@ -111,16 +111,18 @@ We believe in the transformative power of education and are committed to fosteri
         </div>
         <hr className='my-16' />
         <div className='w-[100%]'>
-          <h1 className='text-greenPrimary text-2xl text-center'>VALUE PROPOSITION</h1>
-          <p className='text-black mt-8 text-5xl font-[600] text-center mb-20'>How we can help</p>
+          <h1 className='text-greenPrimary text-[15px]  text-center'>About us
+</h1>
+          <p className='text-slate-700 mt-1 text-2xl font-[400] text-center '>An Edtech that equips learners to become global talents in demand by leveraging technology to provide the best learning experience on tech skills.</p>
           {/* // <PopularCourses /> */}
+          {/* <p className='text-black'>Learn Evolve Build Innovate </p> */}
 
-          <div className='flex flex-col gap-8 lg:flex-row justify-evenly items-center'>
+          <div className='flex flex-col gap-8 lg:flex-row justify-evenly items-center mt-20'>
             <VisionCard fontSize="text-3xl  lg:text-5xl" style='w-[100%] lg:w-[27.5rem] h-[30.5rem]' img='https://cdn-icons-png.flaticon.com/128/2120/2120488.png' title='Vision' description='To Build Talents through an ever-consistent technological model and a transforming learning experience.' />
             <VisionCard fontSize="text-3xl  lg:text-5xl" style='w-[100%] lg:w-[27.5rem] h-[30.5rem]' img='https://cdn-icons-png.flaticon.com/128/694/694900.png' title='Mission' description='To stand as an ever-growing platform for building and equipping learners to become global talents in demand.' />
           </div>
           <div className=' mt-40 mb-32'>
-            <h1 className='text-black mt-8 text-5xl font-[600] text-center'>Our Visions</h1>
+            <h1 className='text-black mt-8 text-5xl font-[600] text-center'>Our Values</h1>
             <div className='flex flex-col lg:flex-row gap-6 justify-evenly items-center mt-12'>
 
               <VisionCard fontSize="text-3xl" style='w-[22.5rem] h-[30.5rem]' img='https://cdn-icons-png.flaticon.com/128/14535/14535805.png' title='Excellence' description='We uphold the highest quality standards in our services, offering a platform for technology focused individuals to learn, evolve, build and scale.' />
