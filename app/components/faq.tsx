@@ -101,7 +101,7 @@ const Faq = () => {
     <div className="bg-greenPrimary px-[1rem] w-[100vw] lato py-24 flex flex-col justify-center lg:items-center">
       <p className="text-white border-b text-lg pb-1 border-dashed border-white">We&apos;ve got answers</p>
       <h1 className="text-white text-3xl lg:text-5xl mt-6 lg:mt-0">Frequently Asked Questions</h1>
-      <div className="p-4 mt-16 max-w-[70rem] px-[1rem] rounded-lg grid grid-cols-1 lg:grid-cols-3 gap-12 gap-">
+      <div className="p-4 mt-16 max-w-[70rem] px-[1rem] rounded-lg grid grid-cols-1 lg:grid-cols-2 gap-12 gap-">
       <Accordion
         title="Will there be any project at the completion of the program?"
         answer="Yes, you will be given about 5 projects to build after the

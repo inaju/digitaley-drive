@@ -153,5 +153,6 @@ const SliderNavigation = forwardRef(({ length }, ref) => {
         </div>
     );
 });
+SliderNavigation.displayName = 'SliderNavigation';
 
 export default SliderNavigation;

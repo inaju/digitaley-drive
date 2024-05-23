@@ -246,7 +246,7 @@ const Testimonials = (props: Props) => {
         </div>
         {/* End Title */}
         {/* Grid */}
-        <div className="lg:grid flex flex-col lg:grid-cols-2 gap-6">
+        <div className="lg:grid flex flex-col lg:grid-cols-3 gap-6">
           {/* Card */}
           <div className="flex h-auto">
             <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">

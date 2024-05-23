@@ -140,7 +140,7 @@ import { useEscapePress } from "../utils/use-escape-press";
 
 // console.log(careerPaths);
 
-const Page = () => {
+const page = () => {
   const [scope, animate] = useAnimate();
   const fullscreenFeature = useFeatureStore((state) => state.fullscreenFeature);
   const lastFullscreenFeature = useFeatureStore(
@@ -365,7 +365,7 @@ const Page = () => {
   )
 }
 
-export default Page
+export default page
 
 {/* <Faq />
 <ContactForm />
