@@ -314,7 +314,7 @@ Thank you Digitaleydrive for this wonderful opportunity.
           </div>
           {/* End Card */}
           {/* Card */}
-          <div className="flex h-auto col-span-2">
+          <div className="flex h-auto">
             <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
               <div className="flex-auto p-4 md:p-6">
                 <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
@@ -346,7 +346,7 @@ Thank you Digitaleydrive for this wonderful opportunity.
         </div>
         {/* End Grid */}
         {/* Grid */}
-        <div className="mt-20 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">
+        <div className="mt-20 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-4 lg:gap-8">
           {/* Stats */}
           <div>
             <h4 className="text-lg sm:text-xl font-semibold text-white">
@@ -364,18 +364,29 @@ Thank you Digitaleydrive for this wonderful opportunity.
               Students
             </h4>
             <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
-              3,000+
+            18,000+
             </p>
             <p className="mt-1 text-gray-400">partner with Digitaley Drive</p>
           </div>
           {/* End Stats */}
+          {/* Stats */}
+<div className="flex flex-col items-center">
+          <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
+            Countries
+          </h4>
+          <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
+            26+
+          </p>
+          <p className="mt-1 text-gray-500">Impacted</p>
+        </div>
+        {/* End Stats */}
           {/* Stats */}
           <div>
             <h4 className="text-lg sm:text-xl font-semibold text-white">
               Courses
             </h4>
             <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
-              5
+              6+
             </p>
             <p className="mt-1 text-gray-400">this year alone</p>
           </div>
