@@ -54,7 +54,7 @@ const HowDigitaley = (props: Props) => {
     
 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-12 w-[100%] mt-16 lg:mt-0 lg:w-6/12">
   {
-    reasons.map((item) => <div className="text-center border-2 py-3 px-[1rem] border-dashed border-greenPrimary" key={item.title}>
+    reasons.map((item) => <div className="text-center py-3 px-[1rem]" key={item.title}>
       <h1 className="text-greenPrimary text-3xl">{item.title}</h1>
       <p className="mt-1">{item.description}</p>
     </div>)

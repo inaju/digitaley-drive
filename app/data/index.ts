@@ -1295,7 +1295,10 @@ export const courses = [
         topics: '40+',
         weeks: '12',
         modules: '5',
-        internshipBenefit: '3 months internship'
+        internshipBenefit: '3 months internship',
+        enroll: 'https://paystack.com/pay/h6go2uvwlc',
+        installments: 'https://paystack.com/pay/djw1nmq8yo',
+        brochure: ''
     },
     {
 
@@ -1352,6 +1355,9 @@ export const courses = [
         internshipBenefit: '3 months internship',
         amountWithInternship: '₦150,000|$150 ',
         amountWithoutInternship: '₦100,000|$100',
+        enroll: 'https://paystack.com/pay/krrhzqdgdl',
+        installments: 'https://paystack.com/pay/hvezkrazux',
+        brochure: ''
     },
     {
         id: 4,
@@ -1395,7 +1401,10 @@ export const courses = [
         topics: '20+',
         weeks: '12',
         modules: '3',
-        amountWithoutInternship: '₦30,000|$300',
+        amountWithoutInternship: '₦30,000|$30',
+        enroll: 'https://paystack.com/pay/-yjzyvx9cd',
+        // installments: 'https://paystack.com/pay/hvezkrazux',
+        brochure: ''
     },
     {
         id: 5,
@@ -1444,6 +1453,9 @@ export const courses = [
         internshipBenefit: '3 months internship',
         amountWithInternship: '₦150,000|$150 ',
         amountWithoutInternship: '₦100,000|$100',
+        enroll: 'https://paystack.com/pay/krrhzqdgdl',
+        installments: 'https://paystack.com/pay/hvezkrazux',
+        brochure: ''
     },
     {
         id: 6,
@@ -1480,6 +1492,9 @@ export const courses = [
         internshipBenefit: '3 months internship',
         amountWithInternship: '₦130,000|$130 ',
         amountWithoutInternship: '₦100,000|$100',
+        enroll: 'https://paystack.com/pay/il6uz88ryc',
+        installments: 'https://paystack.com/pay/9x3pfjhsqa',
+        brochure: ''
     },
     {
         id: 6,
@@ -1595,6 +1610,9 @@ export const courses = [
         topics: '20+',
         weeks: '12',
         modules: '2',
+        enroll: 'https://docs.google.com/forms/d/e/1FAIpQLSfRSrRrbbm1ufhsaaKW1mdmdgVceoSPbPnNXH7Bb9pNr27nVg/viewform',
+        // installments: 'https://paystack.com/pay/hvezkrazux',
+        brochure: ''
     },
 ]
 
