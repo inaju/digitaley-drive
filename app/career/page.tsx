@@ -20,7 +20,7 @@ const Page = () => {
   }, []);
     return (
         <div className=' overflow-x-hidden pt-24 mx-auto max-w-[100vw] lato h-fit'>
-            <div className='h-[30rem] bg-slate-800 overflow-hidden lg:mx-[2rem] lg:rounded-3xl relative flex flex-col items-center justify-center'>
+            <div className='h-[30rem] lg:mx-[4rem] bg-slate-800 overflow-hidden lg:rounded-3xl relative flex flex-col items-center justify-center'>
             <h1 className='px-[1rem] lg:text-center text-greenPrimary leading-[3rem] lg:leading-[5rem] xl:leading-[5rem] text-[3rem] lg:text-[6rem]'>Join our world-class team <br className='hiidden lg:flex'/> Innovators & Excellence</h1>
             <p className='px-[1rem] mt-12 text-xl text-white lg:text-center'>our philosophy is simple _____ we strive for excellence and we believe in a giving <br />exceptional / transformational learning experience</p>
             </div>

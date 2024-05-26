@@ -30,7 +30,7 @@ const Page = () => {
 
   return (
     <div className='max-w-[100vw] overflow-x-hidden'>
-      <div className='lato h-fit overflow-y- pb-24 max-w-[85rem] px-[1rem] pt-20 lg:pt-48 mx-auto'>
+      <div className='lato h-fit overflow-y- pb-24 max-w-[85rem] px-[1rem] lg:mx-[3rem] pt-20 lg:pt-48 mx-auto'>
       <div className='flex flex-col-reverse lg:flex-row justify-between gap-20'>
         <div className='w-[100%] lg:w-7/12'>
           <h1 className='text-3xl '>{foundObjectById?.title}</h1>
@@ -50,8 +50,80 @@ const Page = () => {
             <span className='text-[18px]'>
               {foundObjectById?.modules} modules
             </span>
+            
           </div>
+       {
+        courseSlug == "business-analysis" &&    <div className="mt-7 grid gap-3 w-full sm:inline-flex flex-wrap">
 
+        {foundObjectById?.enrollWithoutInternship &&  <a
+          className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+          href={foundObjectById?.enrollWithoutInternship}
+          target="_blank"
+        >
+          Enroll
+          <svg
+            className="w-2.5 h-2.5"
+            width={16}
+            height={16}
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+            />
+          </svg>
+        </a>}
+        
+        
+        
+        {foundObjectById?.installmentsWithoutInternship &&
+        <a
+          className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+          href={foundObjectById?.installmentsWithoutInternship}
+          target="_blank"
+        >
+          Installments
+          <svg
+            className="w-2.5 h-2.5"
+            width={16}
+            height={16}
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+            />
+          </svg>
+        </a>
+        }
+        <a
+          className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+          href="#application-form"
+        >
+          See Brochure
+          <svg
+            className="w-2.5 h-2.5"
+            width={16}
+            height={16}
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+            />
+          </svg>
+        </a>
+        </div>
+       }
           {
             foundObjectById?.tools && <div className="flex mt-8 flex-wrap gap-2 mb-0">
             {
@@ -85,9 +157,9 @@ const Page = () => {
 
             <div className="mt-7 grid gap-3 w-full sm:inline-flex flex-wrap">
 
-{foundObjectById?.enroll &&  <a
+{foundObjectById?.enrollWithoutInternship &&  <a
   className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-  href={foundObjectById?.enroll}
+  href={foundObjectById?.enrollWithoutInternship}
   target="_blank"
 >
   Enroll
@@ -109,10 +181,10 @@ const Page = () => {
 
 
 
-{foundObjectById?.installments &&
+{foundObjectById?.installmentsWithoutInternship &&
 <a
   className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-  href={foundObjectById?.installments}
+  href={foundObjectById?.installmentsWithoutInternship}
   target="_blank"
 >
   Installments
@@ -156,94 +228,91 @@ const Page = () => {
           </div>
 
         </div>
-        <div className=''>
-          <h1 className='text-2xl  text-greenPrimary'>{foundObjectById?.title} Track with internship   </h1>
-          <div className='mt-6'>
-            {
-              foundObjectById?.notes?.map((note, i) => <p key={i} className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>.</span> {note}   </p>)
-            }
-            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>.</span>3 months Internship</p>
-            {/* <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>PowerBI </p>
-            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>Bi weekly Mentorship   </p>
-            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>SQL </p>
-            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>Hackathon Development   </p>
-            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>*</span>3 months Internship</p>
- */}
+       {
+        foundObjectById.amountWithInternship &&  <div className=''>
+        <h1 className='text-2xl  text-greenPrimary'>{foundObjectById?.title} Track with internship   </h1>
+        <div className='mt-6'>
+          {
+            foundObjectById?.notes?.map((note, i) => <p key={i} className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>.</span> {note}   </p>)
+          }
+          <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>.</span>3 months Internship</p>
+       
 
-            <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>.</span>Pricing:<span className='ml-2'>{foundObjectById?.amountWithInternship}</span></p>
-            <div className="mt-7 grid gap-3 w-full sm:inline-flex flex-wrap">
+          <p className='flex  items-center gap-4 text-lg'><span className='text-greenPrimary text-2xl'>.</span>Pricing:<span className='ml-2'>{foundObjectById?.amountWithInternship}</span></p>
+          <div className="mt-7 grid gap-3 w-full sm:inline-flex flex-wrap">
 
-{foundObjectById?.enroll &&  <a
-  className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-  href="#"
-  target="_blank"
+{foundObjectById?.enrollWithInternship &&  <a
+className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+href={foundObjectById?.enrollWithInternship}
+target="_blank"
 >
-  Enroll
-  <svg
-    className="w-2.5 h-2.5"
-    width={16}
-    height={16}
-    viewBox="0 0 16 16"
-    fill="none"
-  >
-    <path
-      d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-    />
-  </svg>
+Enroll
+<svg
+  className="w-2.5 h-2.5"
+  width={16}
+  height={16}
+  viewBox="0 0 16 16"
+  fill="none"
+>
+  <path
+    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+  />
+</svg>
 </a>}
 
 
 
-{foundObjectById?.installments &&
+{foundObjectById?.installmentsWithInternship &&
 <a
-  className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-  href="#"
-  target="_blank"
+className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+href={foundObjectById?.installmentsWithInternship}
+target="_blank"
 >
-  Installments
-  <svg
-    className="w-2.5 h-2.5"
-    width={16}
-    height={16}
-    viewBox="0 0 16 16"
-    fill="none"
-  >
-    <path
-      d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-    />
-  </svg>
+Installments
+<svg
+  className="w-2.5 h-2.5"
+  width={16}
+  height={16}
+  viewBox="0 0 16 16"
+  fill="none"
+>
+  <path
+    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+  />
+</svg>
 </a>
 }
 <a
-  className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-  href="#application-form"
+className="inline-flex justify-center items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenSecondary border border-transparent text-sm lg:text-base hover:text-white text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+href="#application-form"
 >
-  See Brochure
-  <svg
-    className="w-2.5 h-2.5"
-    width={16}
-    height={16}
-    viewBox="0 0 16 16"
-    fill="none"
-  >
-    <path
-      d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-    />
-  </svg>
+See Brochure
+<svg
+  className="w-2.5 h-2.5"
+  width={16}
+  height={16}
+  viewBox="0 0 16 16"
+  fill="none"
+>
+  <path
+    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+  />
+</svg>
 </a>
 </div>
-            {/* <h1>Pricing: $100</h1> */}
-          </div>
+          {/* <h1>Pricing: $100</h1> */}
         </div>
+      </div>
+       }
 
 
 

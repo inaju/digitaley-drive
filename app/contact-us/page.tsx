@@ -77,10 +77,10 @@ const Page = () => {
     <motion.section
       // style={{ opacity }}
       // ref={targetRef}
-      className="relative max-w-[100vw] bg-slate-800 pt-20 lg:pt-12 overflow-x-hidden flex flex-col h-fit bg- space text-white "
+      className="relative max-w-[100vw] bg-slate-800 py-20 lg:py-12 overflow-x-hidden flex flex-col h-fit bg- space text-white "
     >
       <div className='absolute top-0 w-[100vw] left-0 bg-white h-[72px]'></div>
-      <div className='z-0 flex px-[1rem]  lg:pt-24 w-[100%] pb-12 lg:pb-0 flex-col-reverse lg:flex-row max-w-[90rem] lg:h-[100vh] mx-auto justify-between items-center lg:items-start'>
+      <div className='z-0 flex px-[1rem] lg:px-[3rem]  lg:py-24 pb-12 w-[100%] flex-col-reverse lg:flex-row max-w-[90rem] lg:h-fit mx-auto justify-between items-center lg:items-start'>
         <div className='text-black w-[100%] mt-16 lg:mt-0 lg:w-5/12'>
           <h1 className='text-5xl lg:text-8xl text-greenPrimary'>Contact Us</h1>
           <p className='mt-3 text-white'>Email, call or complete the form to learn how Digitaley Drive can take your tech skills to the next level.</p>
@@ -123,7 +123,7 @@ const Page = () => {
             }
           </div>
         </div>
-        <div className='border text-greenPrimary py-6 shadow-md w-[100%] lg:w-[55%] bg-white z-0 p-3 px-5 rounded-xl'>
+        <div className='border text-greenPrimary py-6 shadow-md w-[100%] lg:w-[50%] bg-white z-0 p-3 px-5 rounded-xl'>
           <h1>Get in Touch</h1>
           <p>You can reach us anytime</p>
 
