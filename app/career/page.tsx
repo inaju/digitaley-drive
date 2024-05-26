@@ -8,7 +8,7 @@ import Faq from '../components/faq';
 import ContactForm from '../components/ContactForm';
 import Works from '../components/Works';
 import Lenis from "@studio-freight/lenis";
-const page = () => {
+const Page = () => {
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -68,4 +68,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page;
