@@ -22,32 +22,13 @@ export function FollowingPointerDemo({ course, width, index }: any) {
             </span>
             <div className="w-2 h-2 rounded-full bg-greenPrimary"></div>
             <span>
-              12 weeks
+            {course.weeks && course.weeks} weeks
             </span>
             <div className="w-2 h-2 rounded-full bg-greenPrimary"></div>
             <span>
-              5 modules
+            {course.modules && course.modules} modules
             </span>
           </div>
-          {/* <h2 className="font-normal my-4 text-sm text-zinc-500">
-            {course.description}
-          </h2> */}
-          {/* <div className="flex flex-wrap gap-2 mb-0 h-[70px]">
-            {
-
-              course.tools && course.tools.map((tool: any) => <span className={`inline-flex items-center h-7 gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium ${tool.color} dark:bg-white/10 dark:text-white`}>
-
-                {
-                  tool.tool
-                }
-              </span>)
-            }
-
-          </div> */}
-          {/* <div className="flex gap-3 h-8 justify-end items-center text-[#14452f] ">
-            <FaClock />
-            <h1 className="text-[15px]">3 months</h1>
-          </div> */}
           <div className="group-hover:flex hidden flex-row justify-between items-center mt-2">
            <Link href={`/courses/${course.reference}`} className="">
             <RoundedButton  className='px-10 py-2 cursor-pointer rounded-full mt-6 w-fit '>

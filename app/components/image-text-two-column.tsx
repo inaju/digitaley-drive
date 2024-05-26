@@ -278,7 +278,7 @@ const ImageTextTwoColumn = (props: Props) => {
                    <div className="">
            <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGF0YSUyMGFuYWx5c3R8ZW58MHx8MHx8fDA%3D" 
            className="w-[100%] lg:w-9/12 rounded-xl h-auo shadow-md"/>
-           <img src="https://i0.wp.com/techwriteable.com/wp-content/uploads/2024/05/community.webp?resize=1536%2C808&ssl=1" 
+           <img src="https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGVhcm5pbmclMjBtYW5hZ2VtZW50JTIwc3lzdGVtfGVufDB8fDB8fHww" 
            className="w-7/12 rounded-xl h-auto max-h-[15rem] relative bottom-16 left-32 lg:left-64 shadow-md"/>
          {/* https://i0.wp.com/techwriteable.com/wp-content/uploads/2024/02/cta-image-10.jpg?w=560&ssl=1 */}
          </div>

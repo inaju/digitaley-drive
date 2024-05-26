@@ -65,19 +65,20 @@ export default function Home() {
       <Faq />
  
       <Works />
-      <ContactForm />
+      {/* <ContactForm /> */}
       {/* <Team /> */}
       {/* <Faq /> */}
       {/* <FeedbackForm /> */}
       <div>
         <div
-          className="icon-bar cursor-pointer"
+          className="icon-bar cursor-pointer flex flex-row-reverse  gap-4 items-center"
           onClick={() =>
             router.push(
               "https://wa.me/+2349034718259?text=Hello, I want to learn more about digitaley drive, I came from the website!"
             )
           }
         >
+          <div className=" w-14 h-14">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -109,6 +110,8 @@ export default function Home() {
               clip-rule="evenodd"
             ></path>
           </svg>{" "}
+          </div>
+          <p className=" font-[500] text-greenPrimary text-[16px] lg:text-[18px] text-center">Chat with us</p>
         </div>
       </div>
       {/* <Footer /> */}

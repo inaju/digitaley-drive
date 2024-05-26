@@ -20,8 +20,8 @@ const texts = [
   },
   {
     id: 3,
-    title: 'Media Inquiries',
-    description: 'For media inquiries, interviews, or press-related information, please contact our media relations team. We are available to provide the information you need and arrange interviews with our experts.'
+    title: 'Inquiries',
+    description: 'For inquiries, please contact our team using this form. We are more than happy to provide the information you need.'
   },
 ];
 const Page = () => {
@@ -75,31 +75,55 @@ const Page = () => {
 
   return (
     <motion.section
-      style={{ opacity }}
-      ref={targetRef}
-      className="relative max-w-[100vw]  pt-20 lg:pt-12 overflow-x-hidden flex flex-col h-fit bg-white space text-white before:pointer-events-none before:fixed before:inset-0 before:z-0 before:bg-[radial-gradient(circle_farthest-side_at_var(--x,_100px)_var(--y,_100px),_var(--color-secondary)_0%,_transparent_100%)] before:opacity-40"
+      // style={{ opacity }}
+      // ref={targetRef}
+      className="relative max-w-[100vw] bg-slate-800 pt-20 lg:pt-12 overflow-x-hidden flex flex-col h-fit bg- space text-white "
     >
-      <div className='z-0 flex px-[1rem] pb-12 lg:pb-0 flex-col-reverse lg:flex-row max-w-[90rem] lg:h-[100vh] mx-auto justify-between items-center'>
+      <div className='absolute top-0 w-[100vw] left-0 bg-white h-[72px]'></div>
+      <div className='z-0 flex px-[1rem]  lg:pt-24 w-[100%] pb-12 lg:pb-0 flex-col-reverse lg:flex-row max-w-[90rem] lg:h-[100vh] mx-auto justify-between items-center lg:items-start'>
         <div className='text-black w-[100%] mt-16 lg:mt-0 lg:w-5/12'>
-          <h1 className='text-5xl lg:text-8xl text-slate-700'>Contact Us</h1>
-          <p className='mt-3 text-slate-800'>Email, call or complete the form to learn how <br /> Digitaley can take your tech skills to the next level.</p>
-          <p className='mt-3 text-slate-800'>contact@digitaleydrive.com</p>
-          <p className='mt-3 text-slate-800'>+298 3498 0985</p>
+          <h1 className='text-5xl lg:text-8xl text-greenPrimary'>Contact Us</h1>
+          <p className='mt-3 text-white'>Email, call or complete the form to learn how Digitaley Drive can take your tech skills to the next level.</p>
+          <p>
+                <a
+                  className="inline-flex gap-x-2 text-white hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
+                  href="mailto:contact@digitaleydrive.com"
+                >
+                  contact@digitaleydrive.com
+                </a>
+              </p>
+          <p>
+                <a
+                  className="inline-flex gap-x-2 text-white hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
+                  href="tel:+2349034718259"
+                >
+                  +234 903 471 8259
+                </a>
+              </p>
+              <p>
+                <a
+                  className="inline-flex gap-x-2 text-white hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
+                  href="tel:+2349161568320"
+                >
+                  +234 916 156 8320
+                </a>
+              </p>
+          {/* <p className='mt-3 text-white'>+298 3498 0985</p> */}
 
-          <p className='underline font-[500] text-greenPrimary mt-3'>Customer Support</p>
+          {/* <p className='underline font-[500] text-greenPrimary mt-3'>Customer Support</p> */}
 
           <div className='flex flex-col lg:flex-row flex-wrap gap-6 mt-8'>
             {
               texts.map((item, i) => (
                 <div key={i}>
                   <h1 className='text-[17px] text-greenPrimary'>{item.title}</h1>
-                  <p className='text-slate-800'>{item.description}</p>
+                  <p className='text-white'>{item.description}</p>
                 </div>
               ))
             }
           </div>
         </div>
-        <div className='border text-greenPrimary py-6 shadow-md w-[100%] lg:w-6/12 bg-white z-0 p-3 px-5 rounded-xl'>
+        <div className='border text-greenPrimary py-6 shadow-md w-[100%] lg:w-[55%] bg-white z-0 p-3 px-5 rounded-xl'>
           <h1>Get in Touch</h1>
           <p>You can reach us anytime</p>
 
@@ -140,7 +164,6 @@ const Page = () => {
 
       <div className='z-0 bg-white'>
       <Faq />
-      <ContactForm />
       <Works />
       </div>
 

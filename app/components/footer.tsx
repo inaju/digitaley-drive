@@ -2,12 +2,14 @@
 import React from "react";
 import { IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter, IoLogoFacebook } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
-import RoundedButton from "./custom/RoundedButton/RoundedButton";
+import { LuSendHorizonal } from "react-icons/lu";
+import RoundedButton from './custom/RoundedButton/RoundedButton';
+import MagneticButton from "./custom/Magnetic";
 type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <div className="bg-green-800 lato">
+    <div className="bg-slate-800 lato">
       <footer className="w-full  max-w-[85rem] py-16 px-4 sm:px-6 lg:px-8 mx-auto">
         {/* Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
@@ -262,9 +264,9 @@ href="/contact-us"
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-300 hover:text-green-500 dark:text-gray-300 dark:hover:text-gray-200"
-                  href="mailto:hello@digitaleydrive.com"
+                  href="mailto:contact@digitaleydrive.com"
                 >
-                  hello@digitaleydrive.com
+                  contact@digitaleydrive.com
                 </a>
               </p>
               <p>
@@ -290,35 +292,71 @@ href="/contact-us"
         </div>
 
 
-        <div className="flex flex-col px-[1rem] lg:flex-row justify-between items-center">
-          <div className="w-[100%] lg:w-fit relative flex flex-row gap-4">
+        <div className="flex flex-col-reverse lg:flex-row justify-between items-center">
+          <div className="w-[100%] lg:w-fit mt-12 lg:mt-0 relative flex flex-row gap-4">
 
+          <MagneticButton>
           <a href="https://www.instagram.com/digitaleydrive/" target="_blank" className="md:mt-[4rem] mt-[2rem] cursor-pointer relative flex flex-row gap-4">
             <div className="text-white text-2xl p-1 rounded-md bg-greenPrimary shadow-md">
               <IoLogoInstagram />
             </div>
             </a>
+          </MagneticButton>
+
+          <MagneticButton>
             <a href="https://ne.linkedin.com/company/digitaley-drive.ng" target="_blank" className="md:mt-[4rem] mt-[2rem] cursor-pointer relative flex flex-row gap-4">
             <div className="text-white text-2xl p-1 rounded-md bg-greenPrimary shadow-md">
               <IoLogoLinkedin />
             </div>
             </a>
-            <a href="https://twitter.com/Digitaleydrive" target="_blank" className="md:mt-[4rem] mt-[2rem] cursor-pointer relative flex flex-row gap-4">
+          </MagneticButton>
+            
+
+            <MagneticButton>
+              <a href="https://twitter.com/Digitaleydrive" target="_blank" className="md:mt-[4rem] mt-[2rem] cursor-pointer relative flex flex-row gap-4">
             <div className="text-white text-2xl p-1 rounded-md bg-greenPrimary shadow-md">
               <IoLogoTwitter />
             </div>
             </a>
-            <a href="https://www.facebook.com/p/Digitaley-Drive-100085373543996/" target="_blank" className="md:mt-[4rem] mt-[2rem] cursor-pointer relative flex flex-row gap-4">
+            </MagneticButton>
+            
+
+            <MagneticButton>
+              <a href="https://www.facebook.com/p/Digitaley-Drive-100085373543996/" target="_blank" className="md:mt-[4rem] mt-[2rem] cursor-pointer relative flex flex-row gap-4">
             <div className="text-white text-2xl p-1 rounded-md bg-greenPrimary shadow-md">
               <IoLogoFacebook />
             </div>
             </a>
+            </MagneticButton>
+            
 
 
 
           </div>
 
-          <div></div>
+          <div className="w-[100%] lg:w-fit ">
+          <h1 className='text-2xl lg:text-5xl text-greenPrimary'>Let&apos;s keep in touch</h1>
+            <p className='text-white text-[16px] mt-2'>Subscribe to keep with fresh and existing updates. 
+                we promise not to spam you.</p>
+
+            <div className='flex flex-col w-[100%] lg:w-fit lg:flex-row lg:items-center gap-5 lg:gap-8 mt-4'>
+                <input placeholder='Enter your email address' className='max-w-[35rem] w-[100%] lg:w-[30rem] px-4 py-3 outline-none border-greenPrimary border rounded-md' />
+                <RoundedButton className='px-8 rounded-xl w-fit cursor-pointer py-2 lg:py-3'>
+                    <div className='flex flex-row gap-3 items-center '>
+                        <p>
+                            Subscribe
+                        </p>
+                        <LuSendHorizonal />
+                    </div>
+                </RoundedButton>
+            </div>
+
+            <div className='mt-4 w-[40rem] flex items-center gap-4'>
+                <input type='checkbox' />
+                <p className='text-greenPrimary'>I agree to my email address being stored and <br />
+                    used to receive monthly newsletter.</p>
+            </div>
+          </div>
         </div>
 
       </footer>

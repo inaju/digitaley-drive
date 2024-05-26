@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, {useEffect} from 'react'
 import { jobOpenings } from '../data'
 import MagneticButton from '../components/custom/Magnetic'
 import { CiLocationOn } from "react-icons/ci";
@@ -7,12 +7,23 @@ import { IoMdTime } from "react-icons/io";
 import Faq from '../components/faq';
 import ContactForm from '../components/ContactForm';
 import Works from '../components/Works';
+import Lenis from "@studio-freight/lenis";
 const page = () => {
+
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
     return (
-        <div className='pt-24 lg:pt-40 overflow-x-hidden mx-auto max-w-[100vw] lato h-fit'>
-            <h1 className='px-[1rem] lg:text-center text-greenPrimary leading-[3rem] lg:leading-[5rem] xl:leading-[7rem] text-[3rem] lg:text-[8rem]'>Join our world-class team <br className='hiidden lg:flex'/> creators & dreamers</h1>
-            <p className='px-[1rem] mt-12 text-xl lg:text-center'>our philosophy is simple _____ hire a team of diverse, passionate people <br className='hiidden lg:flex'/>
-                and foster a culture that empowers you to do your best work.</p>
+        <div className=' overflow-x-hidden pt-24 mx-auto max-w-[100vw] lato h-fit'>
+            <div className='h-[30rem] bg-slate-800 overflow-hidden lg:mx-[2rem] lg:rounded-3xl relative flex flex-col items-center justify-center'>
+            <h1 className='px-[1rem] lg:text-center text-greenPrimary leading-[3rem] lg:leading-[5rem] xl:leading-[5rem] text-[3rem] lg:text-[6rem]'>Join our world-class team <br className='hiidden lg:flex'/> Innovators & Excellence</h1>
+            <p className='px-[1rem] mt-12 text-xl text-white lg:text-center'>our philosophy is simple _____ we strive for excellence and we believe in a giving <br />exceptional / transformational learning experience</p>
+            </div>
 
             <div className='px-[1rem] max-w-[70rem] flex flex-col gap-16 mx-auto my-20 lg:my-40'>
                 {jobOpenings.map((job, i) => 
@@ -38,19 +49,19 @@ const page = () => {
                             </MagneticButton>
                         </div>
                     </div>
-
-                    <MagneticButton >
+<></>
+                    {/* <MagneticButton >
                         <div className='flex items-center gap-4 h-fit cursor-pointer'>
                             <h1 className='text-[18px]'>Apply</h1>
                             <img src="/assets/svg/arrow-right-up-green.svg" alt="" className="w-5 h-5" />
 
                         </div>
-                    </MagneticButton>
+                    </MagneticButton> */}
                 </div>)}
             </div>
             <div className='z-0 bg-white'>
       <Faq />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Works />
       </div>
         </div>

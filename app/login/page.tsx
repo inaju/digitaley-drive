@@ -50,7 +50,7 @@ const page = () => {
                 muted
                 loop
             >
-                <source src="/bg5.mp4" type="video/mp4" />
+                <source src="/bg.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             {/* <div className="absolute bottom-0 left-0 w-full h-full custom-gradient z-0"></div> */}

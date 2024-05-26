@@ -9,10 +9,9 @@ const Accordion = ({ title, answer }: {title: string, answer: string}) => {
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between w-full items-start  bg-transparent"
       >
-        <span className="text-white text-start text-md space">{title}</span>
-        {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
+        <span className="text-black text-start text-md space">{title}</span>
         <svg
-          className="fill-white shrink-0 ml-8"
+          className="fill-black shrink-0 ml-8"
           width="16"
           height="16"
           xmlns="http://www.w3.org/2000/svg"
@@ -37,18 +36,15 @@ const Accordion = ({ title, answer }: {title: string, answer: string}) => {
           />
         </svg>
       </button>
-      {/* {
-        accordionOpen &&  */}
         <div
         className={` ${
           accordionOpen
-            ? "grid-rows-[1fr] opacity-100 grid overflow-hidden mt-4 transition-all bg-white p-4 duration-300 ease-in-out text-slate-600 text-sm"
+            ? "grid-rows-[1fr] opacity-100 grid overflow-hidden mt-4 transition-all bg-greenPrimary p-4 duration-300 ease-in-out text-white text-sm"
             : "grid-rows-[0fr] opacity-0 h-0 transition-all duration-300 ease-in-out"
         }`}
       >
         <div className="overflow-hidden">{answer}</div>
       </div>
-      {/* } */}
     </div>
   );
 };

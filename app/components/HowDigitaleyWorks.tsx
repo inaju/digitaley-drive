@@ -46,7 +46,7 @@ const HowDigitaley = (props: Props) => {
       id="why-digitaley"
       className="bg-[#005DE80C] px-[1rem] lato w-[100vw] h-fit py-20"
     >
-      <h1 className="text-3xl text-center">How learning  <span className="border-b-4 text-greenPrimary border-greenPrimary pb-1">Works</span></h1>
+      <h1 className="text-3xl text-center">How learning  <span className="border-b-4 text-greenPrimary border-greenPrimary pb-1">works</span></h1>
       <div className="flex flex-col lg:flex-row items-center mt-16 justify-evenly">
         <img src="https://heelsandtech.com/wp-content/uploads/2023/07/Asset-1-1024x716.png" 
         className="w-[100%] lg:w-5/12" />

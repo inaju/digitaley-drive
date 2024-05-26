@@ -8,7 +8,7 @@
 .icon-bar {
   position: fixed;
   top: 90%;
-  left: 95%;
+  right: 1.5%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -30,7 +30,7 @@ a{
   .icon-bar {
     position: fixed;
     top: 95%;
-    left: 85%;
+    left: 55%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);

@@ -42,7 +42,7 @@ const Page = () => {
       </div>
 
       <Faq />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Works />
     </div>
   )

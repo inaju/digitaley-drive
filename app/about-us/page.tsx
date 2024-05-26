@@ -57,30 +57,13 @@ const Page = () => {
   }, []);
   return (
     <motion.div
-      // style={{ opacity }}
-      // ref={targetRef}
-      // className="relative max-w-[100vw] overflow-x-hidden flex flex-col h-fit pb-20 bg-green-50 space text-white before:pointer-events-none before:fixed before:inset-0 before:z-0 before:bg-[radial-gradient(circle_farthest-side_at_var(--x,_100px)_var(--y,_100px),_var(--color-secondary)_0%,_transparent_100%)] before:opacity-40"
-
-
-
       className="relative max-w-[100vw] overflow-x-hidden flex flex-col h-fit pb-20 bg-white text-white "
     >
-      {/* <div className='h-16/ bg-white w-[100vw]'></div> */}
-      {/* <div className='gradientBg z- absolute top-0 left-0 w-[100vw] h-[60vh]'></div> */}
       <div className='bg-white lg:parallelogram   relative flex items-center justify-center z- top-0 left-0 w-[100vw] h-[60vh]'>
         <h1 className='text-white text-center z-20 relative'>Get To know Us</h1>
-        {/* <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-          autoPlay
-          muted
-          loop
-        >
-          <source src="/bg5.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
         <div className='bg-white h-16 absolute top-0 left-0 w-full z-20'></div>
 
-        <img src='https://www.cambridgespark.com/hubfs/data%20analyst%20header.jpg' className='w-[100%] border border-red-500 h-[100%] absolute' />
+        <img src='/assets/digitaley.jpg' className='w-[100%] border border-red-500 h-[100%] absolute object-cover' />
 
         <div className='absolute top-0 left-0 w-full h-full bg-black/60 z-10'></div>
       </div>
@@ -90,20 +73,20 @@ const Page = () => {
         <div className='flex flex-col lg:flex-row gap-8 lg:gap-16 items-start'>
           <div className='w-[100%] lg:w-5/12'>
             <h1 className='text-greenPrimary text-2xl'>OUR MISSION</h1>
-            <p className='text-gray-600 text-4xl lg:text-6xl font-[500]'>Listen to people <br /> and help them</p>
+            <p className='text-gray-600 text-4xl lg:text-6xl font-[500]'>Digitaley Drive is on a mission to improve Quality Education</p>
           </div>
           <div className='w-[100%] lg:w-8/12  text-[18px] font-[400]'>
             <p className='mt-2 text-gray-700 '>At Digitaley Drive, our mission is to empower individuals through education and technology. We are dedicated to providing accessible, high-quality learning opportunities that enable our users to acquire new skills and achieve their professional goals. By listening to our community and understanding their needs, we continuously strive to enhance our platform and deliver exceptional support.
-<br />
-<br />
-We believe in the transformative power of education and are committed to fostering a supportive and inclusive environment where everyone can thrive. Join us on our journey to make learning more effective and enjoyable for people around the world.
+              <br />
+              <br />
+              We believe in the transformative power of education and are committed to fostering a supportive and inclusive environment where everyone can thrive. Join us on our journey to make learning more effective and enjoyable for people around the world.
 
 
 
 
 
 
-</p>
+            </p>
           </div>
           <div>
 
@@ -111,18 +94,16 @@ We believe in the transformative power of education and are committed to fosteri
         </div>
         <hr className='my-16' />
         <div className='w-[100%]'>
-          <h1 className='text-greenPrimary text-[15px]  text-center'>About us
-</h1>
-          <p className='text-slate-700 mt-1 text-2xl font-[400] text-center '>An Edtech that equips learners to become global talents in demand by leveraging technology to provide the best learning experience on tech skills.</p>
-          {/* // <PopularCourses /> */}
-          {/* <p className='text-black'>Learn Evolve Build Innovate </p> */}
+          <h1 className='text-greenPrimary text-[16px]  text-center'>About us
+          </h1>
+          <p className='text-slate-700 mt-1 text-xl max-w-[60rem] mx-auto font-[400] text-center '>An Edtech that equips learners to become global talents in demand by leveraging technology to provide the best learning experience on tech skills.</p>
 
           <div className='flex flex-col gap-8 lg:flex-row justify-evenly items-center mt-20'>
             <VisionCard fontSize="text-3xl  lg:text-5xl" style='w-[100%] lg:w-[27.5rem] h-[30.5rem]' img='https://cdn-icons-png.flaticon.com/128/2120/2120488.png' title='Vision' description='To Build Talents through an ever-consistent technological model and a transforming learning experience.' />
             <VisionCard fontSize="text-3xl  lg:text-5xl" style='w-[100%] lg:w-[27.5rem] h-[30.5rem]' img='https://cdn-icons-png.flaticon.com/128/694/694900.png' title='Mission' description='To stand as an ever-growing platform for building and equipping learners to become global talents in demand.' />
           </div>
           <div className=' mt-40 mb-32'>
-            <h1 className='text-black mt-8 text-5xl font-[600] text-center'>Our Values</h1>
+            <h1 className='text-slate-700 mt-8 text-4xl font-[600] text-center'>Our <span className='border-b-4 border-greenPrimary text-greenPrimary'>Values</span></h1>
             <div className='flex flex-col lg:flex-row gap-6 justify-evenly items-center mt-12'>
 
               <VisionCard fontSize="text-3xl" style='w-[22.5rem] h-[30.5rem]' img='https://cdn-icons-png.flaticon.com/128/14535/14535805.png' title='Excellence' description='We uphold the highest quality standards in our services, offering a platform for technology focused individuals to learn, evolve, build and scale.' />
@@ -140,7 +121,7 @@ We believe in the transformative power of education and are committed to fosteri
 
       </div>
       <Faq />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Works />
     </motion.div>
   )

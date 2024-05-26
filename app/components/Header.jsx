@@ -25,7 +25,7 @@ const Header = () => {
             initial={["default", { y: -100 }]}
             animate={[scrolled ? "active" : "default", "slide"]}
             transition={{ duration: 0.3 }}
-            className="fixed flex items-center h-[70px] z-[1000] w-full border border-solid border-transparent"
+            className="fixed flex items-center h-[70px] z-[1000] max-w-[100vw] w-[100vw] border-solid border-transparent"
         >
            <NavBar />
         </motion.header>

@@ -148,7 +148,7 @@ Great Learning Experience                </span>
             </div>
             {/* End Avatar Group */}
             <span className="text-sm text-gray-500">
-              Trusted by over 3k students
+              Trusted by over 318k students
             </span>
           </div>
         </div>

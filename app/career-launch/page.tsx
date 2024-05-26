@@ -1,146 +1,27 @@
 'use client'
-import React from 'react'
+import React, {useEffect} from 'react'
 import { stagger, useAnimate } from "framer-motion";
 import Faq from '../components/faq';
 import ContactForm from '../components/ContactForm';
 import Works from '../components/Works';
-// import {
-//   // Availability,
-//   // Colors,
-//   // Music,
-//   // SchedulingLinks,
-//   // Team,
-//   // Todo,
-//   ScrollCard
-// } from '../components/features/card';
 import { careerPaths } from '../data';
 import { FeatureTitle } from '../components/features/title';
-// import { AnalyticsEngineering, Backend, BusinessAnalysis, DataAnalytics, DataEngineering, DataScience, Frontend, GameDevelopment, MusicVisual, OtherVisual, UiDesign } from "../components/features/visual";
 import { useFeatureStore } from "../components/features/store";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { useHidePageOverflow } from "../utils/toggle-page-overflow";
 import { useEscapePress } from "../utils/use-escape-press";
-// const features = [
-//   {
-//     title: "Use your calendar as a todo list",
-//     id: "todo-list",
-//     card: ScrollCard,
-//     visual: OtherVisual,
-//   },
-//   {
-//     title: "Color your calendar to organize",
-//     id: "colors",
-//     card: ScrollCard,
-//     visual: OtherVisual,
-//   },
-//   {
-//     title: "Instantly know if someone is available",
-//     id: "availability",
-//     card: ScrollCard,
-//     visual: OtherVisual,
-//   },
-//   {
-//     title: "Track what you listened to when",
-//     id: "music",
-//     card: ScrollCard,
-//     visual: MusicVisual,
-//   },
-//   {
-//     title: "Send scheduling links guests love",
-//     id: "scheduling-links",
-//     card: ScrollCard,
-//     visual: OtherVisual,
-//   },
-//   {
-//     title: "Always know what your team is up to",
-//     id: "team",
-//     card: ScrollCard,
-//     visual: OtherVisual,
-//   },
-// ];
-
-
-// const courses = [
-//   {
-//     title: "Data Analytics",
-//     id: "data-analyst",
-//     description: 'Data Analytics involves the collecting, transforming and organization of data so as to make informed decisions and predictions. In simple terms, data analytics is sitting people round a table, and telling them fairy stories about something you discovered. Yes, that is Data Analytics!  <br />  So the discovery is the trend and pattern you discovered inside a data  <br />  The round table is your stakeholders   <br /> The means by which you tell them what you discovered is dashboard and visuals <br /> And How do you make your dashboards? you clean, transform and analyze the data. ',
-//     sections: [
-//       {
-//         title: 'You are wondering what skills do I need? You need the following ',
-//         notes: [
-//           'Structured Query Language (SQL) which is a database tool used to access data stored in a database',
-//           'Data Visualization tools such as Microsoft Excel, Tableau or Power BI to create charts and graphs that tell a story . ',
-//           'A programming tool like Python or R (though this is not compulsory, but you can learn it to stand out!)'
-//         ]
-//       },
-//       {
-//         title: 'You are wondering if this is for you….. Well,',
-//         notes: [
-//           'If you like to solve problems',
-//           'If you like telling stories from a hidden discovery',
-//           'If you like presentations'
-//         ]
-//       },
-//     ],
-//     closingTag: 'Then this is the right path for you.'
-//   },
-//   {
-//     title: "",
-//     id: "",
-//     description: '',
-//     sections: [
-//       {
-//         title: '',
-//         notes: [
-//           '',
-//           '',
-//           ''
-//         ]
-//       },
-//       {
-//         title: '',
-//         notes: [
-//           '',
-//           '',
-//           ''
-//         ]
-//       },
-//     ],
-//     closingTag: ''
-//   },
-//   {
-//     title: "",
-//     id: "",
-//     description: '',
-//     sections: [
-//       {
-//         title: '',
-//         notes: [
-//           '',
-//           '',
-//           ''
-//         ]
-//       },
-//       {
-//         title: '',
-//         notes: [
-//           '',
-//           '',
-//           ''
-//         ]
-//       },
-//     ],
-//     closingTag: ''
-//   },
-// ];
-
-
-
-
-// console.log(careerPaths);
-
+import Lenis from "@studio-freight/lenis";
 const Page = () => {
+
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
+
   const [scope, animate] = useAnimate();
   const fullscreenFeature = useFeatureStore((state) => state.fullscreenFeature);
   const lastFullscreenFeature = useFeatureStore(
@@ -202,7 +83,7 @@ const Page = () => {
   }, [animate, fullscreenFeature, lastFullscreenFeature]);
   return (
     <div className="mx-auto pt-24 lg:pt-40 max-w-[82.5rem] px-[1rem] lg:px-0 lato">
-      <h1 className='text-[2.5rem] lg:text-[6rem] text-greenPrimary'>Hello Digitaley Drive Learner!</h1>
+      <h1 className='text-[2.5rem] lg:text-[3rem] text-greenPrimary'>Hello Digitaley Drive Learner!</h1>
       <p className='mt-6 text-[18px]'>If you are confused about what to learn or what career path to take, then grap a hot tea cause i am about to spill some tea.</p>
       <div ref={scope}>
         {careerPaths.map((feature) => (
@@ -217,68 +98,7 @@ const Page = () => {
         <div className="flex flex-col-reverse lg:flex-row  w-full items-start gap-16 lg:gap-20">
           <div className="w-full py-[4rem] lg:py-[40vh]">
             <ul>
-              {/* {careerPaths.map((path, index) => (
-                <li key={path.id}>
-                  <FeatureTitle id={path.id}>
-                    <div key={index} className="career-path border border-black">
-                      <h2 className='text-greenPrimary'>{path.title}</h2>
-                      <p>{path.description}</p>
-                      {path.details && (
-                        <div>
-                          <h3>Details:</h3>
-                          <ul>
-                            {path.details.map((detail, i) => (
-                              <li key={i}>{detail}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-                      {path.skills && (
-                        <div>
-                          <h3>Skills Needed:</h3>
-                          <ul>
-                            {path.skills.map((skill, i) => (
-                              <li key={i}>{skill}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-                      {path.tools && (
-                        <div>
-                          <h3>Tools:</h3>
-                          <ul>
-                            {path.tools.map((tool, i) => (
-                              <li key={i}>{tool}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-                      {path.parts && (
-                        <div>
-                          <h3>Parts:</h3>
-                          <ul>
-                            {path.parts.map((part, i) => (
-                              <li key={i}>{part}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-                      {path.fit && (
-                        <div>
-                          <h3>Is this career for you?</h3>
-                          <ul>
-                            {path.fit.map((fit, i) => (
-                              <li key={i}>{fit}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-                    </div>
-                  </FeatureTitle>
-                </li>
-              ))} */}
-
-
+        
               {careerPaths.map((path, index) => (
                 <li key={path.id}>
                   <FeatureTitle id={path.id} item={path} index={index} />
@@ -295,78 +115,8 @@ const Page = () => {
           </div>
         </div>
       </div>
-      {/* <div className="h-screen">More room to scroll</div> */}
-
-
-
-
-{/* 
-      <div>
-        {careerPaths.map((path, index) => (
-          <div key={index} className="career-path">
-            <h2>{path.title}</h2>
-            <p>{path.description}</p>
-            {path.details && (
-              <div>
-                <h3>Details:</h3>
-                <ul>
-                  {path.details.map((detail, i) => (
-                    <li key={i}>{detail}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {path.skills && (
-              <div>
-                <h3>Skills Needed:</h3>
-                <ul>
-                  {path.skills.map((skill, i) => (
-                    <li key={i}>{skill}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {path.tools && (
-              <div>
-                <h3>Tools:</h3>
-                <ul>
-                  {path.tools.map((tool, i) => (
-                    <li key={i}>{tool}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {path.parts && (
-              <div>
-                <h3>Parts:</h3>
-                <ul>
-                  {path.parts.map((part, i) => (
-                    <li key={i}>{part}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {path.fit && (
-              <div>
-                <h3>Is this career for you?</h3>
-                <ul>
-                  {path.fit.map((fit, i) => (
-                    <li key={i}>{fit}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        ))}
-      </div> */}
-
-     
     </div>
   )
 }
 
 export default Page
-
-{/* <Faq />
-<ContactForm />
-<Works /> */}

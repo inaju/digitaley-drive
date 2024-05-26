@@ -370,14 +370,14 @@ Thank you Digitaleydrive for this wonderful opportunity.
           </div>
           {/* End Stats */}
           {/* Stats */}
-<div className="flex flex-col items-center">
-          <h4 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
+<div>
+          <h4 className="text-lg sm:text-xl font-semibold text-white dark:text-gray-200">
             Countries
           </h4>
           <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-greenPrimary">
             26+
           </p>
-          <p className="mt-1 text-gray-500">Impacted</p>
+          <p className="mt-1 text-gray-400">Impacted</p>
         </div>
         {/* End Stats */}
           {/* Stats */}

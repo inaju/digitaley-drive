@@ -5,35 +5,32 @@ import MagneticButton from '../components/custom/Magnetic';
 const values = [
     {
         title: 'Expert Vetted',
-        description: 'Our writers undergo a rigorous selection process, ensuring they are skilled professionals capable of delivering high-quality, impactful content tailored to your needs',
+        description: 'We have a pool of talents that have undergone a rigorous training process, ensuring they are skilled professionals capable of delivering high-quality, innovative solutions that fit into your business needs.',
     },
     {
-        title: 'Industry Specialization',
-        description: 'Our writers have expertise in specific industries, ensuring content is well-written, highly relevant, and authoritative.',
+        title: 'Domain specialization',
+        description: 'Through the high value content of our educational materials, our talents have expertise in specific technologies ensuring your business gets the right solutions.',
     },
     {
-        title: 'SEO Mastery',
-        description: 'Skilled in the latest SEO techniques, our writers craft content that ranks well on search engines, driving organic traffic to your business.',
+        title: 'Timely Delivery',
+        description: 'Our talents are efficient and fast in delivery, while ensuring that the successful business that your company has is not compromised.',
     },
     {
-        title: 'Expert Vetted',
-        description: 'We prioritize punctuality, ensuring your content is delivered on schedule to keep your marketing efforts on track.',
+        title: 'Skilled Mastery',
+        description: 'Our talents are highly skilled in efficient data mastery that has revolutionized business operations. From the science of building scalable codes, to the art in data visualization and the process of transforming business operations',
     },
-    {
-        title: 'Continuous Improvement',
-        description: 'Our writers are committed to growth, regularly updating their skills to stay ahead in the ever-evolving content landscape.',
-    },
+    
 ]
 const page = () => {
     return (
         <div className='h-fit text-center py-28 px-[1rem] lg:py-40 max-w-[80rem] mx-auto lato'>
-            <p className='text-[16px] mt-2 text-greenPrimary'>creative Writers</p>
-            <h1 className='text-3xl mt-3 lg:text-4xl'>Get connected to our top <span className='text-greenPrimary'>expert writers</span></h1>
-            <p className='text-[17px] mt-8 lg:mt-4'>With a passion for innovation and a dedication to excellence , our <br className='hidden lg:flex' />
-            writers bring diverse expertise to every project they undertake</p>
+            <p className='text-[16px] mt-2 text-greenPrimary'>Hire Talents</p>
+            <h1 className='text-3xl mt-3 lg:text-4xl'>Get connected to our top <span className='text-greenPrimary'>talents</span></h1>
+            {/* <p className='text-[17px] mt-8 lg:mt-4'>With a passion for innovation and a dedication to excellence , our <br className='hidden lg:flex' />
+            writers bring diverse expertise to every project they undertake</p> */}
 
 
-            <div className='grid mt-16 lg:mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-12'>
+            <div className='grid mt-16 lg:mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
                 {
                     values.map((item, i) => <div key={i} className='flex flex-col p-3 gap-2 items-center'>
                         <IoCheckmarkDoneSharp className='text-xl text-white rounded-full p-1 bg-greenPrimary'/>
@@ -43,12 +40,13 @@ const page = () => {
                 }
             </div>
 
-            <div className='mt-20 lg:mt-40 flex flex-col gap-16 items-center lg:w-[60rem] w-[100%] mx-auto'>
+                <h1 className='mt-20 lg:mt-20 text-greenPrimary'>Get in touch</h1>
+            <div className='mt-6 flex flex-col gap-16 items-center lg:w-[60rem] w-[100%] mx-auto'>
                 <div className='text-start w-[100%]'>
                     <label className='text-black font-[300] text-lg'>
                         Your name *
                     </label>
-                    <input className='border px-4 outline-none border-greenPrimary rounded-md mt-3 h-3 py-6 w-[100%] '/>
+                    <input className='border px-4 outline-none border-greenPrimary rounded-md mt-3 h-3 py-4 w-[100%] '/>
                 </div>
 
               

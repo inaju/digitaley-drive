@@ -190,7 +190,7 @@ const NavBar = (props: Props) => {
 
             <Link
               className="font- flex text-[16px] flex-col gap-1 hover:no-underline text-gray-700 hover:text-greenPrimary"
-              href="#why-digitaley"
+              href="/#why-digitaley"
               aria-current="page"
             >
               Why digitaley drive
@@ -204,7 +204,7 @@ const NavBar = (props: Props) => {
 
             <Link
               className="hover:no-underline"
-              href="#"
+              href="/hire"
               aria-current="page"
             >
               <RoundedButton className="border border-greenPrimary px-8 py-2 rounded-full text-[16px] gap-1 hover:no-underline text-greenPrimary hover:text-greenPrimary">
