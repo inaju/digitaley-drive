@@ -30,7 +30,7 @@ const Page = () => {
 
   return (
     <div className='max-w-[100vw] overflow-x-hidden'>
-      <div className='lato h-fit overflow-y- pb-24 max-w-[85rem] px-[1rem] lg:mx-[3rem] pt-20 lg:pt-48 mx-auto'>
+      <div className='lato h-fit overflow-y- pb-24 max-w-[85rem] px-[1rem] lg:px-[3rem] pt-20 lg:pt-48 mx-auto'>
       <div className='flex flex-col-reverse lg:flex-row justify-between gap-20'>
         <div className='w-[100%] lg:w-7/12'>
           <h1 className='text-3xl '>{foundObjectById?.title}</h1>
