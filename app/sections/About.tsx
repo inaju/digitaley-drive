@@ -1,7 +1,6 @@
 'use client'
 import { motion } from "framer-motion";
 import { aboutFeaturs } from "../constants";
-import { about } from "../constants/images";
 import { leftSideVariants, rightSideVariants } from "../constants/motion";
 
 const About = () => {
