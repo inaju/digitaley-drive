@@ -1,158 +1,98 @@
-// import { forwardRef } from "react";
-
-// const SliderNavigation = forwardRef((ref) => {
-//     return (
-//         <div className="flex justify-between">
-//             <button
-//                 type="button"
-//                 className="group btn btn-outline flex items-center justify-center gap-x-2 w-14 sm:w-fit px-0 sm:px-6"
-//                 onClick={() => ref.current.swiper.slidePrev()}
-//             >
-//                 <svg
-//                     width="71"
-//                     height="51"
-//                     viewBox="0 0 71 51"
-//                     fill="none"
-//                     xmlns="http://www.w3.org/2000/svg"
-//                     className="w-[26px]"
-//                 >
-//                     <path
-//                         d="M70.4929 25.4928L6.61276 25.4928M32.6485 48.9472C27.904 40.5601 20.07 31.1572 6.61276 25.4472C20.07 19.7372 27.904 10.3343 32.6485 1.9472"
-//                         stroke="#292C32"
-//                         strokeWidth="4.5"
-//                         className="transition-colors duration-300 group-hover:stroke-white"
-//                     />
-//                 </svg>
-//                 <p className="hidden sm:block">Prev</p>
-//             </button>
-
-//             <button
-//                 type="button"
-//                 className="group btn btn-outline flex items-center justify-center gap-x-2 w-14 sm:w-fit px-0 sm:px-6"
-//                 onClick={() => ref.current.swiper.slideNext()}
-//             >
-//                 <p className="hidden sm:block">Next</p>
-//                 <svg
-//                     width="71"
-//                     height="51"
-//                     viewBox="0 0 71 51"
-//                     fill="none"
-//                     xmlns="http://www.w3.org/2000/svg"
-//                     className="w-[26px]"
-//                 >
-//                     <path
-//                         d="M0.612732 25.4016H64.4928M38.4571 1.9472C43.2016 10.3343 51.0356 19.7372 64.4928 25.4472C51.0356 31.1572 43.2016 40.5601 38.4571 48.9472"
-//                         stroke="#292C32"
-//                         strokeWidth="4.5"
-//                         className="transition-colors duration-300 group-hover:stroke-white"
-//                     />
-//                 </svg>
-//             </button>
-//         </div>
-//     );
-// });
-// SliderNavigation.displayName = 'SliderNavigation';
-// export default SliderNavigation;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { useState, useEffect, useRef, forwardRef } from "react";
 
 const SliderNavigation = forwardRef(({ length }, ref) => {
-    const [direction, setDirection] = useState("forward");
-    const [isAutoSliding, setIsAutoSliding] = useState(true);
-    const intervalRef = useRef(null);
+  const [direction, setDirection] = useState("forward");
+  const [isAutoSliding, setIsAutoSliding] = useState(true);
+  const intervalRef = useRef(null);
 
-    useEffect(() => {
-        if (isAutoSliding) {
-            intervalRef.current = setInterval(() => {
-                if (direction === "forward") {
-                    ref.current.swiper.slideNext();
-                    if (ref.current.swiper.activeIndex === length - 1) {
-                        setDirection("backward");
-                    }
-                } else {
-                    ref.current.swiper.slidePrev();
-                    if (ref.current.swiper.activeIndex === 0) {
-                        setDirection("forward");
-                    }
-                }
-            }, 4000); // Adjust the interval time as needed
+  useEffect(() => {
+    if (isAutoSliding) {
+      intervalRef.current = setInterval(() => {
+        if (direction === "forward") {
+          ref.current.swiper.slideNext();
+          if (ref.current.swiper.activeIndex === length - 1) {
+            setDirection("backward");
+          }
+        } else {
+          ref.current.swiper.slidePrev();
+          if (ref.current.swiper.activeIndex === 0) {
+            setDirection("forward");
+          }
         }
+      }, 4000); // Adjust the interval time as needed
+    }
 
-        return () => clearInterval(intervalRef.current);
-    }, [direction, isAutoSliding, length, ref]);
+    return () => clearInterval(intervalRef.current);
+  }, [direction, isAutoSliding, length, ref]);
 
-    const handleManualNavigation = (navigate, newDirection) => {
-        clearInterval(intervalRef.current);
-        setIsAutoSliding(false);
-        navigate();
-        setDirection(newDirection);
-        setTimeout(() => setIsAutoSliding(true), 5000); // Adjust the delay time as needed
-    };
+  const handleManualNavigation = (navigate, newDirection) => {
+    clearInterval(intervalRef.current);
+    setIsAutoSliding(false);
+    navigate();
+    setDirection(newDirection);
+    setTimeout(() => setIsAutoSliding(true), 5000); // Adjust the delay time as needed
+  };
 
-    return (
-        <div className="flex justify-between">
-            <button
-                type="button"
-                className="group btn btn-outline flex items-center justify-center gap-x-2 w-14 sm:w-fit px-0 sm:px-6"
-                onClick={() => handleManualNavigation(() => ref.current.swiper.slidePrev(), "backward")}
-            >
-                <svg
-                    width="71"
-                    height="51"
-                    viewBox="0 0 71 51"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-[26px]"
-                >
-                    <path
-                        d="M70.4929 25.4928L6.61276 25.4928M32.6485 48.9472C27.904 40.5601 20.07 31.1572 6.61276 25.4472C20.07 19.7372 27.904 10.3343 32.6485 1.9472"
-                        stroke="#292C32"
-                        strokeWidth="4.5"
-                        className="transition-colors duration-300 group-hover:stroke-white"
-                    />
-                </svg>
-                <p className="hidden sm:block">Prev</p>
-            </button>
+  return (
+    <div className="flex justify-between">
+      <button
+        type="button"
+        className="group btn btn-outline flex items-center justify-center gap-x-2 w-14 sm:w-fit px-0 sm:px-6"
+        onClick={() =>
+          handleManualNavigation(
+            () => ref.current.swiper.slidePrev(),
+            "backward"
+          )
+        }
+      >
+        <svg
+          width="71"
+          height="51"
+          viewBox="0 0 71 51"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-[26px]"
+        >
+          <path
+            d="M70.4929 25.4928L6.61276 25.4928M32.6485 48.9472C27.904 40.5601 20.07 31.1572 6.61276 25.4472C20.07 19.7372 27.904 10.3343 32.6485 1.9472"
+            stroke="#292C32"
+            strokeWidth="4.5"
+            className="transition-colors duration-300 group-hover:stroke-white"
+          />
+        </svg>
+        <p className="hidden sm:block">Prev</p>
+      </button>
 
-            <button
-                type="button"
-                className="group btn btn-outline flex items-center justify-center gap-x-2 w-14 sm:w-fit px-0 sm:px-6"
-                onClick={() => handleManualNavigation(() => ref.current.swiper.slideNext(), "forward")}
-            >
-                <p className="hidden sm:block">Next</p>
-                <svg
-                    width="71"
-                    height="51"
-                    viewBox="0 0 71 51"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-[26px]"
-                >
-                    <path
-                        d="M0.612732 25.4016H64.4928M38.4571 1.9472C43.2016 10.3343 51.0356 19.7372 64.4928 25.4472C51.0356 31.1572 43.2016 40.5601 38.4571 48.9472"
-                        stroke="#292C32"
-                        strokeWidth="4.5"
-                        className="transition-colors duration-300 group-hover:stroke-white"
-                    />
-                </svg>
-            </button>
-        </div>
-    );
+      <button
+        type="button"
+        className="group btn btn-outline flex items-center justify-center gap-x-2 w-14 sm:w-fit px-0 sm:px-6"
+        onClick={() =>
+          handleManualNavigation(
+            () => ref.current.swiper.slideNext(),
+            "forward"
+          )
+        }
+      >
+        <p className="hidden sm:block">Next</p>
+        <svg
+          width="71"
+          height="51"
+          viewBox="0 0 71 51"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-[26px]"
+        >
+          <path
+            d="M0.612732 25.4016H64.4928M38.4571 1.9472C43.2016 10.3343 51.0356 19.7372 64.4928 25.4472C51.0356 31.1572 43.2016 40.5601 38.4571 48.9472"
+            stroke="#292C32"
+            strokeWidth="4.5"
+            className="transition-colors duration-300 group-hover:stroke-white"
+          />
+        </svg>
+      </button>
+    </div>
+  );
 });
-SliderNavigation.displayName = 'SliderNavigation';
+SliderNavigation.displayName = "SliderNavigation";
 
 export default SliderNavigation;

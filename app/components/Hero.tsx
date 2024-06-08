@@ -27,7 +27,8 @@ const Hero = () => {
               <span className="text-greenPrimary">Education</span>
             </h1>
             <p className="mt-3 text-lg text-gray-600 dark:text-gray-400">
-              Explore a Range of flexible courses designed to equip and empower you for Innovation.{" "}
+              Explore a Range of flexible courses designed to equip and empower
+              you for Innovation.{" "}
             </p>
             <div className="md:mt-24 mt-7 md:mb-12 grid gap-3 w-full  sm:inline-flex">
               <a
@@ -36,41 +37,42 @@ const Hero = () => {
               >
                 Individual
                 <svg
-            className="w-4 h-4"
-            width={16}
-            height={16}
-            viewBox="0 0 16 16"
-            fill="none"
-          >
-            <path
-              d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-            />
-          </svg>
+                  className="w-4 h-4"
+                  width={16}
+                  height={16}
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                  />
+                </svg>
                 {/* <img src="/assets/svg/arrow-right-green.svg" alt="" className="w-6" /> */}
               </a>
 
               <a
                 className="inline-flex mt-2 lg:mt-0 justify-center hover:text-white items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenPrimary hover:text-\ border border-transparent text-sm lg:text-base text-white font-[700] rounded-xl focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-8 dark:focus:ring-offset-gray-800"
-                href="https://docs.google.com/forms/d/e/1FAIpQLScjDdtgFMuQu5-7EjFCvtaPIQG22nRlinEXLMgPUlsgBpxG9Q/viewform" target="_blank"
+                href="https://docs.google.com/forms/d/11gnpmFWETCJcjBWsR4yNv3Q8gPDXuYzbkqySIGru5Oo/edit"
+                target="_blank"
               >
                 Kids
                 <svg
-            className="w-4 h-4"
-            width={16}
-            height={16}
-            viewBox="0 0 16 16"
-            fill="none"
-          >
-            <path
-              d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-            />
-          </svg>
+                  className="w-4 h-4"
+                  width={16}
+                  height={16}
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                  />
+                </svg>
                 {/* <img src="/assets/svg/arrow-right.svg" alt="" className="w-6" /> */}
                 {/* <svg
                   className="w-2.5 h-2.5"
@@ -89,23 +91,24 @@ const Hero = () => {
               </a>
               <a
                 className="inline-flex mt-2 lg:mt-0 justify-center hover:text-white items-center gap-x-3 text-center bg-greenPrimary hover:bg-greenPrimary hover:text-\ border border-transparent text-sm lg:text-base text-white font-[700] rounded-xl focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:ring-offset-2 focus:ring-offset-white transition py-3 px-8 dark:focus:ring-offset-gray-800"
-                href="https://forms.zohopublic.eu/digitaleydrive/form/ContactUs/formperma/e697FUIdeD5WHars_vm1FQw5i5wBRdT0MUmDyzxY8bI" target="_blank"
+                href="https://forms.zohopublic.eu/digitaleydrive/form/ContactUs/formperma/e697FUIdeD5WHars_vm1FQw5i5wBRdT0MUmDyzxY8bI"
+                target="_blank"
               >
                 Data Solution
                 <svg
-            className="w-4 h-4"
-            width={20}
-            height={20}
-            viewBox="0 0 16 16"
-            fill="none"
-          >
-            <path
-              d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-            />
-          </svg>
+                  className="w-4 h-4"
+                  width={20}
+                  height={20}
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                  />
+                </svg>
                 {/* <img src="/assets/svg/arrow-right.svg" alt="" className="w-6" /> */}
                 {/* <svg
                   className="w-2.5 h-2.5"
@@ -122,7 +125,6 @@ const Hero = () => {
                   />
                 </svg> */}
               </a>
-              
             </div>
           </div>
         </Animate>

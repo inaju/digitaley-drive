@@ -63,7 +63,6 @@ export const DataAnalytics = ({ id }: Props) => {
   );
 };
 
-
 export const Frontend = ({ id }: Props) => {
   return (
     <Visual id={id}>
@@ -103,7 +102,6 @@ export const AnalyticsEngineering = ({ id }: Props) => {
     </Visual>
   );
 };
-
 
 export const GameDevelopment = ({ id }: Props) => {
   return (

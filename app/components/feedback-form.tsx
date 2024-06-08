@@ -4,9 +4,10 @@ type Props = {};
 
 const FeedbackForm = (props: Props) => {
   return (
-    <div 
-    id="application-form"
-    className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div
+      id="application-form"
+      className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
+    >
       {/* Grid */}
       <div className="grid md:grid-cols-2 items-center gap-12">
         <div>
@@ -89,7 +90,7 @@ const FeedbackForm = (props: Props) => {
                     fill="currentColor"
                   />
                 </svg>
-             
+
                 <span className="text-gray-600 dark:text-gray-400">
                   Simple and affordable
                 </span>
@@ -108,9 +109,10 @@ const FeedbackForm = (props: Props) => {
                     fill="currentColor"
                   />
                 </svg>
-             
+
                 <span className="text-gray-600 dark:text-gray-400">
-Great Learning Experience                </span>
+                  Great Learning Experience{" "}
+                </span>
               </li>
             </ul>
           </div>
@@ -166,7 +168,12 @@ Great Learning Experience                </span>
               Loading…
             </iframe> */}
 
-<iframe className="w-[340px] h-[382px] md:w-[440px]" src="https://docs.google.com/forms/d/e/1FAIpQLSeoOoJysCsTcH0iu_ovlTdb7NRk-GxQRbfP7GWcgMyD6ACWEg/viewform?embedded=true" >Loading…</iframe>
+            <iframe
+              className="w-[340px] h-[382px] md:w-[440px]"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeoOoJysCsTcH0iu_ovlTdb7NRk-GxQRbfP7GWcgMyD6ACWEg/viewform?embedded=true"
+            >
+              Loading…
+            </iframe>
 
             {/* <form>
               <div className="mt-6 grid gap-4 lg:gap-6">

@@ -5,6 +5,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { LuSendHorizonal } from "react-icons/lu";
 import RoundedButton from './custom/RoundedButton/RoundedButton';
 import MagneticButton from "./custom/Magnetic";
+import SubstackWidget from "./Substack";
 type Props = {};
 
 const Footer = (props: Props) => {
@@ -340,7 +341,7 @@ href="/contact-us"
                 we promise not to spam you.</p>
 
             <div className='flex flex-col w-[100%] lg:w-fit lg:flex-row lg:items-center gap-5 lg:gap-8 mt-4'>
-                <input placeholder='Enter your email address' className='max-w-[35rem] w-[100%] lg:w-[30rem] px-4 py-3 outline-none border-greenPrimary border rounded-md' />
+                {/* <input placeholder='Enter your email address' className='max-w-[35rem] w-[100%] lg:w-[30rem] px-4 py-3 outline-none border-greenPrimary border rounded-md' />
                 <RoundedButton className='px-8 rounded-xl w-fit cursor-pointer py-2 lg:py-3'>
                     <div className='flex flex-row gap-3 items-center '>
                         <p>
@@ -348,7 +349,9 @@ href="/contact-us"
                         </p>
                         <LuSendHorizonal />
                     </div>
-                </RoundedButton>
+                </RoundedButton> */}
+
+<SubstackWidget />
             </div>
 
             <div className='mt-4 w-[40rem] flex items-center gap-4'>
