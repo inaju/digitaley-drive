@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.post("/api/proxy", async (req, res) => {
   const { method, worksheet_name, header_row, json_data } = req.body;
   console.log({ method, worksheet_name, header_row, json_data });
-  const resourceId = "ck8r64c933a7ca89d4c3d9085036334643681"; // Replace with your actual resource ID
+ 
   const url = `https://sheet.zoho.eu/api/v2/ck8r64c933a7ca89d4c3d9085036334643681`;
 
   const paramMap = {
@@ -35,7 +35,7 @@ app.post("/api/proxy", async (req, res) => {
     const response = await axios.post(url, new URLSearchParams(paramMap), {
       headers: {
         Authorization:
-          "Zoho-oauthtoken 1000.f920670ba0d6f57b7b4e059e5bdb8ba8.5759225f784940309fd60e0c20e973f7",
+          "Zoho-oauthtoken ",
         "Content-Type": "application/x-www-form-urlencoded",
       },
     });
@@ -259,7 +259,7 @@ async function sendToZohoSheet(method, worksheet_name, header_row, json_data) {
   try {
     const response = await axios.post(url, new URLSearchParams(paramMap), {
       headers: {
-        Authorization: "Zoho-oauthtoken 1000.f920670ba0d6f57b7b4e059e5bdb8ba8.5759225f784940309fd60e0c20e973f7",
+        Authorization: "Zoho-oauthtoken ",
         "Content-Type": "application/x-www-form-urlencoded",
       },
     });
