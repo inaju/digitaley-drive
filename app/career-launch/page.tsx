@@ -108,8 +108,8 @@ const Page = () => {
               ))}
             </ul>
           </div>
-          <div className="sticky mt-[1.5rem] b top-0 flex h-[20rem] lg:h-screen w-full lg:items-center">
-            <div className="relative bg-gray-100 aspect-square w-full rounded-2xl [&:has(>_.active-card)]:bg-transparent">
+          <div className="sticky mt-[1.5rem] b top-0  flex h-[20rem] lg:h-screen w-full lg:items-center">
+            <div className="relative aspect-square w-full rounded-2xl bg-gray-100 [&:has(>_.active-card)]:bg-transparent">
               {careerPaths.map((feature) => (
                 <feature.card
                   id={feature.id}
