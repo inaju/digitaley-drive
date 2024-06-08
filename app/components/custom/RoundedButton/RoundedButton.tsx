@@ -39,7 +39,7 @@ const RoundedButton: React.FC<RoundedButtonProps> = ({ children, backgroundColor
   return (
     <Magnetic>
       <div className={`${styles.roundedButton} ${className}`} style={{ overflow: "hidden" }} onMouseEnter={manageMouseEnter} onMouseLeave={manageMouseLeave} {...attributes}>
-        <p className='text-white text-[16px] lato font-[700] space'>
+        <p className='text-white text-[16px] lato font-[700]'>
           {children}
         </p>
         <div ref={circle} style={{ backgroundColor }} className={styles.circle}></div>

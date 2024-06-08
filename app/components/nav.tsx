@@ -66,11 +66,11 @@ const NavBar = (props: Props) => {
       >
         <div className="flex items-center w-[100%] lg:w-fit justify-between">
           <Link
-            className="flex hover:no-underline  w-[15rem] items-center gap-3 font-semibold text-grey-800"
+            className="flex hover:no-underline  w-[15rem] items-center gap-1 font-semibold text-grey-800"
             href="/"
           >
-            <Image src={logo} alt="logo" height={40} width={40} className="w-10"/>
-            <p className="text-xl text-gray-700">Digitaley Drive</p>
+            <Image src={logo} alt="logo" height={40} width={40} className="w-12"/>
+            <p className="text-xl mt-3 font-bold flex flex-col text-end raleway text-greenPrimary">digitaley <span className="text-sm font-[500]">drive</span></p>
           </Link>
           <div className="lg:hidden">
             {!showNavBar ? (

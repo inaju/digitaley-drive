@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { navLinks } from "../constants";
 import { navbarVariants, mobileMenuVariants } from "../constants/motion";
 import { useResizeX, useScrollY } from "../hooks";
 import NavBar from "@/app/components/nav";

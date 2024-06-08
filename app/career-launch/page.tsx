@@ -1,18 +1,16 @@
-'use client'
-import React, {useEffect} from 'react'
+"use client";
+import React, { useEffect } from "react";
 import { stagger, useAnimate } from "framer-motion";
-import Faq from '../components/faq';
-import ContactForm from '../components/ContactForm';
-import Works from '../components/Works';
-import { careerPaths } from '../data';
-import { FeatureTitle } from '../components/features/title';
+import Faq from "../components/faq";
+import ContactForm from "../components/ContactForm";
+import Works from "../components/Works";
+import { careerPaths } from "../data";
+import { FeatureTitle } from "../components/features/title";
 import { useFeatureStore } from "../components/features/store";
-// import { useEffect } from "react";
 import { useHidePageOverflow } from "../utils/toggle-page-overflow";
 import { useEscapePress } from "../utils/use-escape-press";
 import Lenis from "@studio-freight/lenis";
 const Page = () => {
-
   useEffect(() => {
     const lenis = new Lenis();
     function raf(time: any) {
@@ -83,8 +81,13 @@ const Page = () => {
   }, [animate, fullscreenFeature, lastFullscreenFeature]);
   return (
     <div className="mx-auto pt-24 lg:pt-40 max-w-[82.5rem] px-[1rem] lg:px-0 lato">
-      <h1 className='text-[2.5rem] lg:text-[3rem] text-greenPrimary'>Hello Digitaley Drive Learner!</h1>
-      <p className='mt-6 text-[18px]'>If you are confused about what to learn or what career path to take, then grap a hot tea cause i am about to spill some tea.</p>
+      <h1 className="text-[2.5rem] lg:text-[3rem] text-greenPrimary">
+        Hello Digitaley Drive Learner!
+      </h1>
+      <p className="mt-6 text-[18px]">
+        If you are confused about what to learn or what career path to take,
+        then grap a hot tea cause i am about to spill some tea.
+      </p>
       <div ref={scope}>
         {careerPaths.map((feature) => (
           <feature.visual id={feature.id} key={feature.id} />
@@ -98,7 +101,6 @@ const Page = () => {
         <div className="flex flex-col-reverse lg:flex-row  w-full items-start gap-16 lg:gap-20">
           <div className="w-full py-[4rem] lg:py-[40vh]">
             <ul>
-        
               {careerPaths.map((path, index) => (
                 <li key={path.id}>
                   <FeatureTitle id={path.id} item={path} index={index} />
@@ -107,16 +109,20 @@ const Page = () => {
             </ul>
           </div>
           <div className="sticky mt-[1.5rem] b top-0 flex h-[20rem] lg:h-screen w-full lg:items-center">
-            <div className="relative aspect-square w-full rounded-2xl bg-gray-100 [&:has(>_.active-card)]:bg-transparent">
+            <div className="relative bg-gray-100 aspect-square w-full rounded-2xl [&:has(>_.active-card)]:bg-transparent">
               {careerPaths.map((feature) => (
-                <feature.card id={feature.id} key={feature.id} img={feature.url} />
+                <feature.card
+                  id={feature.id}
+                  key={feature.id}
+                  img={feature.url}
+                />
               ))}
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

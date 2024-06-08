@@ -24,7 +24,7 @@ import { Button } from "rsuite";
 // import { PopularCourses } from "./components/test/src/sections";
 import Header from './components/Header';
 // import Statistics from './components/Statistics'
-import About from './sections/About'
+// import About from './sections/About'
 // import Instructors from './sections/Instructors'
 // import TestApp from './components/test/src/App'
 // import Faq from "./components/Faq";

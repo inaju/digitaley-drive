@@ -28,16 +28,23 @@ const FeatureCard = ({ gradient, children, id, url }: FeatureCardProps) => {
           : "pointer-events-none opacity-0"
       )}
     >
-      <img src={url} className="h-auto rounded-2xl w-[100%] object-contain"/>
+      <img src={url} className="h-auto rounded-2xl w-[100%] object-contain" />
     </div>
   );
 };
 
 export const ScrollCard = ({ id, img }: CardProps) => {
   return (
-    <FeatureCard img="" id={id} gradient="from-[#fff7f5] to-[#ffd8ad]" url={img}>
-      <img src={img} 
-      className="h-[100%] object-cover max-w-[100%]"/>
+    <FeatureCard
+      img=""
+      id={id}
+      gradient="from-[#fff7f5] to-[#ffd8ad]"
+      url={img}
+    >
+      <img
+        src={img}
+        className="h-[20rem] lg:h-[100%] bg-gray-100 object-cover max-w-[100%]"
+      />
     </FeatureCard>
   );
 };

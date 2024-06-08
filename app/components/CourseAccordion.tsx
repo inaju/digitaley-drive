@@ -7,16 +7,32 @@ interface CourseAccordionProps {
   index?: number;
 }
 
-const CourseAccordion = ({ title, week, topics, index }: {title: string, week: number, topics: any, index: number}) => {
+const CourseAccordion = ({
+  title,
+  week,
+  topics,
+  index,
+}: {
+  title: string;
+  week: number;
+  topics: any;
+  index: number;
+}) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className={`py-3 shadow-md px-[1rem] border overflow-y-hidden ${!accordionOpen && 'h-14'} my-2 lato lg:px-[2rem] z-[${index}]`}>
+    <div
+      className={`py-3 shadow-md px-[1rem] border overflow-y-hidden ${
+        !accordionOpen && "h-14"
+      } my-2 lato lg:px-[2rem] z-[${index}]`}
+    >
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between w-full h-8 items-center bg-transparent"
       >
-        <span className="text-greenPrimary text-start text-lg space">Week {week}: {title}</span>
+        <span className="text-greenPrimary text-start text-lg">
+          Week {week}: {title}
+        </span>
         <svg
           className="fill-greenPrimary shrink-0 ml-8"
           width="16"
@@ -50,19 +66,28 @@ const CourseAccordion = ({ title, week, topics, index }: {title: string, week: n
             : "grid-rows-[0fr] opacity-0 h-0 transition-all duration-300 ease-in-out"
         }`}
       >
-        <div className="overflow-hidden flex flex-col gap-8">{topics && topics.map((topic: any, i: number) => 
-        <div key={i} className="flex flex-col items- gap-3">
-
-            <h1 className="text-[18px] font-[400]">Day {topic.day}:</h1>
-            <div className="flex flex-col gap-4">
-            {topic.topics && topic.topics.map((top: string, i: number) => <p key={i} className="flex items-center gap-6">
-            <img src="/assets/svg/arrow-right-green.svg" alt="" className="w-5 h-5" />
-                {top}
-                </p> )}
-            </div>
-            <p className="text-xl font-[400]"></p>
+        <div className="overflow-hidden flex flex-col gap-8">
+          {topics &&
+            topics.map((topic: any, i: number) => (
+              <div key={i} className="flex flex-col items- gap-3">
+                <h1 className="text-[18px] font-[400]">Day {topic.day}:</h1>
+                <div className="flex flex-col gap-4">
+                  {topic.topics &&
+                    topic.topics.map((top: string, i: number) => (
+                      <p key={i} className="flex items-center gap-6">
+                        <img
+                          src="/assets/svg/arrow-right-green.svg"
+                          alt=""
+                          className="w-5 h-5"
+                        />
+                        {top}
+                      </p>
+                    ))}
+                </div>
+                <p className="text-xl font-[400]"></p>
+              </div>
+            ))}
         </div>
-    )}</div>
       </div>
     </div>
   );

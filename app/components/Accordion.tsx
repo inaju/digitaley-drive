@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Accordion = ({ title, answer }: {title: string, answer: string}) => {
+const Accordion = ({ title, answer }: { title: string; answer: string }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
@@ -9,7 +9,7 @@ const Accordion = ({ title, answer }: {title: string, answer: string}) => {
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between w-full items-start  bg-transparent"
       >
-        <span className="text-black text-start text-md space">{title}</span>
+        <span className="text-black text-start text-md">{title}</span>
         <svg
           className="fill-black shrink-0 ml-8"
           width="16"
@@ -36,7 +36,7 @@ const Accordion = ({ title, answer }: {title: string, answer: string}) => {
           />
         </svg>
       </button>
-        <div
+      <div
         className={` ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100 grid overflow-hidden mt-4 transition-all bg-greenPrimary p-4 duration-300 ease-in-out text-white text-sm"

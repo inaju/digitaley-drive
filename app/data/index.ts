@@ -526,10 +526,10 @@ export const courses = [
         internshipBenefit: '3 months internship',
         enrollWithoutInternship: 'https://paystack.com/pay/93na0y3i-s',
         installmentsWithoutInternship: 'https://paystack.com/pay/mskjtja8c9',
-        brochureWithoutInternship: '',
         enrollWithInternship: 'https://paystack.com/pay/i560yhg6c0',
         installmentsWithInternship: 'https://paystack.com/pay/pq5ywgvk7z',
-        brochureWithInternship: '',
+        brochureWithoutInternship: '/',
+        brochureWithInternship: '/',
         enrolled: '14,000'
     },
     {
@@ -589,10 +589,10 @@ export const courses = [
         amountWithoutInternship: '₦70,000 | $70',
         enrollWithoutInternship: 'https://paystack.com/pay/hvezkrazux',
         installmentsWithoutInternship: 'https://paystack.com/pay/hz5-ddw80e',
-        brochureWithoutInternship: '',
         enrollWithInternship: 'https://paystack.com/pay/krrhzqdgdl',
         installmentsWithInternship: 'https://paystack.com/pay/lmulpvefek',
-        brochureWithInternship: '',
+        brochureWithoutInternship: '/',
+        brochureWithInternship: '/',
         enrolled: '500'
     },
     {
@@ -629,9 +629,7 @@ export const courses = [
             'Python',
             'Google Colab',
             'Github',
-            'Hackathon Development              ',
-            'SQL',
-            'Hackathon Development'
+            'Hackathon Development',
         ],
         duration: '4',
         topics: '20+',
@@ -640,7 +638,8 @@ export const courses = [
         amountWithoutInternship: '₦30,000|$30',
         enrollWithoutInternship: 'https://paystack.com/pay/-yjzyvx9cd',
         // installments: 'https://paystack.com/pay/hvezkrazux',
-        brochure: '',
+        brochureWithoutInternship: '/',
+        brochureWithInternship: '/',
         enrolled: '2000'
     },
     {
@@ -735,10 +734,10 @@ export const courses = [
         amountWithoutInternship: '₦100,000|$100',
         enrollWithoutInternship: 'https://paystack.com/pay/9x3pfjhsqa',
         installmentsWithoutInternship: 'https://paystack.com/pay/n0u8x6r1h5',
-        brochureWithoutInternship: '',
         enrollWithInternship: 'https://paystack.com/pay/il6uz88ryc',
         installmentsWithInternship: 'https://paystack.com/pay/vgm0fg8flf',
-        brochureWithInternship: '',
+        brochureWithoutInternship: '/',
+        brochureWithInternship: '/',
         enrolled: '500'
     },
     {
@@ -857,7 +856,8 @@ export const courses = [
         modules: '3',
         enrollWithoutInternship: 'https://paystack.com/pay/taem1ukjhm',
         installmentsWithoutInternship: 'https://paystack.com/pay/se5zfkxsu0',
-        brochureWithoutInternship: '',
+        brochureWithoutInternship: '/',
+        brochureWithInternship: '/',
         enrolled: '100'
     },
 ]
@@ -876,13 +876,13 @@ export const jobOpenings = [
         
     },
     {
-        role: 'Python Engineer',
+        role: 'Python Programmer',
         description: "We are looking for a python facilitator to join our techinical team",
         
     },
     {
-        role: 'Saas Instructor',
-        description: "We are looking for a Saas instructor to join our technical team",
+        role: 'Sas Instructor',
+        description: "We are looking for a sas instructor to join our technical team",
         
     }
 ]
