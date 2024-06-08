@@ -109,7 +109,7 @@ const MobileNavbar = ({ toggleMenu, open }: { open: any, toggleMenu: any }) => {
                                 >
                                     <Link
                                         className="border w-[100%] border-greenPrimary px-8 py-3 rounded-md text-[16px] gap-1 hover:no-underline text-greenPrimary hover:text-greenPrimary"
-                                        href="#"
+                                        href="/hire"
                                         aria-current="page"
                                     >
                                         Hire talents

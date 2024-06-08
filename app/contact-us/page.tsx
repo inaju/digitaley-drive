@@ -185,7 +185,7 @@ return;
           onSubmit={handleSubmit}
           className="border text-greenPrimary py-6 shadow-md w-[100%] lg:w-[50%] bg-white z-0 p-3 px-5 rounded-xl"
         >
-          <h1 className="text-6xl">Get in Touch</h1>
+          <h1 className="text-5xl">Get in Touch</h1>
           <p>You can reach us anytime</p>
 
           <div className="mt-8">
