@@ -11,7 +11,7 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <div className="bg-slate-800 lato">
-      <footer className="w-full  max-w-[85rem] py-16 px-4 sm:px-6 lg:px-8 mx-auto">
+      <footer className="w-full overflow-x-hidden  max-w-[85rem] py-16 px-4 sm:px-6 lg:px-8 mx-auto">
         {/* Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
           {/* <div className="col-span-full hidden lg:col-span-1 lg:block">

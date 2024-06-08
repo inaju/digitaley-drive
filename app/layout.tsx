@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-lightPrimary`}>
+      <body className={`${inter.className} bg-lightPrimary max-w-[100vw] overflow-x-hidden`}>
         <Toaster />
         <Header />
         {children}
